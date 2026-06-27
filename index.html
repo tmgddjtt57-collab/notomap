@@ -1409,6 +1409,11 @@ form {
   padding: 14px;
 }
 
+#spotForm.batch-entry-mode > .common-spot-field,
+#spotForm.batch-entry-mode > .common-spot-actions {
+  display: none;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1498,6 +1503,92 @@ form {
 
 .photo-preview-gallery img {
   min-height: 92px;
+}
+
+.photo-preview.batch-mode {
+  aspect-ratio: auto;
+  min-height: 0;
+  overflow: visible;
+  place-items: stretch;
+  padding: 8px;
+}
+
+.batch-photo-list {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+}
+
+.batch-photo-item {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  border: 1px solid rgba(216, 208, 194, 0.95);
+  border-radius: var(--radius);
+  background: #fffefa;
+  padding: 10px;
+}
+
+.batch-photo-thumb {
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border: 1px solid rgba(10, 23, 43, 0.16);
+  border-radius: 6px;
+  background: #e7ebf2;
+  padding: 0;
+}
+
+.batch-photo-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.batch-photo-fields,
+.batch-photo-field {
+  display: grid;
+  min-width: 0;
+}
+
+.batch-photo-fields {
+  gap: 8px;
+}
+
+.batch-photo-field {
+  gap: 6px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.batch-photo-field input,
+.batch-photo-field textarea {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 0 10px;
+  font: inherit;
+  font-weight: 600;
+}
+
+.batch-photo-field textarea {
+  min-height: 68px;
+  padding: 9px 10px;
+  resize: vertical;
+}
+
+.batch-photo-field input[aria-invalid="true"],
+.batch-photo-field textarea[aria-invalid="true"],
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: rgba(157, 70, 56, 0.75);
+  box-shadow: 0 0 0 3px rgba(157, 70, 56, 0.12);
 }
 
 .completion-toast {
@@ -2033,6 +2124,25 @@ form {
     min-height: 78px;
   }
 
+  .batch-photo-item {
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 8px;
+    padding: 7px;
+  }
+
+  .batch-photo-thumb {
+    width: 76px;
+    height: 76px;
+  }
+
+  .batch-photo-fields {
+    gap: 7px;
+  }
+
+  .batch-photo-field textarea {
+    min-height: 60px;
+  }
+
   .coordinate-actions {
     gap: 7px;
   }
@@ -2258,22 +2368,22 @@ form {
               <div class="photo-preview" id="photoPreview"></div>
             </div>
 
-            <label class="field">
+            <label class="field common-spot-field">
               <span data-i18n="titleJa">Title JA</span>
-              <input id="titleJa" type="text" required maxlength="80" />
+              <input id="titleJa" type="text" maxlength="80" />
             </label>
 
-            <label class="field">
+            <label class="field common-spot-field">
               <span data-i18n="descriptionJa">Description JA</span>
-              <textarea id="descriptionJa" rows="3" required maxlength="420"></textarea>
+              <textarea id="descriptionJa" rows="3" maxlength="420"></textarea>
             </label>
 
-            <label class="field">
+            <label class="field common-spot-field">
               <span data-i18n="locationInfo">Location info</span>
               <input id="locationInfo" type="text" inputmode="text" placeholder="37°22'14.5&quot;N 137°14'25.7&quot;E" />
             </label>
 
-            <div class="coordinate-actions">
+            <div class="coordinate-actions common-spot-actions">
               <button class="secondary-button" id="currentLocationButton" type="button">
                 <i data-lucide="locate-fixed"></i>
                 <span data-i18n="currentLocation">Use current location</span>
@@ -2537,6 +2647,12 @@ const ui = {
     photoUrl: "Photo URL",
     uploadPhoto: "Photo upload",
     choosePhoto: "Choose photos",
+    photoTitle: "Photo {index} title",
+    photoTitlePlaceholder: "Enter title",
+    photoDescription: "Photo {index} details",
+    photoDescriptionPlaceholder: "Enter details",
+    photoLocation: "Photo {index} location",
+    photoLocationPlaceholder: "Enter location info",
     delete: "Delete",
     reset: "Reset",
     save: "Show on map",
@@ -2553,10 +2669,13 @@ const ui = {
     centerUsed: "Map center copied.",
     invalidLocation: "Enter latitude and longitude, like 37.000000, 136.000000.",
     locationRequired: "Add location info first.",
+    titleDescriptionRequired: "Add a title and details first.",
     photoLocationFound: "Photo location was added.",
     photoLocationMissing: "No location data was found in this photo.",
     currentLocationFailed: "Could not get current location.",
     postComplete: "Post complete. The photo is now on the map.",
+    batchSaved: "Saved {count} posts.",
+    batchPostComplete: "Post complete. {count} photos are now on the map.",
     viewerMode: "Viewer mode hides editing controls.",
     editorMode: "Editor mode is active.",
     editorAccess: "Editor access",
@@ -2622,6 +2741,12 @@ const ui = {
     photoUrl: "사진 URL",
     uploadPhoto: "사진 업로드",
     choosePhoto: "사진 여러 장 선택",
+    photoTitle: "사진 {index} 제목",
+    photoTitlePlaceholder: "제목을 입력하세요",
+    photoDescription: "사진 {index} 상세",
+    photoDescriptionPlaceholder: "상세를 입력하세요",
+    photoLocation: "사진 {index} 위치 정보",
+    photoLocationPlaceholder: "위치 정보를 입력하세요",
     delete: "삭제",
     reset: "초기화",
     save: "지도에 표시",
@@ -2638,10 +2763,13 @@ const ui = {
     centerUsed: "지도의 중앙 좌표를 복사했습니다.",
     invalidLocation: "37.000000, 136.000000 형식으로 위도와 경도를 입력하세요.",
     locationRequired: "먼저 위치 정보를 입력하세요.",
+    titleDescriptionRequired: "먼저 제목과 상세를 입력하세요.",
     photoLocationFound: "사진의 위치 정보를 추가했습니다.",
     photoLocationMissing: "이 사진에서 위치 정보를 찾을 수 없습니다.",
     currentLocationFailed: "현재 위치를 가져올 수 없습니다.",
     postComplete: "게시가 완료되었습니다. 사진이 지도에 표시됩니다.",
+    batchSaved: "{count}건의 게시물을 저장했습니다.",
+    batchPostComplete: "게시가 완료되었습니다. 사진 {count}장이 지도에 표시됩니다.",
     viewerMode: "열람자 모드에서는 편집 도구가 숨겨집니다.",
     editorMode: "편집자 모드가 활성화되었습니다.",
     editorAccess: "편집자 접근",
@@ -2707,6 +2835,12 @@ const ui = {
     photoUrl: "照片 URL",
     uploadPhoto: "上传照片",
     choosePhoto: "选择多张照片",
+    photoTitle: "照片 {index} 标题",
+    photoTitlePlaceholder: "请输入标题",
+    photoDescription: "照片 {index} 详情",
+    photoDescriptionPlaceholder: "请输入详情",
+    photoLocation: "照片 {index} 位置信息",
+    photoLocationPlaceholder: "请输入位置信息",
     delete: "删除",
     reset: "重置",
     save: "显示在地图上",
@@ -2723,10 +2857,13 @@ const ui = {
     centerUsed: "已复制地图中心坐标。",
     invalidLocation: "请输入纬度和经度，例如 37.000000, 136.000000。",
     locationRequired: "请先添加位置信息。",
+    titleDescriptionRequired: "请先输入标题和详情。",
     photoLocationFound: "已添加照片位置信息。",
     photoLocationMissing: "此照片中未找到位置信息。",
     currentLocationFailed: "无法获取当前位置。",
     postComplete: "发布完成。照片已显示在地图上。",
+    batchSaved: "已保存 {count} 条发布内容。",
+    batchPostComplete: "发布完成。{count} 张照片已显示在地图上。",
     viewerMode: "浏览者模式会隐藏编辑控件。",
     editorMode: "编辑者模式已启用。",
     editorAccess: "编辑者访问",
@@ -2792,6 +2929,12 @@ const ui = {
     photoUrl: "写真URL",
     uploadPhoto: "写真アップロード",
     choosePhoto: "写真を複数選択",
+    photoTitle: "写真{index}のタイトル",
+    photoTitlePlaceholder: "タイトルを入力",
+    photoDescription: "写真{index}の詳細",
+    photoDescriptionPlaceholder: "詳細を入力",
+    photoLocation: "写真{index}の位置情報",
+    photoLocationPlaceholder: "位置情報を入力",
     delete: "削除",
     reset: "リセット",
     save: "地図に表示",
@@ -2808,10 +2951,13 @@ const ui = {
     centerUsed: "地図中心の座標を反映しました。",
     invalidLocation: "37.000000, 136.000000 の形式で緯度・経度を入力してください。",
     locationRequired: "先に位置情報を入力してください。",
+    titleDescriptionRequired: "先にタイトルと詳細を入力してください。",
     photoLocationFound: "写真の位置情報を反映しました。",
     photoLocationMissing: "この写真には位置情報が見つかりませんでした。",
     currentLocationFailed: "現在地を取得できませんでした。",
     postComplete: "投稿が完了しました。写真を地図に表示しました。",
+    batchSaved: "{count}件の投稿を保存しました。",
+    batchPostComplete: "投稿が完了しました。{count}枚の写真を地図に表示しました。",
     viewerMode: "閲覧者モードでは編集操作を非表示にします。",
     editorMode: "編集者モードが有効です。",
     editorAccess: "編集者アクセス",
@@ -2979,6 +3125,7 @@ const state = {
   activeGroup: null,
   selectedId: null,
   draftImages: [],
+  draftPhotoItems: [],
   picking: false,
   spots: loadSpots(),
 };
@@ -3226,6 +3373,13 @@ function t(key) {
   return ui[state.lang][key] || ui.en[key] || key;
 }
 
+function formatMessage(template, values = {}) {
+  return Object.entries(values).reduce(
+    (message, [key, value]) => message.replaceAll(`{${key}}`, String(value)),
+    template,
+  );
+}
+
 function localize(value) {
   if (!value || typeof value !== "object") return "";
   return value[state.lang] || value.en || value.ja || Object.values(value)[0] || "";
@@ -3294,6 +3448,59 @@ function makePhotoGallery(images, alt, className = "") {
             <img src="${escapeHtml(source)}" alt="${escapeHtml(`${alt} ${index + 1}`)}" loading="lazy" decoding="async" />
           `,
         )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderBatchPhotoPreview() {
+  els.photoPreview.innerHTML = `
+    <div class="batch-photo-list">
+      ${state.draftPhotoItems
+        .map((item, index) => {
+          const source = safeImageSource(item.image);
+          const titleValue = item.title || "";
+          const descriptionValue = item.description || "";
+          const locationValue = item.locationInfo || "";
+          return `
+            <div class="batch-photo-item">
+              <button class="batch-photo-thumb" type="button" aria-label="${escapeHtml(t("previewEmpty"))}">
+                <img src="${escapeHtml(source)}" alt="${escapeHtml(`${t("previewEmpty")} ${index + 1}`)}" loading="lazy" decoding="async" />
+              </button>
+              <div class="batch-photo-fields">
+                <label class="batch-photo-field">
+                  <span>${escapeHtml(formatMessage(t("photoTitle"), { index: index + 1 }))}</span>
+                  <input
+                    type="text"
+                    data-photo-title-index="${index}"
+                    value="${escapeHtml(titleValue)}"
+                    maxlength="80"
+                    placeholder="${escapeHtml(t("photoTitlePlaceholder"))}"
+                  />
+                </label>
+                <label class="batch-photo-field">
+                  <span>${escapeHtml(formatMessage(t("photoDescription"), { index: index + 1 }))}</span>
+                  <textarea
+                    data-photo-description-index="${index}"
+                    rows="2"
+                    maxlength="420"
+                    placeholder="${escapeHtml(t("photoDescriptionPlaceholder"))}"
+                  >${escapeHtml(descriptionValue)}</textarea>
+                </label>
+                <label class="batch-photo-field">
+                  <span>${escapeHtml(formatMessage(t("photoLocation"), { index: index + 1 }))}</span>
+                  <input
+                    type="text"
+                    inputmode="text"
+                    data-photo-location-index="${index}"
+                    value="${escapeHtml(locationValue)}"
+                    placeholder="${escapeHtml(t("photoLocationPlaceholder"))}"
+                  />
+                </label>
+              </div>
+            </div>
+          `;
+        })
         .join("")}
     </div>
   `;
@@ -3530,6 +3737,14 @@ function lockEditorAccess() {
 }
 
 function renderPreview() {
+  if (state.draftPhotoItems.length > 1) {
+    els.spotForm.classList.add("batch-entry-mode");
+    els.photoPreview.classList.add("batch-mode");
+    renderBatchPhotoPreview();
+    return;
+  }
+  els.spotForm.classList.remove("batch-entry-mode");
+  els.photoPreview.classList.remove("batch-mode");
   const urlImage = safeImageSource(els.photoUrl.value);
   const images = state.draftImages.length ? state.draftImages : urlImage ? [urlImage] : [];
   if (!images.length) {
@@ -3561,8 +3776,8 @@ function showStatus(message) {
   }, 2600);
 }
 
-function showCompletionNotification() {
-  els.completionToast.querySelector("span").textContent = t("postComplete");
+function showCompletionNotification(message = t("postComplete")) {
+  els.completionToast.querySelector("span").textContent = message;
   els.completionToast.classList.add("visible");
   if (window.lucide) window.lucide.createIcons();
   window.setTimeout(() => {
@@ -3600,6 +3815,7 @@ function resetForm(spot = null) {
   const municipality = spot?.municipality;
   const images = spotImages(spot);
   state.draftImages = images;
+  state.draftPhotoItems = [];
   els.spotId.value = spot?.id || "";
   els.titleEn.value = spot?.title?.en || "";
   els.titleKo.value = spot?.title?.ko || "";
@@ -3667,19 +3883,41 @@ function formValue(id) {
   return els[id].value.trim();
 }
 
-function buildSpotFromForm() {
+function makeSpotId(label, suffix = "") {
+  const slug = String(label || "spot")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+  const base = slug || "spot";
+  const unique = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  return [base, suffix, unique].filter(Boolean).join("-");
+}
+
+function withTitleSuffix(value, suffix) {
+  if (!suffix || !value) return value;
+  return `${value} ${suffix}`;
+}
+
+function buildSpotFromForm(options = {}) {
+  const {
+    coordinates = null,
+    idSuffix = "",
+    imagesOverride = null,
+    titleOverride = "",
+    descriptionOverride = "",
+    titleTranslationsOverride = null,
+    descriptionTranslationsOverride = null,
+    titleSuffix = "",
+  } = options;
   const existingId = formValue("spotId");
   const existingSpot = getSpot(existingId);
   const existingImages = spotImages(existingSpot);
   const urlImage = safeImageSource(formValue("photoUrl"));
-  const images = state.draftImages.length ? state.draftImages : urlImage ? [urlImage] : existingImages;
-  const baseTitle = formValue("titleJa") || formValue("titleEn");
-  const baseDescription = formValue("descriptionJa") || formValue("descriptionEn");
+  const images = imagesOverride || (state.draftImages.length ? state.draftImages : urlImage ? [urlImage] : existingImages);
+  const baseTitle = titleOverride || formValue("titleJa") || formValue("titleEn");
+  const baseDescription = descriptionOverride || formValue("descriptionJa") || formValue("descriptionEn");
   const baseMunicipality = formValue("municipalityJa") || formValue("municipalityEn");
-  const fallbackId = `${baseTitle || "spot"}-${Date.now()}`
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+  const fallbackId = makeSpotId(baseTitle, idSuffix);
   return {
     id: existingId || fallbackId,
     group: formValue("spotGroup"),
@@ -3689,23 +3927,91 @@ function buildSpotFromForm() {
       zh: formValue("municipalityZh") || baseMunicipality,
       ja: baseMunicipality,
     },
-    lat: Number(formValue("latitude")),
-    lng: Number(formValue("longitude")),
+    lat: Number(coordinates?.lat ?? formValue("latitude")),
+    lng: Number(coordinates?.lng ?? formValue("longitude")),
     image: images[0] || "",
     images,
     title: {
-      en: formValue("titleEn") || baseTitle,
-      ko: formValue("titleKo") || baseTitle,
-      zh: formValue("titleZh") || baseTitle,
-      ja: baseTitle,
+      en: withTitleSuffix(titleTranslationsOverride?.en || (titleOverride ? baseTitle : formValue("titleEn")) || baseTitle, titleSuffix),
+      ko: withTitleSuffix(titleTranslationsOverride?.ko || (titleOverride ? baseTitle : formValue("titleKo")) || baseTitle, titleSuffix),
+      zh: withTitleSuffix(titleTranslationsOverride?.zh || (titleOverride ? baseTitle : formValue("titleZh")) || baseTitle, titleSuffix),
+      ja: withTitleSuffix(baseTitle, titleSuffix),
     },
     description: {
-      en: formValue("descriptionEn") || baseDescription,
-      ko: formValue("descriptionKo") || baseDescription,
-      zh: formValue("descriptionZh") || baseDescription,
+      en: descriptionTranslationsOverride?.en || (descriptionOverride ? baseDescription : formValue("descriptionEn")) || baseDescription,
+      ko: descriptionTranslationsOverride?.ko || (descriptionOverride ? baseDescription : formValue("descriptionKo")) || baseDescription,
+      zh: descriptionTranslationsOverride?.zh || (descriptionOverride ? baseDescription : formValue("descriptionZh")) || baseDescription,
       ja: baseDescription,
     },
   };
+}
+
+function isBatchCreateMode() {
+  return !formValue("spotId") && state.draftPhotoItems.length > 1;
+}
+
+function draftTitleForItem(item) {
+  return item.title?.trim() || "";
+}
+
+function draftDescriptionForItem(item) {
+  return item.description?.trim() || "";
+}
+
+function validateRequiredText(batchMode) {
+  if (!batchMode) {
+    const hasTitle = Boolean(formValue("titleJa") || formValue("titleEn"));
+    const hasDescription = Boolean(formValue("descriptionJa") || formValue("descriptionEn"));
+    els.titleJa.setAttribute("aria-invalid", hasTitle ? "false" : "true");
+    els.descriptionJa.setAttribute("aria-invalid", hasDescription ? "false" : "true");
+    return hasTitle && hasDescription;
+  }
+
+  let isValid = true;
+  state.draftPhotoItems.forEach((item, index) => {
+    const hasTitle = Boolean(draftTitleForItem(item));
+    const hasDescription = Boolean(draftDescriptionForItem(item));
+    const titleInput = els.photoPreview.querySelector(`[data-photo-title-index="${index}"]`);
+    const descriptionInput = els.photoPreview.querySelector(`[data-photo-description-index="${index}"]`);
+    titleInput?.setAttribute("aria-invalid", hasTitle ? "false" : "true");
+    descriptionInput?.setAttribute("aria-invalid", hasDescription ? "false" : "true");
+    if (!hasTitle || !hasDescription) isValid = false;
+  });
+  return isValid;
+}
+
+function photoItemCoordinates(item, fallbackCoordinates) {
+  if (item.locationInfo?.trim()) {
+    return parseLocationInfo(item.locationInfo) || { lat: NaN, lng: NaN };
+  }
+  return item.gps || fallbackCoordinates || { lat: NaN, lng: NaN };
+}
+
+function buildBatchSpotsFromForm() {
+  return state.draftPhotoItems.map((item, index) =>
+    buildSpotFromForm({
+      coordinates: photoItemCoordinates(item),
+      idSuffix: String(index + 1),
+      imagesOverride: [item.image],
+      titleOverride: draftTitleForItem(item),
+      descriptionOverride: draftDescriptionForItem(item),
+      titleTranslationsOverride: item.title?.trim() ? item.titleTranslations : null,
+      descriptionTranslationsOverride: item.description?.trim() ? item.descriptionTranslations : null,
+      titleSuffix: item.title?.trim() ? "" : String(index + 1),
+    }),
+  );
+}
+
+function focusSavedSpots(savedSpots) {
+  if (!savedSpots.length) return;
+  if (savedSpots.length === 1) {
+    map.flyTo([savedSpots[0].lat, savedSpots[0].lng], Math.max(map.getZoom(), 13), { duration: 0.55 });
+    return;
+  }
+  const bounds = L.latLngBounds(savedSpots.map((spot) => [spot.lat, spot.lng]));
+  if (bounds.isValid()) {
+    map.fitBounds(bounds.pad(0.2), { animate: true, duration: 0.55, maxZoom: 13 });
+  }
 }
 
 async function upsertSpot(spot) {
@@ -3726,13 +4032,46 @@ async function upsertSpot(spot) {
   if (!saveSpots()) return;
   clearDraftMarker();
   renderAll();
-  map.flyTo([savedSpot.lat, savedSpot.lng], Math.max(map.getZoom(), 13), { duration: 0.55 });
+  focusSavedSpots([savedSpot]);
   if (state.role === "editor") {
     resetForm(savedSpot);
     openDrawer();
   }
   showStatus(t("saved"));
   showCompletionNotification();
+}
+
+async function upsertBatchSpots(spots) {
+  const savedSpots = [];
+  try {
+    for (const spot of spots) {
+      savedSpots.push(cloud.enabled && state.cloudUser ? await persistCloudSpot(spot) : spot);
+    }
+  } catch {
+    showStatus(t("cloudSyncFailed"));
+    return;
+  }
+
+  savedSpots.forEach((savedSpot) => {
+    const index = state.spots.findIndex((item) => item.id === savedSpot.id);
+    if (index >= 0) {
+      state.spots.splice(index, 1, savedSpot);
+    } else {
+      state.spots.unshift(savedSpot);
+    }
+  });
+
+  state.selectedId = savedSpots[0]?.id || null;
+  if (!saveSpots()) return;
+  clearDraftMarker();
+  renderAll();
+  focusSavedSpots(savedSpots);
+  if (state.role === "editor") {
+    resetForm();
+    openDrawer();
+  }
+  showStatus(formatMessage(t("batchSaved"), { count: savedSpots.length }));
+  showCompletionNotification(formatMessage(t("batchPostComplete"), { count: savedSpots.length }));
 }
 
 async function deleteCurrentSpot() {
@@ -4050,6 +4389,29 @@ async function findFirstPhotoGps(files) {
   return null;
 }
 
+async function prepareInsertedPhotoItems(files) {
+  const items = [];
+  for (const file of files) {
+    let gps = null;
+    try {
+      gps = await readPhotoGps(file);
+    } catch {
+      gps = null;
+    }
+    items.push({
+      gps,
+      title: "",
+      description: "",
+      titleTranslations: null,
+      descriptionTranslations: null,
+      locationInfo: gps ? formatCoordinates(gps.lat, gps.lng) : "",
+      image: await prepareInsertedPhoto(file),
+      name: file.name || "",
+    });
+  }
+  return items;
+}
+
 async function prepareInsertedPhotos(files) {
   const prepared = [];
   for (const file of files) {
@@ -4131,6 +4493,11 @@ async function translateFromJapanese(text, targetLanguage) {
   return translateWithLocalMemory(text, targetLanguage);
 }
 
+async function translateDraftTextSet(text) {
+  const translations = await Promise.all(translationTargets.map((language) => translateFromJapanese(text, language)));
+  return Object.fromEntries(translationTargets.map((language, index) => [language, translations[index]]));
+}
+
 function setAutoTranslatedValue(element, value, force = false) {
   if (!value) return;
   if (force || !element.value.trim() || element.dataset.autoTranslated === "true") {
@@ -4164,6 +4531,19 @@ async function runAutoTranslate(force = false) {
     setAutoTranslatedValue(descriptionElement, descriptionTranslations[index], force);
     setAutoTranslatedValue(municipalityElement, municipalityTranslations[index], force);
   });
+  showStatus(t("translated"));
+}
+
+async function translateDraftPhotoItems() {
+  if (!els.autoTranslateToggle.checked || !isBatchCreateMode()) return;
+  const items = state.draftPhotoItems.filter((item) => item.title?.trim() || item.description?.trim());
+  if (!items.length) return;
+
+  showStatus(t("translating"));
+  for (const item of items) {
+    if (item.title?.trim()) item.titleTranslations = await translateDraftTextSet(item.title.trim());
+    if (item.description?.trim()) item.descriptionTranslations = await translateDraftTextSet(item.description.trim());
+  }
   showStatus(t("translated"));
 }
 
@@ -4314,17 +4694,27 @@ els.closeDrawerButton.addEventListener("click", closeDrawer);
 
 els.spotForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  if (!syncLocationInfoToMap()) {
+  const batchMode = isBatchCreateMode();
+  if (!validateRequiredText(batchMode)) {
+    showStatus(t("titleDescriptionRequired"));
+    return;
+  }
+  if (!batchMode && !syncLocationInfoToMap()) {
     showStatus(t("locationRequired"));
     return;
   }
   await runAutoTranslate(true);
-  const spot = buildSpotFromForm();
-  if (!Number.isFinite(spot.lat) || !Number.isFinite(spot.lng)) {
+  await translateDraftPhotoItems();
+  const spots = batchMode ? buildBatchSpotsFromForm() : [buildSpotFromForm()];
+  if (spots.some((spot) => !Number.isFinite(spot.lat) || !Number.isFinite(spot.lng))) {
     showStatus(t("invalidLocation"));
     return;
   }
-  await upsertSpot(spot);
+  if (spots.length > 1) {
+    await upsertBatchSpots(spots);
+  } else {
+    await upsertSpot(spots[0]);
+  }
 });
 
 els.deleteButton.addEventListener("click", () => {
@@ -4393,16 +4783,47 @@ els.useCenterButton.addEventListener("click", () => {
 
 els.photoUrl.addEventListener("input", () => {
   state.draftImages = [];
+  state.draftPhotoItems = [];
   renderPreview();
+});
+
+els.photoPreview.addEventListener("input", (event) => {
+  const titleInput = event.target.closest("[data-photo-title-index]");
+  const descriptionInput = event.target.closest("[data-photo-description-index]");
+  const locationInput = event.target.closest("[data-photo-location-index]");
+  const input = titleInput || descriptionInput || locationInput;
+  if (!input) return;
+  const index = Number(
+    input.dataset.photoTitleIndex ?? input.dataset.photoDescriptionIndex ?? input.dataset.photoLocationIndex,
+  );
+  const item = state.draftPhotoItems[index];
+  if (!item) return;
+
+  if (titleInput) {
+    item.title = input.value;
+    item.titleTranslations = null;
+    input.setAttribute("aria-invalid", input.value.trim() ? "false" : "true");
+  }
+  if (descriptionInput) {
+    item.description = input.value;
+    item.descriptionTranslations = null;
+    input.setAttribute("aria-invalid", input.value.trim() ? "false" : "true");
+  }
+  if (locationInput) {
+    item.locationInfo = input.value;
+    const hasValue = Boolean(input.value.trim());
+    input.setAttribute("aria-invalid", hasValue && !parseLocationInfo(input.value) ? "true" : "false");
+  }
 });
 
 els.photoFile.addEventListener("change", async (event) => {
   const files = Array.from(event.target.files || []);
   if (!files.length) return;
   try {
-    const gps = await findFirstPhotoGps(files);
-    state.draftImages = await prepareInsertedPhotos(files);
+    state.draftPhotoItems = await prepareInsertedPhotoItems(files);
+    state.draftImages = state.draftPhotoItems.map((item) => item.image);
     renderPreview();
+    const gps = state.draftPhotoItems.find((item) => item.gps)?.gps || null;
     if (gps) {
       setCoordinates(gps.lat, gps.lng);
       showStatus(t("photoLocationFound"));
@@ -4411,6 +4832,7 @@ els.photoFile.addEventListener("change", async (event) => {
     }
   } catch {
     state.draftImages = [];
+    state.draftPhotoItems = [];
     renderPreview();
     showStatus(t("uploadFailed"));
   }
