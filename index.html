@@ -2018,7 +2018,7 @@ function attr(s) {
 }
 
 function rx(s) {
-  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\    <script src="app.js" defer></script>");
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function b64(text) {
