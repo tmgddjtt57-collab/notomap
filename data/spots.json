@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "id": "spot-mqzfm87a-l8ox6u",
+    "createdAt": "2026-06-29T16:28:20.616Z",
+    "updatedAt": "2026-06-29T16:28:20.616Z",
+    "title": {
+      "ja": "02ADC532 2EE9 4F5C 932E AB54714FEC8A",
+      "en": "02ADC532 2EE9 4F5C 932E AB54714FEC8A",
+      "ko": "02ADC532 2EE9 4F5C 932E AB54714FEC8A",
+      "zh": "02ADC532 2EE9 4F5C 932E AB54714FEC8A"
+    },
+    "description": {
+      "ja": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.\n\n貴廟の水芭蕉【Kibyo Area｜Asian skunk cabbage】\nWajima, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 001\n#ImpressionismNoto\n#InspiredByMonet\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.\n\n貴廟の水芭蕉【Kibyo Area｜Asian skunk cabbage】\nWajima, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 001\n#ImpressionismNoto\n#InspiredByMonet\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.\n\n貴廟の물파초【Kibyo Area｜Asian skunk cabbage】\n와지마시, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 001\n#ImpressionismNoto\n#InspiredByMonet\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.\n\n貴廟の水芭蕉【Kibyo Area｜Asian skunk cabbage】\n轮岛市, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 001\n#ImpressionismNoto\n#InspiredByMonet\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°21'45.3\"N 136°50'21.1\"E",
+    "lat": 37.36258333333333,
+    "lng": 136.83919444444444,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782750498398-spot-mqzfm87a-l8ox6u-1-02adc532-2ee9-4f5c-932e-ab54714fec8a.jpg?v=1782750500616",
+        "alt": "02ADC532-2EE9-4F5C-932E-AB54714FEC8A.png",
+        "path": "media/spots/1782750498398-spot-mqzfm87a-l8ox6u-1-02adc532-2ee9-4f5c-932e-ab54714fec8a.jpg"
+      }
+    ]
+  }
+]
