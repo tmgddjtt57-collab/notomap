@@ -1,5 +1,73 @@
 [
   {
+    "id": "spot-mqzgk3ic-vjm9vn",
+    "createdAt": "2026-06-29T16:54:40.644Z",
+    "updatedAt": "2026-06-29T16:54:40.644Z",
+    "title": {
+      "ja": "熊野隧道南口",
+      "en": "Kumano Tunnel South Entrance",
+      "ko": "熊野隧道南口",
+      "zh": "熊野隧道南口"
+    },
+    "description": {
+      "ja": "熊野隧道南口【Kumano Tunnel South Entrance】\nWajima, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "熊野隧道南口【Kumano Tunnel South Entrance】\nWajima, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "熊野隧道南口【Kumano Tunnel South Entrance】\n와지마시, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "熊野隧道南口【Kumano Tunnel South Entrance】\n轮岛市, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°19'58.2\"N 136°53'52.3\"E",
+    "lat": 37.33283333333333,
+    "lng": 136.8978611111111,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782752078638-spot-mqzgk3ic-vjm9vn-2-90bb9b09-8f68-4b2e-90fe-58d723a08bf0.jpg?v=1782752080644",
+        "alt": "90BB9B09-8F68-4B2E-90FE-58D723A08BF0.png",
+        "path": "media/spots/1782752078638-spot-mqzgk3ic-vjm9vn-2-90bb9b09-8f68-4b2e-90fe-58d723a08bf0.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mqzgk1e7-n9b27a",
+    "createdAt": "2026-06-29T16:54:38.532Z",
+    "updatedAt": "2026-06-29T16:54:38.532Z",
+    "title": {
+      "ja": "古城が、 揺らめいていた。",
+      "en": "古城が、 揺らめいていた。",
+      "ko": "古城が、 揺らめいていた。",
+      "zh": "古城が、 揺らめいていた。"
+    },
+    "description": {
+      "ja": "古城が、\n揺らめいていた。\nThe old castle\nseemed to flicker.\n\n七尾城本丸跡【Nanao Castle Site｜Main Bailey Area】\nNanao, Noto Peninsula, Japan\n\n37°00'32.3\"N 136°59'03.1\"E\n\nArchive 002\n#ExpressionismNoto\n#InspiredByMunch\n#NanaoCity\n#NotoNoOtoMuseum",
+      "en": "古城が、\n揺らめいていた。\nThe old castle\nseemed to flicker.\n\n七尾城本丸跡【Nanao Castle Site｜Main Bailey Area】\nNanao, Noto Peninsula, Japan\n\n37°00'32.3\"N 136°59'03.1\"E\n\nArchive 002\n#ExpressionismNoto\n#InspiredByMunch\n#NanaoCity\n#NotoNoOtoMuseum",
+      "ko": "古城が、\n揺らめいていた。\nThe old castle\nseemed to flicker.\n\n나나오시城本丸跡【나나오시 Castle Site｜Main Bailey Area】\n나나오시, Noto Peninsula, Japan\n\n37°00'32.3\"N 136°59'03.1\"E\n\nArchive 002\n#ExpressionismNoto\n#InspiredByMunch\n#나나오시City\n#NotoNoOtoMuseum",
+      "zh": "古城が、\n揺らめいていた。\nThe old castle\nseemed to flicker.\n\n七尾市城本丸跡【七尾市 Castle Site｜Main Bailey Area】\n七尾市, Noto Peninsula, Japan\n\n37°00'32.3\"N 136°59'03.1\"E\n\nArchive 002\n#ExpressionismNoto\n#InspiredByMunch\n#七尾市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°00'32.3\"N 136°59'03.1\"E",
+    "lat": 37.00897222222222,
+    "lng": 136.98419444444443,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782752075872-spot-mqzgk1e7-n9b27a-1-b29e6824-3317-4cd6-8435-7be864ca5207.jpg?v=1782752078532",
+        "alt": "B29E6824-3317-4CD6-8435-7BE864CA5207.png",
+        "path": "media/spots/1782752075872-spot-mqzgk1e7-n9b27a-1-b29e6824-3317-4cd6-8435-7be864ca5207.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mqzfm87a-l8ox6u",
     "createdAt": "2026-06-29T16:28:20.616Z",
     "updatedAt": "2026-06-30T00:00:00.000Z",
