@@ -1,5 +1,413 @@
 [
   {
+    "id": "spot-mr0atdxr-b91cdh",
+    "createdAt": "2026-06-30T07:01:42.719Z",
+    "updatedAt": "2026-06-30T07:01:42.719Z",
+    "title": {
+      "ja": "夏だった。",
+      "en": "夏だった。",
+      "ko": "夏だった。",
+      "zh": "夏だった。"
+    },
+    "description": {
+      "ja": "夏だった。\nIt was summer.\n\n氷見線【Himi Line】\nHimi, Toyama, Japan\n\n36°49'38.9\"N 137°00'51.4\"E\n\nArchive 032\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#HimiCity\n#NotoNoOtoMuseum",
+      "en": "夏だった。\nIt was summer.\n\n氷見線【Himi Line】\nHimi, Toyama, Japan\n\n36°49'38.9\"N 137°00'51.4\"E\n\nArchive 032\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#HimiCity\n#NotoNoOtoMuseum",
+      "ko": "夏だった。\nIt was summer.\n\n히미시線【히미시 Line】\n히미시, Toyama, Japan\n\n36°49'38.9\"N 137°00'51.4\"E\n\nArchive 032\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#히미시City\n#NotoNoOtoMuseum",
+      "zh": "夏だった。\nIt was summer.\n\n冰见市線【冰见市 Line】\n冰见市, Toyama, Japan\n\n36°49'38.9\"N 137°00'51.4\"E\n\nArchive 032\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#冰见市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "氷見市",
+      "en": "Himi City",
+      "ko": "히미시",
+      "zh": "冰见市"
+    },
+    "group": "氷見市",
+    "locationText": "36°49'38.9\"N 137°00'51.4\"E",
+    "lat": 36.82747222222223,
+    "lng": 137.01427777777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802900487-spot-mr0atdxr-b91cdh-12-line-album-20260630-260630-48.jpg?v=1782802902719",
+        "alt": "LINE_ALBUM_20260630_260630_48.jpg",
+        "path": "media/spots/1782802900487-spot-mr0atdxr-b91cdh-12-line-album-20260630-260630-48.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0atbz0-f2zsc5",
+    "createdAt": "2026-06-30T07:01:40.429Z",
+    "updatedAt": "2026-06-30T07:01:40.429Z",
+    "title": {
+      "ja": "春が来た。",
+      "en": "springが来た。",
+      "ko": "봄が来た。",
+      "zh": "春天が来た。"
+    },
+    "description": {
+      "ja": "春が来た。\nSpring arrived.\n\n宝達志水町の銀杏並木【The Ginkgo Tree Avenue in Hodatsushimizu】\nHodatsushimizu, Noto Peninsula, Japan\n36°47'58.9\"N 136°46'14.9\"E\n\nArchive 031\n#ShinHangaNoto\n#InspiredByNeoImpressionism\n#InspiredByJapaneseWatercolorPainting\n#HodatsushimizuTown\n#NotoNoOtoMuseum",
+      "en": "春が来た。\nSpring arrived.\n\n宝達志水町の銀杏並木【The Ginkgo Tree Avenue in Hodatsushimizu】\nHodatsushimizu, Noto Peninsula, Japan\n36°47'58.9\"N 136°46'14.9\"E\n\nArchive 031\n#ShinHangaNoto\n#InspiredByNeoImpressionism\n#InspiredByJapaneseWatercolorPainting\n#HodatsushimizuTown\n#NotoNoOtoMuseum",
+      "ko": "봄が来た。\nSpring arrived.\n\n宝達志水町の銀杏並木【The Ginkgo Tree Avenue in Hodatsus히미시zu】\nHodatsus히미시zu, Noto Peninsula, Japan\n36°47'58.9\"N 136°46'14.9\"E\n\nArchive 031\n#ShinHangaNoto\n#InspiredByNeoImpressionism\n#InspiredByJapaneseWatercolorPainting\n#Hodatsus히미시zuTown\n#NotoNoOtoMuseum",
+      "zh": "春天が来た。\nSpring arrived.\n\n宝達志水町の銀杏並木【The Ginkgo Tree Avenue in Hodatsus冰见市zu】\nHodatsus冰见市zu, Noto Peninsula, Japan\n36°47'58.9\"N 136°46'14.9\"E\n\nArchive 031\n#ShinHangaNoto\n#InspiredByNeoImpressionism\n#InspiredByJapaneseWatercolorPainting\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "氷見市",
+      "en": "Himi City",
+      "ko": "히미시",
+      "zh": "冰见市"
+    },
+    "group": "氷見市",
+    "locationText": "36°47'58.9\"N 136°46'14.9\"E",
+    "lat": 36.79969444444444,
+    "lng": 136.77080555555557,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802897949-spot-mr0atbz0-f2zsc5-11-line-album-20260630-260630-45.jpg?v=1782802900429",
+        "alt": "LINE_ALBUM_20260630_260630_45.jpg",
+        "path": "media/spots/1782802897949-spot-mr0atbz0-f2zsc5-11-line-album-20260630-260630-45.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0ata6c-fxyu5i",
+    "createdAt": "2026-06-30T07:01:37.884Z",
+    "updatedAt": "2026-06-30T07:01:37.884Z",
+    "title": {
+      "ja": "空が、 イカの海だった。",
+      "en": "空が、 イカのseaだった。",
+      "ko": "空が、 イカの바다だった。",
+      "zh": "空が、 イカの海だった。"
+    },
+    "description": {
+      "ja": "空が、\nイカの海だった。\nThe sky\nwas an ocean\nfor Ika King.\n\nイカキング【Ika King】\nNoto, Ishikawa, Japan\n\n37°18’44.2”N 137°13’47.8”E\n\nArchive 030\n#ModernismNoto\n#InspiredByTaroOkamoto\n#LiminalJapan\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "空が、\nイカの海だった。\nThe sky\nwas an ocean\nfor Ika King.\n\nイカキング【Ika King】\nNoto, Ishikawa, Japan\n\n37°18’44.2”N 137°13’47.8”E\n\nArchive 030\n#ModernismNoto\n#InspiredByTaroOkamoto\n#LiminalJapan\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "空が、\nイカの바다だった。\nThe sky\nwas an ocean\nfor Ika King.\n\nイカキング【Ika King】\nNoto, I시카마치wa, Japan\n\n37°18’44.2”N 137°13’47.8”E\n\nArchive 030\n#ModernismNoto\n#InspiredByTaroOkamoto\n#LiminalJapan\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "空が、\nイカの海だった。\nThe sky\nwas an ocean\nfor Ika King.\n\nイカキング【Ika King】\nNoto, I志贺町wa, Japan\n\n37°18’44.2”N 137°13’47.8”E\n\nArchive 030\n#ModernismNoto\n#InspiredByTaroOkamoto\n#LiminalJapan\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "志賀町",
+      "en": "Shika",
+      "ko": "시카마치",
+      "zh": "志贺町"
+    },
+    "group": "志賀町",
+    "locationText": "37°18’44.2”N 137°13’47.8”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802895614-spot-mr0ata6c-fxyu5i-10-line-album-20260630-260630-44.jpg?v=1782802897884",
+        "alt": "LINE_ALBUM_20260630_260630_44.jpg",
+        "path": "media/spots/1782802895614-spot-mr0ata6c-fxyu5i-10-line-album-20260630-260630-44.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0at8kk-wtey00",
+    "createdAt": "2026-06-30T07:01:35.555Z",
+    "updatedAt": "2026-06-30T07:01:35.555Z",
+    "title": {
+      "ja": "釜の底に、 甘さが残った。",
+      "en": "釜の底に、 甘さが残った。",
+      "ko": "釜の底に、 甘さが残った。",
+      "zh": "釜の底に、 甘さが残った。"
+    },
+    "description": {
+      "ja": "釜の底に、\n甘さが残った。\nAt the bottom of the boiler,\nsweetness remained.\n\nラファエロ的失敗【A Raphaelian Failure】\n横井商店の飴釜【Candy Boiler at Yokoi Store】\nNoto Town, Noto Peninsula, Japan\n\n37°21’11.6”N 137°14’54.8”E\n\nArchive 037\n#SacredVoidNoto\n#RuinInteriorNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "釜の底に、\n甘さが残った。\nAt the bottom of the boiler,\nsweetness remained.\n\nラファエロ的失敗【A Raphaelian Failure】\n横井商店の飴釜【Candy Boiler at Yokoi Store】\nNoto Town, Noto Peninsula, Japan\n\n37°21’11.6”N 137°14’54.8”E\n\nArchive 037\n#SacredVoidNoto\n#RuinInteriorNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "釜の底に、\n甘さが残った。\nAt the bottom of the boiler,\nsweetness remained.\n\nラファエロ的失敗【A Raphaelian Failure】\n横井商店の飴釜【Candy Boiler at Yokoi Store】\n노토마치, Noto Peninsula, Japan\n\n37°21’11.6”N 137°14’54.8”E\n\nArchive 037\n#SacredVoidNoto\n#RuinInteriorNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "釜の底に、\n甘さが残った。\nAt the bottom of the boiler,\nsweetness remained.\n\nラファエロ的失敗【A Raphaelian Failure】\n横井商店の飴釜【Candy Boiler at Yokoi Store】\n能登町, Noto Peninsula, Japan\n\n37°21’11.6”N 137°14’54.8”E\n\nArchive 037\n#SacredVoidNoto\n#RuinInteriorNoto\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°21’11.6”N 137°14’54.8”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802893536-spot-mr0at8kk-wtey00-9-line-album-20260630-260630-54.jpg?v=1782802895555",
+        "alt": "LINE_ALBUM_20260630_260630_54.jpg",
+        "path": "media/spots/1782802893536-spot-mr0at8kk-wtey00-9-line-album-20260630-260630-54.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0at6jh-bd448h",
+    "createdAt": "2026-06-30T07:01:33.475Z",
+    "updatedAt": "2026-06-30T07:01:33.475Z",
+    "title": {
+      "ja": "モザイクの祈り。",
+      "en": "モザイクの祈り。",
+      "ko": "モザイクの祈り。",
+      "zh": "モザイクの祈り。"
+    },
+    "description": {
+      "ja": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\nHakui, Noto Peninsula, Japan\nAnamizu, Noto Peninsula, Japan\n\n\n37°14'01.8\"N 136°54'08.6\"E\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#HakuiCityAndAnamizuTown\n#NotoNoOtoMuseum",
+      "en": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\nHakui, Noto Peninsula, Japan\nAnamizu, Noto Peninsula, Japan\n\n\n37°14'01.8\"N 136°54'08.6\"E\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#HakuiCityAndAnamizuTown\n#NotoNoOtoMuseum",
+      "ko": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\n하쿠이시, Noto Peninsula, Japan\n아나미즈마치, Noto Peninsula, Japan\n\n\n37°14'01.8\"N 136°54'08.6\"E\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#하쿠이시CityAnd아나미즈마치Town\n#NotoNoOtoMuseum",
+      "zh": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\n羽咋市, Noto Peninsula, Japan\n穴水町, Noto Peninsula, Japan\n\n\n37°14'01.8\"N 136°54'08.6\"E\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#羽咋市CityAnd穴水町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "羽咋市",
+      "en": "Hakui",
+      "ko": "하쿠이시",
+      "zh": "羽咋市"
+    },
+    "group": "羽咋市",
+    "locationText": "37°14'01.8\"N 136°54'08.6\"E",
+    "lat": 37.23383333333334,
+    "lng": 136.9023888888889,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802890909-spot-mr0at6jh-bd448h-8-line-album-20260630-260630-53.jpg?v=1782802893475",
+        "alt": "LINE_ALBUM_20260630_260630_53.jpg",
+        "path": "media/spots/1782802890909-spot-mr0at6jh-bd448h-8-line-album-20260630-260630-53.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0at4x8-xsjgbo",
+    "createdAt": "2026-06-30T07:01:30.845Z",
+    "updatedAt": "2026-06-30T07:01:30.845Z",
+    "title": {
+      "ja": "モザイクの祈り。",
+      "en": "モザイクの祈り。",
+      "ko": "モザイクの祈り。",
+      "zh": "モザイクの祈り。"
+    },
+    "description": {
+      "ja": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\nHakui, Noto Peninsula, Japan\nAnamizu, Noto Peninsula, Japan\n\n36°57'13.3\"N 136°46'35.6\"E\n\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#HakuiCityAndAnamizuTown\n#NotoNoOtoMuseum",
+      "en": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\nHakui, Noto Peninsula, Japan\nAnamizu, Noto Peninsula, Japan\n\n36°57'13.3\"N 136°46'35.6\"E\n\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#HakuiCityAndAnamizuTown\n#NotoNoOtoMuseum",
+      "ko": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\n하쿠이시, Noto Peninsula, Japan\n아나미즈마치, Noto Peninsula, Japan\n\n36°57'13.3\"N 136°46'35.6\"E\n\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#하쿠이시CityAnd아나미즈마치Town\n#NotoNoOtoMuseum",
+      "zh": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\n羽咋市, Noto Peninsula, Japan\n穴水町, Noto Peninsula, Japan\n\n36°57'13.3\"N 136°46'35.6\"E\n\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#羽咋市CityAnd穴水町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "羽咋市",
+      "en": "Hakui",
+      "ko": "하쿠이시",
+      "zh": "羽咋市"
+    },
+    "group": "羽咋市",
+    "locationText": "36°57'13.3\"N 136°46'35.6\"E",
+    "lat": 36.953694444444444,
+    "lng": 136.77655555555557,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802888807-spot-mr0at4x8-xsjgbo-7-line-album-20260630-260630-52.jpg?v=1782802890844",
+        "alt": "LINE_ALBUM_20260630_260630_52.jpg",
+        "path": "media/spots/1782802888807-spot-mr0at4x8-xsjgbo-7-line-album-20260630-260630-52.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0at3h9-rlvik1",
+    "createdAt": "2026-06-30T07:01:28.748Z",
+    "updatedAt": "2026-06-30T07:01:28.748Z",
+    "title": {
+      "ja": "空より遠くに、 雪があった。",
+      "en": "空より遠くに、 雪があった。",
+      "ko": "空より遠くに、 雪があった。",
+      "zh": "空より遠くに、 雪があった。"
+    },
+    "description": {
+      "ja": "空より遠くに、\n雪があった。\nThere was snow\nfarther away than the sky.\n\n内灘大橋【Uchinada Bridge】\nUchinada, Ishikawa, Japan\n\n36°39’45.5”N 136°39’02.7”E\n\nArchive 035\n#PostImpressionismNoto\n#InspiredBySotaroYasui\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "en": "空より遠くに、\n雪があった。\nThere was snow\nfarther away than the sky.\n\n内灘大橋【Uchinada Bridge】\nUchinada, Ishikawa, Japan\n\n36°39’45.5”N 136°39’02.7”E\n\nArchive 035\n#PostImpressionismNoto\n#InspiredBySotaroYasui\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "ko": "空より遠くに、\n雪があった。\nThere was snow\nfarther away than the sky.\n\n内灘大橋【Uchinada Bridge】\nUchinada, I시카마치wa, Japan\n\n36°39’45.5”N 136°39’02.7”E\n\nArchive 035\n#PostImpressionismNoto\n#InspiredBySotaroYasui\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "zh": "空より遠くに、\n雪があった。\nThere was snow\nfarther away than the sky.\n\n内灘大橋【Uchinada Bridge】\nUchinada, I志贺町wa, Japan\n\n36°39’45.5”N 136°39’02.7”E\n\nArchive 035\n#PostImpressionismNoto\n#InspiredBySotaroYasui\n#UchinadaTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "志賀町",
+      "en": "Shika",
+      "ko": "시카마치",
+      "zh": "志贺町"
+    },
+    "group": "志賀町",
+    "locationText": "36°39’45.5”N 136°39’02.7”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802886940-spot-mr0at3h9-rlvik1-6-line-album-20260630-260630-51.jpg?v=1782802888748",
+        "alt": "LINE_ALBUM_20260630_260630_51.jpg",
+        "path": "media/spots/1782802886940-spot-mr0at3h9-rlvik1-6-line-album-20260630-260630-51.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0at1ur-ytvyu2",
+    "createdAt": "2026-06-30T07:01:26.877Z",
+    "updatedAt": "2026-06-30T07:01:26.877Z",
+    "title": {
+      "ja": "雪は、 まだ残っていた。",
+      "en": "雪は、 まだ残っていた。",
+      "ko": "雪は、 まだ残っていた。",
+      "zh": "雪は、 まだ残っていた。"
+    },
+    "description": {
+      "ja": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\nAnamizu, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#AnamizuTown\n#NotoNoOtoMuseum",
+      "en": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\nAnamizu, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#AnamizuTown\n#NotoNoOtoMuseum",
+      "ko": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\n아나미즈마치, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#아나미즈마치Town\n#NotoNoOtoMuseum",
+      "zh": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\n穴水町, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#穴水町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "穴水町",
+      "en": "Anamizu",
+      "ko": "아나미즈마치",
+      "zh": "穴水町"
+    },
+    "group": "穴水町",
+    "locationText": "37°13'44.1\"N 136°53'44.8\"E",
+    "lat": 37.22891666666667,
+    "lng": 136.89577777777777,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802884841-spot-mr0at1ur-ytvyu2-5-line-album-20260630-260630-50.jpg?v=1782802886877",
+        "alt": "LINE_ALBUM_20260630_260630_50.jpg",
+        "path": "media/spots/1782802884841-spot-mr0at1ur-ytvyu2-5-line-album-20260630-260630-50.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0at0fi-f1mmva",
+    "createdAt": "2026-06-30T07:01:24.770Z",
+    "updatedAt": "2026-06-30T07:01:24.770Z",
+    "title": {
+      "ja": "雪は、 まだ残っていた。",
+      "en": "雪は、 まだ残っていた。",
+      "ko": "雪は、 まだ残っていた。",
+      "zh": "雪は、 まだ残っていた。"
+    },
+    "description": {
+      "ja": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\nAnamizu, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#AnamizuTown\n#NotoNoOtoMuseum",
+      "en": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\nAnamizu, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#AnamizuTown\n#NotoNoOtoMuseum",
+      "ko": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\n아나미즈마치, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#아나미즈마치Town\n#NotoNoOtoMuseum",
+      "zh": "雪は、\nまだ残っていた。\n\nThe snow\nstill remained.\n\n雪の来迎寺【Raigoji Temple in Snow】\n穴水町, Noto Peninsula, Japan\n\n37°13'44.1\"N 136°53'44.8\"E\n\nArchive 033\n#AnimeLandscapeNoto\n#InspiredByKazuoOga\n#InspiredByYoshifumiKondo\n#穴水町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "穴水町",
+      "en": "Anamizu",
+      "ko": "아나미즈마치",
+      "zh": "穴水町"
+    },
+    "group": "穴水町",
+    "locationText": "37°13'44.1\"N 136°53'44.8\"E",
+    "lat": 37.22891666666667,
+    "lng": 136.89577777777777,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802882991-spot-mr0at0fi-f1mmva-4-line-album-20260630-260630-49.jpg?v=1782802884770",
+        "alt": "LINE_ALBUM_20260630_260630_49.jpg",
+        "path": "media/spots/1782802882991-spot-mr0at0fi-f1mmva-4-line-album-20260630-260630-49.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0asyx2-g181ov",
+    "createdAt": "2026-06-30T07:01:22.925Z",
+    "updatedAt": "2026-06-30T07:01:22.926Z",
+    "title": {
+      "ja": "静かな甘み。",
+      "en": "静かな甘み。",
+      "ko": "静かな甘み。",
+      "zh": "静かな甘み。"
+    },
+    "description": {
+      "ja": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, Wajima, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum",
+      "en": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, Wajima, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum",
+      "ko": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, 와지마시, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum",
+      "zh": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, 轮岛市, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°21'44.4\"N 136°54'32.2\"E",
+    "lat": 37.36233333333333,
+    "lng": 136.90894444444444,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802881036-spot-mr0asyx2-g181ov-3-line-album-20260630-260630-61.jpg?v=1782802882925",
+        "alt": "LINE_ALBUM_20260630_260630_61.jpg",
+        "path": "media/spots/1782802881036-spot-mr0asyx2-g181ov-3-line-album-20260630-260630-61.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0asxmv-w6n0my",
+    "createdAt": "2026-06-30T07:01:20.966Z",
+    "updatedAt": "2026-06-30T07:01:20.966Z",
+    "title": {
+      "ja": "静かな甘み。",
+      "en": "静かな甘み。",
+      "ko": "静かな甘み。",
+      "zh": "静かな甘み。"
+    },
+    "description": {
+      "ja": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, Wajima, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum",
+      "en": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, Wajima, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum",
+      "ko": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, 와지마시, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum",
+      "zh": "静かな甘み。\nA quiet sweetness.\n\nいただきます。【Itadakimasu】\nHanano Ma, 轮岛市, Noto\nHorita PICNIC Light meal & Sweets, Uchinada, Noto\n\n37°21'44.4\"N 136°54'32.2\"E\n\nArchive 034\n#MingeiNoto\n#InspiredByJeanFrancoisMillet\n#InspiredByYajuroTakano\n#StillLifeNoto\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°21'44.4\"N 136°54'32.2\"E",
+    "lat": 37.36233333333333,
+    "lng": 136.90894444444444,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802879356-spot-mr0asxmv-w6n0my-2-line-album-20260630-260630-60.jpg?v=1782802880966",
+        "alt": "LINE_ALBUM_20260630_260630_60.jpg",
+        "path": "media/spots/1782802879356-spot-mr0asxmv-w6n0my-2-line-album-20260630-260630-60.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0asvux-ojjxha",
+    "createdAt": "2026-06-30T07:01:19.298Z",
+    "updatedAt": "2026-06-30T07:01:19.299Z",
+    "title": {
+      "ja": "5つのおむらいす",
+      "en": "5つのおむらいす",
+      "ko": "5つのおむらいす",
+      "zh": "5つのおむらいす"
+    },
+    "description": {
+      "ja": "5つのおむらいす\nFive omeurice\n\nハローデイズ五椀図【Hello Days: Five Bowls】\nHellow Days, Hakui, Noto\n\n36°53'55.7\"N 136°48'04.5\"E\n\nArchive 041\n#PostmodernRinpa\n#InspiredByItoJakuchu\n#StillLifeNoto\n#HakuiCity\n#NotoNoOtoMuseum",
+      "en": "5つのおむらいす\nFive omeurice\n\nハローデイズ五椀図【Hello Days: Five Bowls】\nHellow Days, Hakui, Noto\n\n36°53'55.7\"N 136°48'04.5\"E\n\nArchive 041\n#PostmodernRinpa\n#InspiredByItoJakuchu\n#StillLifeNoto\n#HakuiCity\n#NotoNoOtoMuseum",
+      "ko": "5つのおむらいす\nFive omeurice\n\nハローデイズ五椀図【Hello Days: Five Bowls】\nHellow Days, 하쿠이시, Noto\n\n36°53'55.7\"N 136°48'04.5\"E\n\nArchive 041\n#PostmodernRinpa\n#InspiredByItoJakuchu\n#StillLifeNoto\n#하쿠이시City\n#NotoNoOtoMuseum",
+      "zh": "5つのおむらいす\nFive omeurice\n\nハローデイズ五椀図【Hello Days: Five Bowls】\nHellow Days, 羽咋市, Noto\n\n36°53'55.7\"N 136°48'04.5\"E\n\nArchive 041\n#PostmodernRinpa\n#InspiredByItoJakuchu\n#StillLifeNoto\n#羽咋市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "羽咋市",
+      "en": "Hakui",
+      "ko": "하쿠이시",
+      "zh": "羽咋市"
+    },
+    "group": "羽咋市",
+    "locationText": "36°53'55.7\"N 136°48'04.5\"E",
+    "lat": 36.898805555555555,
+    "lng": 136.80125,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802877123-spot-mr0asvux-ojjxha-1-line-album-20260630-260630-59.jpg?v=1782802879298",
+        "alt": "LINE_ALBUM_20260630_260630_59.jpg",
+        "path": "media/spots/1782802877123-spot-mr0asvux-ojjxha-1-line-album-20260630-260630-59.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mr0703kd-qqelvp",
     "createdAt": "2026-06-30T05:14:57.062Z",
     "updatedAt": "2026-06-30T05:17:21.505Z",
@@ -23,8 +431,8 @@
     },
     "group": "七尾市",
     "locationText": "37°02’34.5”N 136°58’03.2”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.04291666666666,
+    "lng": 136.96755555555555,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796495188-spot-mr0703kd-qqelvp-12-line-album-20260630-260630-16.jpg?v=1782796497062",
@@ -91,8 +499,8 @@
     },
     "group": "穴水町",
     "locationText": "37°13’40.6”N 136°54’17.3”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.22794444444445,
+    "lng": 136.90480555555555,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796497128-spot-mr07052e-saerlg-13-line-album-20260630-260630-17.jpg?v=1782796498796",
@@ -118,15 +526,15 @@
       "zh": "色がうるさすぎる日は、\nだいたい楽しい。\nThe days with too many colors\nare usually\nfun.\n\n氷見市海浜植物園【Himi City Seaside Botanical Garden】\nHimi, Toyama, Japan\n\n36°50’13.5”N 137°00’18.4”E\n\nArchive 011\n#FauvismNoto\n#InspiredByFauvism\n#HimiCity\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "能登半島",
-      "en": "Noto Peninsula",
-      "ko": "노토반도",
-      "zh": "能登半岛"
+      "ja": "氷見市",
+      "en": "Himi City",
+      "ko": "히미시",
+      "zh": "冰见市"
     },
-    "group": "能登半島",
+    "group": "氷見市",
     "locationText": "36°50’13.5”N 137°00’18.4”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.83708333333333,
+    "lng": 137.00511111111112,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796493137-spot-mr0701zi-ora9dj-11-line-album-20260630-260630-15.jpg?v=1782796495116",
@@ -159,8 +567,8 @@
     },
     "group": "輪島市",
     "locationText": "37°25’33.3”N 137°00’01.0”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.425916666666666,
+    "lng": 137.00027777777777,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796491194-spot-mr0700hf-f5cvls-10-line-album-20260630-260630-14.jpg?v=1782796493070",
@@ -193,8 +601,8 @@
     },
     "group": "志賀町",
     "locationText": "37°05’38.1”N 136°43’37.4”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.09391666666667,
+    "lng": 136.72705555555555,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796489359-spot-mr06zz2a-s15z6p-9-line-album-20260630-260630-25.jpg?v=1782796491122",
@@ -227,8 +635,8 @@
     },
     "group": "志賀町",
     "locationText": "37°05’38.1”N 136°43’37.4”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.09391666666667,
+    "lng": 136.72705555555555,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796487426-spot-mr06zxkq-ldd46o-8-line-album-20260630-260630-24.jpg?v=1782796489281",
@@ -329,8 +737,8 @@
     },
     "group": "輪島市",
     "locationText": "37°24’09.0”N 136°53’47.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.402499999999996,
+    "lng": 136.8966111111111,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796481972-spot-mr06ztd1-yf2zd8-5-line-album-20260630-260630-21.jpg?v=1782796483159",
@@ -363,8 +771,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’45.0”N 136°54’03.7”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.395833333333336,
+    "lng": 136.90102777777778,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796479936-spot-mr06zrsh-bib969-4-line-album-20260630-260630-30.jpg?v=1782796481892",
@@ -397,8 +805,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’45.0”N 136°54’03.7”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.395833333333336,
+    "lng": 136.90102777777778,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796478161-spot-mr06zqed-oy5vr1-3-line-album-20260630-260630-29.jpg?v=1782796479857",
@@ -431,8 +839,8 @@
     },
     "group": "七尾市",
     "locationText": "37°03’00.8”N 136°57’14.9”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.05022222222222,
+    "lng": 136.95413888888888,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796476064-spot-mr06zosw-xhn8qi-2-line-album-20260630-260630-28.jpg?v=1782796478052",
@@ -465,8 +873,8 @@
     },
     "group": "七尾市",
     "locationText": "37°03’00.8”N 136°57’14.9”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.05022222222222,
+    "lng": 136.95413888888888,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796473790-spot-mr06zn1e-ozt2ao-1-line-album-20260630-260630-27.jpg?v=1782796475982",
@@ -669,8 +1077,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’26.9”N 136°53’57.3”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.39080555555555,
+    "lng": 136.89925,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795829427-spot-mr06ltvl-ywl5pl-5-line-album-20260630-260630-10.jpg?v=1782795831124",
@@ -703,8 +1111,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’26.9”N 136°53’57.3”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.39080555555555,
+    "lng": 136.89925,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795827472-spot-mr06lsay-58d5jd-4-line-album-20260630-260630-9.jpg?v=1782795829377",
@@ -737,8 +1145,8 @@
     },
     "group": "能登町",
     "locationText": "37°18’04.9”N 137°10’35.7”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.301361111111106,
+    "lng": 137.17658333333333,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795824556-spot-mr06lq3l-af20ya-3-line-album-20260630-260630-8.jpg?v=1782795827337",
@@ -771,8 +1179,8 @@
     },
     "group": "七尾市",
     "locationText": "37°03’00.7”N 136°57’11.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.05019444444444,
+    "lng": 136.95327777777777,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795822426-spot-mr06lofy-59bn83-2-line-album-20260630-260630-20.jpg?v=1782795824481",
@@ -805,8 +1213,8 @@
     },
     "group": "志賀町",
     "locationText": "36°39’19.8”N 136°39’11.1”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.655499999999996,
+    "lng": 136.65308333333334,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795820526-spot-mr06lmzo-gs85am-1-line-album-20260630-260630-19.jpg?v=1782795822332",
@@ -907,8 +1315,8 @@
     },
     "group": "能登町",
     "locationText": "37°18’04.9”N 137°10’35.7”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.301361111111106,
+    "lng": 137.17658333333333,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795319801-spot-mr06awk0-jzypqb-3-line-album-20260630-260630-7.jpg?v=1782795321759",
