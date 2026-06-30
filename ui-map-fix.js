@@ -5,6 +5,8 @@
   ];
   const HIMI_MUNICIPALITY = { ja: "氷見市", en: "Himi City", ko: "히미시", zh: "冰见市" };
   const HIMI_ALIASES = ["氷見", "himi", "himi city", "#himicity", "히미", "冰见"];
+  let correctedSpotsRef = null;
+  let correctedSpotsLength = -1;
 
   installAreaVocabulary();
 
@@ -138,6 +140,7 @@
 
   function applyAreaCorrections() {
     if (!Array.isArray(S.spots)) return;
+    if (S.spots === correctedSpotsRef && S.spots.length === correctedSpotsLength) return;
     S.spots.forEach((p) => {
       if (!p || !isHimiSpot(p)) return;
       p.municipality = { ...HIMI_MUNICIPALITY };
@@ -148,6 +151,8 @@
         p.lng = c.lng;
       }
     });
+    correctedSpotsRef = S.spots;
+    correctedSpotsLength = S.spots.length;
   }
 
   function isHimiSpot(p) {
@@ -236,6 +241,19 @@
       .spot-more-button { min-height: 28px; margin-top: 4px; font-size: .78rem; font-weight: 800; color: var(--navy-800); }
       .spot-more-button:hover { text-decoration: underline; }
       .leaflet-popup-content .popup-card { max-height: min(70vh, 560px); overflow: auto; }
+      @media (min-width: 761px) {
+        .app-shell { height: 100vh; }
+        .workspace { min-height: 0; overflow: hidden; }
+        .panel, .drawer { min-height: 0; overscroll-behavior: contain; }
+        .map-wrap { min-height: 0; height: 100%; }
+        #map { min-height: 0; height: 100%; }
+      }
+      @media (max-width: 760px) {
+        .app-shell { height: auto; min-height: 100vh; }
+        .workspace, body.editor.drawer-open .workspace { overflow: visible; }
+        .panel { overflow: visible; }
+        .map-wrap, #map { height: 58vh; }
+      }
     `;
     document.head.appendChild(style);
   }
