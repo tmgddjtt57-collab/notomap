@@ -23,8 +23,8 @@
     },
     "group": "氷見市",
     "locationText": "36°51’53.5”N 136°45’28.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.86486111111111,
+    "lng": 136.758,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782809112347-spot-mr0eij12-ot2o9a-10-line-album-20260630-260630-58.jpg?v=1782809114249",
@@ -159,8 +159,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’49.8”N 136°54’29.5”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.397166666666664,
+    "lng": 136.90819444444446,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782809103450-spot-mr0eic5n-0twmph-6-line-album-20260630-260630-66.jpg?v=1782809105524",
@@ -227,8 +227,8 @@
     },
     "group": "能登半島",
     "locationText": "37°20’05.7”N 137°08’06.6”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.33491666666667,
+    "lng": 137.13516666666666,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782809099668-spot-mr0ei98e-m5e8kb-4-line-album-20260630-260630-62.jpg?v=1782809101423",
@@ -295,8 +295,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’05.6”N 136°54’30.6”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.38488888888889,
+    "lng": 136.9085,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782809095758-spot-mr0ei689-lbp9s5-2-line-album-20260630-260630-76.jpg?v=1782809097640",
@@ -710,40 +710,6 @@
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804719425-spot-mr0bwdfy-z7cxc8-11-line-album-20260630-260630-78.jpg?v=1782804720980",
         "alt": "LINE_ALBUM_20260630_260630_78.jpg",
         "path": "media/spots/1782804719425-spot-mr0bwdfy-z7cxc8-11-line-album-20260630-260630-78.jpg"
-      }
-    ]
-  },
-  {
-    "id": "spot-mr0bwc3w-tdr2jw",
-    "createdAt": "2026-06-30T07:31:59.373Z",
-    "updatedAt": "2026-06-30T07:31:59.373Z",
-    "title": {
-      "ja": "LINE ALBUM 20260630 260630 77",
-      "en": "LINE ALBUM 20260630 260630 77",
-      "ko": "LINE ALBUM 20260630 260630 77",
-      "zh": "LINE ALBUM 20260630 260630 77"
-    },
-    "description": {
-      "ja": "有限の宇宙【Finite Cosmos】\nHimi City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#HimiCity\n#NotoNoOtoMuseum",
-      "en": "有限の宇宙【Finite Cosmos】\nHimi City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#HimiCity\n#NotoNoOtoMuseum",
-      "ko": "有限の宇宙【Finite Cosmos】\n히미시 City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#히미시City\n#NotoNoOtoMuseum",
-      "zh": "有限の宇宙【Finite Cosmos】\n冰见市 City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#冰见市City\n#NotoNoOtoMuseum"
-    },
-    "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
-    },
-    "group": "氷見市",
-    "locationText": "",
-    "lat": 0,
-    "lng": 0,
-    "photos": [
-      {
-        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804717710-spot-mr0bwc3w-tdr2jw-10-line-album-20260630-260630-77.jpg?v=1782804719372",
-        "alt": "LINE_ALBUM_20260630_260630_77.jpg",
-        "path": "media/spots/1782804717710-spot-mr0bwc3w-tdr2jw-10-line-album-20260630-260630-77.jpg"
       }
     ]
   },
