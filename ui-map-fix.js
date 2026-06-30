@@ -242,8 +242,8 @@
       .spot-more-button:hover { text-decoration: underline; }
       .leaflet-popup-content .popup-card { max-height: min(70vh, 560px); overflow: auto; }
       @media (min-width: 761px) {
-        .app-shell { height: 100vh; }
-        .workspace { min-height: 0; overflow: hidden; }
+        .app-shell { min-height: 100vh; height: 100vh; display: flex; flex-direction: column; }
+        .workspace { flex: 1; min-height: 0; overflow: hidden; }
         .panel, .drawer { min-height: 0; overscroll-behavior: contain; }
         .map-wrap { min-height: 0; height: 100%; }
         #map { min-height: 0; height: 100%; }
