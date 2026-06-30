@@ -91,8 +91,8 @@
     },
     "group": "志賀町",
     "locationText": "37°18’44.2”N 137°13’47.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.31227777777777,
+    "lng": 137.22994444444444,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802895614-spot-mr0ata6c-fxyu5i-10-line-album-20260630-260630-44.jpg?v=1782802897884",
@@ -125,8 +125,8 @@
     },
     "group": "能登町",
     "locationText": "37°21’11.6”N 137°14’54.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.35322222222222,
+    "lng": 137.24855555555555,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802893536-spot-mr0at8kk-wtey00-9-line-album-20260630-260630-54.jpg?v=1782802895555",
@@ -227,8 +227,8 @@
     },
     "group": "志賀町",
     "locationText": "36°39’45.5”N 136°39’02.7”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.662638888888885,
+    "lng": 136.65075000000002,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782802886940-spot-mr0at3h9-rlvik1-6-line-album-20260630-260630-51.jpg?v=1782802888748",
@@ -438,40 +438,6 @@
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796495188-spot-mr0703kd-qqelvp-12-line-album-20260630-260630-16.jpg?v=1782796497062",
         "alt": "LINE_ALBUM_20260630_260630_16.jpg",
         "path": "media/spots/1782796495188-spot-mr0703kd-qqelvp-12-line-album-20260630-260630-16.jpg"
-      }
-    ]
-  },
-  {
-    "id": "spot-mr0706ek-t6wzb9",
-    "createdAt": "2026-06-30T05:15:00.957Z",
-    "updatedAt": "2026-06-30T05:15:00.957Z",
-    "title": {
-      "ja": "夕暮れの潮騒に、 古の記憶が残っている。",
-      "en": "夕暮れの潮騒に、 古の記憶が残っている。",
-      "ko": "夕暮れの潮騒に、 古の記憶が残っている。",
-      "zh": "夕暮れの潮騒に、 古の記憶が残っている。"
-    },
-    "description": {
-      "ja": "夕暮れの潮騒に、\n古の記憶が残っている。\nWithin the evening tide,\nancient memories\nstill remain.\n\nボラ待ち櫓\n【Bora-machi Yagura】\nAnamizu, Noto Peninsula, Japan\n\n37°11'25.4\"N 136°54'19.4\"E\n\nArchive 014\n#SymbolismNoto\n#InspiredByGustavKlimt\n#AnamizuTown\n#NotoNoOtoMuseum",
-      "en": "夕暮れの潮騒に、\n古の記憶が残っている。\nWithin the evening tide,\nancient memories\nstill remain.\n\nボラ待ち櫓\n【Bora-machi Yagura】\nAnamizu, Noto Peninsula, Japan\n\n37°11'25.4\"N 136°54'19.4\"E\n\nArchive 014\n#SymbolismNoto\n#InspiredByGustavKlimt\n#AnamizuTown\n#NotoNoOtoMuseum",
-      "ko": "夕暮れの潮騒に、\n古の記憶が残っている。\nWithin the evening tide,\nancient memories\nstill remain.\n\nボラ待ち櫓\n【Bora-machi Yagura】\n아나미즈마치, Noto Peninsula, Japan\n\n37°11'25.4\"N 136°54'19.4\"E\n\nArchive 014\n#SymbolismNoto\n#InspiredByGustavKlimt\n#아나미즈마치Town\n#NotoNoOtoMuseum",
-      "zh": "夕暮れの潮騒に、\n古の記憶が残っている。\nWithin the evening tide,\nancient memories\nstill remain.\n\nボラ待ち櫓\n【Bora-machi Yagura】\n穴水町, Noto Peninsula, Japan\n\n37°11'25.4\"N 136°54'19.4\"E\n\nArchive 014\n#SymbolismNoto\n#InspiredByGustavKlimt\n#穴水町Town\n#NotoNoOtoMuseum"
-    },
-    "municipality": {
-      "ja": "穴水町",
-      "en": "Anamizu",
-      "ko": "아나미즈마치",
-      "zh": "穴水町"
-    },
-    "group": "穴水町",
-    "locationText": "37°11'25.4\"N 136°54'19.4\"E",
-    "lat": 37.19038888888888,
-    "lng": 136.9053888888889,
-    "photos": [
-      {
-        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782796498869-spot-mr0706ek-t6wzb9-14-line-album-20260630-260630-18.jpg?v=1782796500957",
-        "alt": "LINE_ALBUM_20260630_260630_18.jpg",
-        "path": "media/spots/1782796498869-spot-mr0706ek-t6wzb9-14-line-album-20260630-260630-18.jpg"
       }
     ]
   },
