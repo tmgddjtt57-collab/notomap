@@ -1,5 +1,39 @@
 [
   {
+    "id": "spot-mqzfm87a-l8ox6u",
+    "createdAt": "2026-06-29T16:28:20.616Z",
+    "updatedAt": "2026-06-30T00:00:00.000Z",
+    "title": {
+      "ja": "貴廟の水芭蕉",
+      "en": "Kibyo Area / Asian skunk cabbage",
+      "ko": "기뵤 지역 / 물파초",
+      "zh": "贵庙地区 / 水芭蕉"
+    },
+    "description": {
+      "ja": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.",
+      "en": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.",
+      "ko": "인상주의의 색채 언어로 노토의 봄 풍경을 재해석하며, 특히 모네의 빛 표현에서 영감을 받았습니다.",
+      "zh": "以印象派的色彩语言重新想象能登的春日风景，尤其受到莫奈对光线处理方式的启发。"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°21'45.3\"N 136°50'21.1\"E",
+    "lat": 37.36258333333333,
+    "lng": 136.83919444444444,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782750498398-spot-mqzfm87a-l8ox6u-1-02adc532-2ee9-4f5c-932e-ab54714fec8a.jpg?v=1782750500616",
+        "alt": "02ADC532-2EE9-4F5C-932E-AB54714FEC8A.png",
+        "path": "media/spots/1782750498398-spot-mqzfm87a-l8ox6u-1-02adc532-2ee9-4f5c-932e-ab54714fec8a.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mqzgk3ic-vjm9vn",
     "createdAt": "2026-06-29T16:54:40.644Z",
     "updatedAt": "2026-06-29T16:54:40.644Z",
@@ -64,40 +98,6 @@
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782752075872-spot-mqzgk1e7-n9b27a-1-b29e6824-3317-4cd6-8435-7be864ca5207.jpg?v=1782752078532",
         "alt": "B29E6824-3317-4CD6-8435-7BE864CA5207.png",
         "path": "media/spots/1782752075872-spot-mqzgk1e7-n9b27a-1-b29e6824-3317-4cd6-8435-7be864ca5207.jpg"
-      }
-    ]
-  },
-  {
-    "id": "spot-mqzfm87a-l8ox6u",
-    "createdAt": "2026-06-29T16:28:20.616Z",
-    "updatedAt": "2026-06-30T00:00:00.000Z",
-    "title": {
-      "ja": "貴廟の水芭蕉",
-      "en": "Kibyo Area / Asian skunk cabbage",
-      "ko": "기뵤 지역 / 물파초",
-      "zh": "贵庙地区 / 水芭蕉"
-    },
-    "description": {
-      "ja": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.",
-      "en": "Reimagining the spring landscapes of Noto\nthrough the color language of Impressionism,\nwith particular inspiration drawn from Monet’s treatment of light.",
-      "ko": "인상주의의 색채 언어로 노토의 봄 풍경을 재해석하며, 특히 모네의 빛 표현에서 영감을 받았습니다.",
-      "zh": "以印象派的色彩语言重新想象能登的春日风景，尤其受到莫奈对光线处理方式的启发。"
-    },
-    "municipality": {
-      "ja": "輪島市",
-      "en": "Wajima",
-      "ko": "와지마시",
-      "zh": "轮岛市"
-    },
-    "group": "輪島市",
-    "locationText": "37°21'45.3\"N 136°50'21.1\"E",
-    "lat": 37.36258333333333,
-    "lng": 136.83919444444444,
-    "photos": [
-      {
-        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782750498398-spot-mqzfm87a-l8ox6u-1-02adc532-2ee9-4f5c-932e-ab54714fec8a.jpg?v=1782750500616",
-        "alt": "02ADC532-2EE9-4F5C-932E-AB54714FEC8A.png",
-        "path": "media/spots/1782750498398-spot-mqzfm87a-l8ox6u-1-02adc532-2ee9-4f5c-932e-ab54714fec8a.jpg"
       }
     ]
   }
