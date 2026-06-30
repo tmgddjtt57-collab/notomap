@@ -1,5 +1,719 @@
 [
   {
+    "id": "spot-mr0bwwbw-ql8prj",
+    "createdAt": "2026-06-30T07:32:25.797Z",
+    "updatedAt": "2026-06-30T07:32:25.797Z",
+    "title": {
+      "ja": "棚田と共に、 私は光の中にいた。",
+      "en": "棚田と共に、 私は光の中にいた。",
+      "ko": "棚田と共に、 私は光の中にいた。",
+      "zh": "棚田と共に、 私は光の中にいた。"
+    },
+    "description": {
+      "ja": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, Wajima, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, Wajima, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, 와지마시, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, 轮岛市, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°25'27.3\"N 136°59'58.1\"E",
+    "lat": 37.42425,
+    "lng": 136.9994722222222,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804743904-spot-mr0bwwbw-ql8prj-21-line-album-20260630-260630-74.jpg?v=1782804745797",
+        "alt": "LINE_ALBUM_20260630_260630_74.jpg",
+        "path": "media/spots/1782804743904-spot-mr0bwwbw-ql8prj-21-line-album-20260630-260630-74.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwtfk-royg90",
+    "createdAt": "2026-06-30T07:32:23.852Z",
+    "updatedAt": "2026-06-30T07:32:23.852Z",
+    "title": {
+      "ja": "光は、 森の奥で眠っていた。",
+      "en": "光は、 森の奥で眠っていた。",
+      "ko": "光は、 森の奥で眠っていた。",
+      "zh": "光は、 森の奥で眠っていた。"
+    },
+    "description": {
+      "ja": "光は、\n森の奥で眠っていた。\nThe light\nwas sleeping\ndeep inside the forest.\n\n木漏れ日の橋\n【Bridge of Filtered Light】\nOuterWajima, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 051\n#PostImpressionismNoto\n#InspiredByPierreBonnard\n#ForestMemoryNoto\n#NotoNoOtoMuseum",
+      "en": "光は、\n森の奥で眠っていた。\nThe light\nwas sleeping\ndeep inside the forest.\n\n木漏れ日の橋\n【Bridge of Filtered Light】\nOuterWajima, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 051\n#PostImpressionismNoto\n#InspiredByPierreBonnard\n#ForestMemoryNoto\n#NotoNoOtoMuseum",
+      "ko": "光は、\n森の奥で眠っていた。\nThe light\nwas sleeping\ndeep inside the forest.\n\n木漏れ日の橋\n【Bridge of Filtered Light】\nOuter와지마시, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 051\n#PostImpressionismNoto\n#InspiredByPierreBonnard\n#ForestMemoryNoto\n#NotoNoOtoMuseum",
+      "zh": "光は、\n森の奥で眠っていた。\nThe light\nwas sleeping\ndeep inside the forest.\n\n木漏れ日の橋\n【Bridge of Filtered Light】\nOuter轮岛市, Noto Peninsula, Japan\n\n37°21'45.3\"N 136°50'21.1\"E\n\nArchive 051\n#PostImpressionismNoto\n#InspiredByPierreBonnard\n#ForestMemoryNoto\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°21'45.3\"N 136°50'21.1\"E",
+    "lat": 37.36258333333333,
+    "lng": 136.83919444444444,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804740161-spot-mr0bwtfk-royg90-20-line-album-20260630-260630-73.jpg?v=1782804743852",
+        "alt": "LINE_ALBUM_20260630_260630_73.jpg",
+        "path": "media/spots/1782804740161-spot-mr0bwtfk-royg90-20-line-album-20260630-260630-73.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwrph-q8u2vs",
+    "createdAt": "2026-06-30T07:32:20.096Z",
+    "updatedAt": "2026-06-30T07:32:20.096Z",
+    "title": {
+      "ja": "深青が、 静かに覆っていた。",
+      "en": "深青が、 静かに覆っていた。",
+      "ko": "深青が、 静かに覆っていた。",
+      "zh": "深青が、 静かに覆っていた。"
+    },
+    "description": {
+      "ja": "深青が、\n静かに覆っていた。\nDeep blue\nwas quietly settling over.\n\n百楽荘桟橋【Pier at Hyakurakuso】\nNoto Town, Noto Peninsula, Japan\n\n37°18’34.4”N 137°13’56.3”E\n\nArchive 050\n#BluePeriodNoto\n#InspiredByYokoyamaTaikan\n#InspiredByHigashiyamaKaii\n#InspiredByPicassoBluePeriod\n#NotoNoOtoMuseum",
+      "en": "深青が、\n静かに覆っていた。\nDeep blue\nwas quietly settling over.\n\n百楽荘桟橋【Pier at Hyakurakuso】\nNoto Town, Noto Peninsula, Japan\n\n37°18’34.4”N 137°13’56.3”E\n\nArchive 050\n#BluePeriodNoto\n#InspiredByYokoyamaTaikan\n#InspiredByHigashiyamaKaii\n#InspiredByPicassoBluePeriod\n#NotoNoOtoMuseum",
+      "ko": "深青が、\n静かに覆っていた。\nDeep blue\nwas quietly settling over.\n\n百楽荘桟橋【Pier at Hyakurakuso】\n노토마치, Noto Peninsula, Japan\n\n37°18’34.4”N 137°13’56.3”E\n\nArchive 050\n#BluePeriodNoto\n#InspiredByYokoyamaTaikan\n#InspiredByHigashiyamaKaii\n#InspiredByPicassoBluePeriod\n#NotoNoOtoMuseum",
+      "zh": "深青が、\n静かに覆っていた。\nDeep blue\nwas quietly settling over.\n\n百楽荘桟橋【Pier at Hyakurakuso】\n能登町, Noto Peninsula, Japan\n\n37°18’34.4”N 137°13’56.3”E\n\nArchive 050\n#BluePeriodNoto\n#InspiredByYokoyamaTaikan\n#InspiredByHigashiyamaKaii\n#InspiredByPicassoBluePeriod\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18’34.4”N 137°13’56.3”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804737915-spot-mr0bwrph-q8u2vs-19-line-album-20260630-260630-72.jpg?v=1782804740095",
+        "alt": "LINE_ALBUM_20260630_260630_72.jpg",
+        "path": "media/spots/1782804737915-spot-mr0bwrph-q8u2vs-19-line-album-20260630-260630-72.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwol2-k3lr5u",
+    "createdAt": "2026-06-30T07:32:17.861Z",
+    "updatedAt": "2026-06-30T07:32:17.861Z",
+    "title": {
+      "ja": "青空も、 行き先を知らなかった。",
+      "en": "青空も、 行き先を知らなかった。",
+      "ko": "青空も、 行き先を知らなかった。",
+      "zh": "青空も、 行き先を知らなかった。"
+    },
+    "description": {
+      "ja": "青空も、\n行き先を知らなかった。\n Even the blue sky\ndid not know where the road would lead.\n\n蓮湖渚公園の路【Road at Renko Nagisa Park】\nUchinada, Ishikawa, Japan\n\n36°39’27.9”N 136°39’13.1”E\n\nArchive 049\n#PostwarLandscapeNoto\n#InspiredByYasuoKazuki\n#RoadsOfNoto\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "en": "青空も、\n行き先を知らなかった。\n Even the blue sky\ndid not know where the road would lead.\n\n蓮湖渚公園の路【Road at Renko Nagisa Park】\nUchinada, Ishikawa, Japan\n\n36°39’27.9”N 136°39’13.1”E\n\nArchive 049\n#PostwarLandscapeNoto\n#InspiredByYasuoKazuki\n#RoadsOfNoto\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "ko": "青空も、\n行き先を知らなかった。\n Even the blue sky\ndid not know where the road would lead.\n\n蓮湖渚公園の路【Road at Renko Nagisa Park】\nUchinada, I시카마치wa, Japan\n\n36°39’27.9”N 136°39’13.1”E\n\nArchive 049\n#PostwarLandscapeNoto\n#InspiredByYasuoKazuki\n#RoadsOfNoto\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "zh": "青空も、\n行き先を知らなかった。\n Even the blue sky\ndid not know where the road would lead.\n\n蓮湖渚公園の路【Road at Renko Nagisa Park】\nUchinada, I志贺町wa, Japan\n\n36°39’27.9”N 136°39’13.1”E\n\nArchive 049\n#PostwarLandscapeNoto\n#InspiredByYasuoKazuki\n#RoadsOfNoto\n#UchinadaTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "志賀町",
+      "en": "Shika",
+      "ko": "시카마치",
+      "zh": "志贺町"
+    },
+    "group": "志賀町",
+    "locationText": "36°39’27.9”N 136°39’13.1”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804733875-spot-mr0bwol2-k3lr5u-18-line-album-20260630-260630-71.jpg?v=1782804737860",
+        "alt": "LINE_ALBUM_20260630_260630_71.jpg",
+        "path": "media/spots/1782804733875-spot-mr0bwol2-k3lr5u-18-line-album-20260630-260630-71.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwmob-rzd772",
+    "createdAt": "2026-06-30T07:32:13.813Z",
+    "updatedAt": "2026-06-30T07:32:13.813Z",
+    "title": {
+      "ja": "春は、 紙の中で咲いていた。",
+      "en": "springは、 紙の中で咲いていた。",
+      "ko": "봄は、 紙の中で咲いていた。",
+      "zh": "春天は、 紙の中で咲いていた。"
+    },
+    "description": {
+      "ja": "春は、\n紙の中で咲いていた。\nSpring\nwas blooming\ninside the paper.\n\n平等寺の地蔵【Jizo at Byodoji Temple】\nNoto Town, Noto Peninsula, Japan\n\n37°20’53.1”N 137°05’14.0”E\n\nArchive 048\n\n#CollageNoto\n#InspiredByKiyoshiYamashita\n#FragmentsOfSpring\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "春は、\n紙の中で咲いていた。\nSpring\nwas blooming\ninside the paper.\n\n平等寺の地蔵【Jizo at Byodoji Temple】\nNoto Town, Noto Peninsula, Japan\n\n37°20’53.1”N 137°05’14.0”E\n\nArchive 048\n\n#CollageNoto\n#InspiredByKiyoshiYamashita\n#FragmentsOfSpring\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "봄は、\n紙の中で咲いていた。\nSpring\nwas blooming\ninside the paper.\n\n平等寺の地蔵【Jizo at Byodoji Temple】\n노토마치, Noto Peninsula, Japan\n\n37°20’53.1”N 137°05’14.0”E\n\nArchive 048\n\n#CollageNoto\n#InspiredByKiyoshiYamashita\n#FragmentsOfSpring\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "春天は、\n紙の中で咲いていた。\nSpring\nwas blooming\ninside the paper.\n\n平等寺の地蔵【Jizo at Byodoji Temple】\n能登町, Noto Peninsula, Japan\n\n37°20’53.1”N 137°05’14.0”E\n\nArchive 048\n\n#CollageNoto\n#InspiredByKiyoshiYamashita\n#FragmentsOfSpring\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°20’53.1”N 137°05’14.0”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804731416-spot-mr0bwmob-rzd772-17-line-album-20260630-260630-70.jpg?v=1782804733813",
+        "alt": "LINE_ALBUM_20260630_260630_70.jpg",
+        "path": "media/spots/1782804731416-spot-mr0bwmob-rzd772-17-line-album-20260630-260630-70.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwkvp-iz9trk",
+    "createdAt": "2026-06-30T07:32:11.338Z",
+    "updatedAt": "2026-06-30T07:32:11.338Z",
+    "title": {
+      "ja": "線による芽吹き。",
+      "en": "線による芽吹き。",
+      "ko": "線による芽吹き。",
+      "zh": "線による芽吹き。"
+    },
+    "description": {
+      "ja": "線による芽吹き。\nEmerging Through Lines.\n\n能登を線で編む【Weaving Noto with Lines】\nHodatsushimizu Town, Noto Peninsula, Japan\n\n36°48’06.9”N 136°46’13.3”E\n\nArchive 061\n#DrawingNotoWithLines\n#InspiredByTsuguharuFoujita\n#HodatsushimizuTown\n#NotoNoOtoMuseum",
+      "en": "線による芽吹き。\nEmerging Through Lines.\n\n能登を線で編む【Weaving Noto with Lines】\nHodatsushimizu Town, Noto Peninsula, Japan\n\n36°48’06.9”N 136°46’13.3”E\n\nArchive 061\n#DrawingNotoWithLines\n#InspiredByTsuguharuFoujita\n#HodatsushimizuTown\n#NotoNoOtoMuseum",
+      "ko": "線による芽吹き。\nEmerging Through Lines.\n\n能登を線で編む【Weaving Noto with Lines】\nHodatsus히미시zu Town, Noto Peninsula, Japan\n\n36°48’06.9”N 136°46’13.3”E\n\nArchive 061\n#DrawingNotoWithLines\n#InspiredByTsuguharuFoujita\n#Hodatsus히미시zuTown\n#NotoNoOtoMuseum",
+      "zh": "線による芽吹き。\nEmerging Through Lines.\n\n能登を線で編む【Weaving Noto with Lines】\nHodatsus冰见市zu Town, Noto Peninsula, Japan\n\n36°48’06.9”N 136°46’13.3”E\n\nArchive 061\n#DrawingNotoWithLines\n#InspiredByTsuguharuFoujita\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "氷見市",
+      "en": "Himi City",
+      "ko": "히미시",
+      "zh": "冰见市"
+    },
+    "group": "氷見市",
+    "locationText": "36°48’06.9”N 136°46’13.3”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804729064-spot-mr0bwkvp-iz9trk-16-line-album-20260630-260630-83.jpg?v=1782804731338",
+        "alt": "LINE_ALBUM_20260630_260630_83.jpg",
+        "path": "media/spots/1782804729064-spot-mr0bwkvp-iz9trk-16-line-album-20260630-260630-83.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwj11-8yfuye",
+    "createdAt": "2026-06-30T07:32:09.013Z",
+    "updatedAt": "2026-06-30T07:32:09.013Z",
+    "title": {
+      "ja": "仏像たちの、 お花見。",
+      "en": "仏像たちの、 お花見。",
+      "ko": "仏像たちの、 お花見。",
+      "zh": "仏像たちの、 お花見。"
+    },
+    "description": {
+      "ja": "仏像たちの、\nお花見。\nThe Buddhas, too,\nwere viewing the blossoms.\n\n空の入り口【Entrance to the Sky】\nNoto Town, Noto Peninsula, Japan\n\n37°20’53.8”N 137°05’15.3”E\n\nArchive 060\n#MatisseNoto\n#InspiredByHenriMatisse\n#EntranceToTheSky\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "仏像たちの、\nお花見。\nThe Buddhas, too,\nwere viewing the blossoms.\n\n空の入り口【Entrance to the Sky】\nNoto Town, Noto Peninsula, Japan\n\n37°20’53.8”N 137°05’15.3”E\n\nArchive 060\n#MatisseNoto\n#InspiredByHenriMatisse\n#EntranceToTheSky\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "仏像たちの、\nお花見。\nThe Buddhas, too,\nwere viewing the blossoms.\n\n空の入り口【Entrance to the Sky】\n노토마치, Noto Peninsula, Japan\n\n37°20’53.8”N 137°05’15.3”E\n\nArchive 060\n#MatisseNoto\n#InspiredByHenriMatisse\n#EntranceToTheSky\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "仏像たちの、\nお花見。\nThe Buddhas, too,\nwere viewing the blossoms.\n\n空の入り口【Entrance to the Sky】\n能登町, Noto Peninsula, Japan\n\n37°20’53.8”N 137°05’15.3”E\n\nArchive 060\n#MatisseNoto\n#InspiredByHenriMatisse\n#EntranceToTheSky\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°20’53.8”N 137°05’15.3”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804726672-spot-mr0bwj11-8yfuye-15-line-album-20260630-260630-82.jpg?v=1782804729013",
+        "alt": "LINE_ALBUM_20260630_260630_82.jpg",
+        "path": "media/spots/1782804726672-spot-mr0bwj11-8yfuye-15-line-album-20260630-260630-82.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwhlz-ovpxox",
+    "createdAt": "2026-06-30T07:32:06.613Z",
+    "updatedAt": "2026-06-30T07:32:06.613Z",
+    "title": {
+      "ja": "浮かび上がる。",
+      "en": "浮かび上がる。",
+      "ko": "浮かび上がる。",
+      "zh": "浮かび上がる。"
+    },
+    "description": {
+      "ja": "浮かび上がる。\n Emerging.\n\n小島【Islet】\n Bentenjima, Noto Town, Noto Peninsula, Japan\n\n37°22’12.8”N 137°14’24.8”E\n\nArchive 059\n #CubismNoto\n #InspiredByGeorgesBraque\n #NotoTown\n #NotoNoOtoMuseum",
+      "en": "浮かび上がる。\n Emerging.\n\n小島【Islet】\n Bentenjima, Noto Town, Noto Peninsula, Japan\n\n37°22’12.8”N 137°14’24.8”E\n\nArchive 059\n #CubismNoto\n #InspiredByGeorgesBraque\n #NotoTown\n #NotoNoOtoMuseum",
+      "ko": "浮かび上がる。\n Emerging.\n\n小島【Islet】\n Bentenjima, 노토마치, Noto Peninsula, Japan\n\n37°22’12.8”N 137°14’24.8”E\n\nArchive 059\n #CubismNoto\n #InspiredByGeorgesBraque\n #NotoTown\n #NotoNoOtoMuseum",
+      "zh": "浮かび上がる。\n Emerging.\n\n小島【Islet】\n Bentenjima, 能登町, Noto Peninsula, Japan\n\n37°22’12.8”N 137°14’24.8”E\n\nArchive 059\n #CubismNoto\n #InspiredByGeorgesBraque\n #NotoTown\n #NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°22’12.8”N 137°14’24.8”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804724830-spot-mr0bwhlz-ovpxox-14-line-album-20260630-260630-81.jpg?v=1782804726613",
+        "alt": "LINE_ALBUM_20260630_260630_81.jpg",
+        "path": "media/spots/1782804724830-spot-mr0bwhlz-ovpxox-14-line-album-20260630-260630-81.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwfyk-dgd94p",
+    "createdAt": "2026-06-30T07:32:04.775Z",
+    "updatedAt": "2026-06-30T07:32:04.775Z",
+    "title": {
+      "ja": "白濁",
+      "en": "白濁",
+      "ko": "白濁",
+      "zh": "白濁"
+    },
+    "description": {
+      "ja": "白濁\nMilky White\n\n弁天島【Bentenjima】\nNoto, Ishikawa, Japan\n\n37°22'14.5\"N 137°14'25.7\"E\n\nArchive 058\n#MinimalismNoto\n#InspiredByAgnesMartin\n#SeaOfNoto\n#NotoTown\n#NotoNoOtoMuseum （",
+      "en": "白濁\nMilky White\n\n弁天島【Bentenjima】\nNoto, Ishikawa, Japan\n\n37°22'14.5\"N 137°14'25.7\"E\n\nArchive 058\n#MinimalismNoto\n#InspiredByAgnesMartin\n#SeaOfNoto\n#NotoTown\n#NotoNoOtoMuseum （",
+      "ko": "白濁\nMilky White\n\n弁天島【Bentenjima】\nNoto, I시카마치wa, Japan\n\n37°22'14.5\"N 137°14'25.7\"E\n\nArchive 058\n#MinimalismNoto\n#InspiredByAgnesMartin\n#SeaOfNoto\n#NotoTown\n#NotoNoOtoMuseum （",
+      "zh": "白濁\nMilky White\n\n弁天島【Bentenjima】\nNoto, I志贺町wa, Japan\n\n37°22'14.5\"N 137°14'25.7\"E\n\nArchive 058\n#MinimalismNoto\n#InspiredByAgnesMartin\n#SeaOfNoto\n#NotoTown\n#NotoNoOtoMuseum （"
+    },
+    "municipality": {
+      "ja": "志賀町",
+      "en": "Shika",
+      "ko": "시카마치",
+      "zh": "志贺町"
+    },
+    "group": "志賀町",
+    "locationText": "37°22'14.5\"N 137°14'25.7\"E",
+    "lat": 37.370694444444446,
+    "lng": 137.2404722222222,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804722674-spot-mr0bwfyk-dgd94p-13-line-album-20260630-260630-80.jpg?v=1782804724775",
+        "alt": "LINE_ALBUM_20260630_260630_80.jpg",
+        "path": "media/spots/1782804722674-spot-mr0bwfyk-dgd94p-13-line-album-20260630-260630-80.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bweol-pio85j",
+    "createdAt": "2026-06-30T07:32:02.635Z",
+    "updatedAt": "2026-06-30T07:32:02.635Z",
+    "title": {
+      "ja": "誰もいない緑",
+      "en": "誰もいない緑",
+      "ko": "誰もいない緑",
+      "zh": "誰もいない緑"
+    },
+    "description": {
+      "ja": "誰もいない緑\nGreen, with no one there.\n\n湯船【Bathtub】\nNoto Town, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 057\n#ModernismNoto\n#InspiredBySeijiTogo\n#PrivateBathNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "誰もいない緑\nGreen, with no one there.\n\n湯船【Bathtub】\nNoto Town, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 057\n#ModernismNoto\n#InspiredBySeijiTogo\n#PrivateBathNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "誰もいない緑\nGreen, with no one there.\n\n湯船【Bathtub】\n노토마치, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 057\n#ModernismNoto\n#InspiredBySeijiTogo\n#PrivateBathNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "誰もいない緑\nGreen, with no one there.\n\n湯船【Bathtub】\n能登町, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 057\n#ModernismNoto\n#InspiredBySeijiTogo\n#PrivateBathNoto\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18'36.4\"N 137°13'57.1\"E",
+    "lat": 37.310111111111105,
+    "lng": 137.2325277777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804721036-spot-mr0bweol-pio85j-12-line-album-20260630-260630-79.jpg?v=1782804722634",
+        "alt": "LINE_ALBUM_20260630_260630_79.jpg",
+        "path": "media/spots/1782804721036-spot-mr0bweol-pio85j-12-line-album-20260630-260630-79.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwdfy-z7cxc8",
+    "createdAt": "2026-06-30T07:32:00.980Z",
+    "updatedAt": "2026-06-30T07:32:00.980Z",
+    "title": {
+      "ja": "棚田と共に、 私は光の中にいた。",
+      "en": "棚田と共に、 私は光の中にいた。",
+      "ko": "棚田と共に、 私は光の中にいた。",
+      "zh": "棚田と共に、 私は光の中にいた。"
+    },
+    "description": {
+      "ja": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, Wajima, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, Wajima, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, 와지마시, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "棚田と共に、\n私は光の中にいた。\nWith the terraced fields,\nI was in the light.\n\n千枚田の光【Light over Senmaida】\nShiroyone Senmaida, 轮岛市, Noto Peninsula, Japan\n\n37°25'27.3\"N 136°59'58.1\"E\n\nArchive 056\n#ImpressionismNoto\n#InspiredByRenoir\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°25'27.3\"N 136°59'58.1\"E",
+    "lat": 37.42425,
+    "lng": 136.9994722222222,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804719425-spot-mr0bwdfy-z7cxc8-11-line-album-20260630-260630-78.jpg?v=1782804720980",
+        "alt": "LINE_ALBUM_20260630_260630_78.jpg",
+        "path": "media/spots/1782804719425-spot-mr0bwdfy-z7cxc8-11-line-album-20260630-260630-78.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwc3w-tdr2jw",
+    "createdAt": "2026-06-30T07:31:59.373Z",
+    "updatedAt": "2026-06-30T07:31:59.373Z",
+    "title": {
+      "ja": "LINE ALBUM 20260630 260630 77",
+      "en": "LINE ALBUM 20260630 260630 77",
+      "ko": "LINE ALBUM 20260630 260630 77",
+      "zh": "LINE ALBUM 20260630 260630 77"
+    },
+    "description": {
+      "ja": "有限の宇宙【Finite Cosmos】\nHimi City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#HimiCity\n#NotoNoOtoMuseum",
+      "en": "有限の宇宙【Finite Cosmos】\nHimi City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#HimiCity\n#NotoNoOtoMuseum",
+      "ko": "有限の宇宙【Finite Cosmos】\n히미시 City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#히미시City\n#NotoNoOtoMuseum",
+      "zh": "有限の宇宙【Finite Cosmos】\n冰见市 City, Toyama, Japan\n\nArchive 055\n#FiniteCosmos\n#InspiredByLeijiMatsumoto\n#RailwaysOfNoto\n#冰见市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "氷見市",
+      "en": "Himi City",
+      "ko": "히미시",
+      "zh": "冰见市"
+    },
+    "group": "氷見市",
+    "locationText": "",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804717710-spot-mr0bwc3w-tdr2jw-10-line-album-20260630-260630-77.jpg?v=1782804719372",
+        "alt": "LINE_ALBUM_20260630_260630_77.jpg",
+        "path": "media/spots/1782804717710-spot-mr0bwc3w-tdr2jw-10-line-album-20260630-260630-77.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bwaqi-xgawby",
+    "createdAt": "2026-06-30T07:31:57.644Z",
+    "updatedAt": "2026-06-30T07:31:57.644Z",
+    "title": {
+      "ja": "現役の近代",
+      "en": "現役の近代",
+      "ko": "現役の近代",
+      "zh": "現役の近代"
+    },
+    "description": {
+      "ja": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\nSuzu, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#SuzuCity\n#NotoNoOtoMuseum",
+      "en": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\nSuzu, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#SuzuCity\n#NotoNoOtoMuseum",
+      "ko": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\n스즈시, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#스즈시City\n#NotoNoOtoMuseum",
+      "zh": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\n珠洲市, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#珠洲市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "珠洲市",
+      "en": "Suzu",
+      "ko": "스즈시",
+      "zh": "珠洲市"
+    },
+    "group": "珠洲市",
+    "locationText": "37°22'30.2\"N 137°14'13.0\"E",
+    "lat": 37.375055555555555,
+    "lng": 137.23694444444442,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804715914-spot-mr0bwaqi-xgawby-9-line-album-20260630-260630-89.jpg?v=1782804717644",
+        "alt": "LINE_ALBUM_20260630_260630_89.jpg",
+        "path": "media/spots/1782804715914-spot-mr0bwaqi-xgawby-9-line-album-20260630-260630-89.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bw9ap-7v1pqs",
+    "createdAt": "2026-06-30T07:31:55.865Z",
+    "updatedAt": "2026-06-30T07:31:55.865Z",
+    "title": {
+      "ja": "町は、 いちどほどけ、 また編まれる。",
+      "en": "町は、 いちどほどけ、 また編まれる。",
+      "ko": "町は、 いちどほどけ、 また編まれる。",
+      "zh": "町は、 いちどほどけ、 また編まれる。"
+    },
+    "description": {
+      "ja": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n輪島朝市通り【Wajima Asaichi Street】\nWajima, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#WajimaAsaichi\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n輪島朝市通り【Wajima Asaichi Street】\nWajima, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#WajimaAsaichi\n#WajimaCity\n#NotoNoOtoMuseum",
+      "ko": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n와지마시朝市通り【와지마시 Asaichi Street】\n와지마시, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#와지마시Asaichi\n#와지마시City\n#NotoNoOtoMuseum",
+      "zh": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n轮岛市朝市通り【轮岛市 Asaichi Street】\n轮岛市, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#轮岛市Asaichi\n#轮岛市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°23'47.9\"N 136°54'05.3\"E",
+    "lat": 37.39663888888889,
+    "lng": 136.90147222222222,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804714061-spot-mr0bw9ap-7v1pqs-8-line-album-20260630-260630-88.jpg?v=1782804715865",
+        "alt": "LINE_ALBUM_20260630_260630_88.jpg",
+        "path": "media/spots/1782804714061-spot-mr0bw9ap-7v1pqs-8-line-album-20260630-260630-88.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bw7vv-muwj4j",
+    "createdAt": "2026-06-30T07:31:54.001Z",
+    "updatedAt": "2026-06-30T07:31:54.001Z",
+    "title": {
+      "ja": "崩落は、律動する。",
+      "en": "崩落は、律動する。",
+      "ko": "崩落は、律動する。",
+      "zh": "崩落は、律動する。"
+    },
+    "description": {
+      "ja": "崩落は、律動する。\nCollapse finds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\nSuzu City, Noto Peninsula, Japan\n\n37°28'23.6\"N 137°05'37.2\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#SuzuCity\n#NotoNoOtoMuseum",
+      "en": "崩落は、律動する。\nCollapse finds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\nSuzu City, Noto Peninsula, Japan\n\n37°28'23.6\"N 137°05'37.2\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#SuzuCity\n#NotoNoOtoMuseum",
+      "ko": "崩落は、律動する。\nCollapse finds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\n스즈시 City, Noto Peninsula, Japan\n\n37°28'23.6\"N 137°05'37.2\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#스즈시City\n#NotoNoOtoMuseum",
+      "zh": "崩落は、律動する。\nCollapse finds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\n珠洲市 City, Noto Peninsula, Japan\n\n37°28'23.6\"N 137°05'37.2\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#珠洲市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "珠洲市",
+      "en": "Suzu",
+      "ko": "스즈시",
+      "zh": "珠洲市"
+    },
+    "group": "珠洲市",
+    "locationText": "37°28'23.6\"N 137°05'37.2\"E",
+    "lat": 37.473222222222226,
+    "lng": 137.09366666666668,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804712235-spot-mr0bw7vv-muwj4j-7-line-album-20260630-260630-87.jpg?v=1782804714001",
+        "alt": "LINE_ALBUM_20260630_260630_87.jpg",
+        "path": "media/spots/1782804712235-spot-mr0bw7vv-muwj4j-7-line-album-20260630-260630-87.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bw65p-mplkmc",
+    "createdAt": "2026-06-30T07:31:52.170Z",
+    "updatedAt": "2026-06-30T07:31:52.170Z",
+    "title": {
+      "ja": "石はあり、 やがてほどける。",
+      "en": "石はあり、 やがてほどける。",
+      "ko": "石はあり、 やがてほどける。",
+      "zh": "石はあり、 やがてほどける。"
+    },
+    "description": {
+      "ja": "石はあり、\nやがてほどける。\nForm drifts\ninto emptiness.\n\n鎮座する流転【Seated in Flux】\nHimi City, Toyama, Japan\n\n36°50’16.1”N 137°00’15.5”E\n\nArchive 064\n#InkPaintingNoto\n#InspiredByHasegawaTohaku\n#HimiCity\n#NotoNoOtoMuseum",
+      "en": "石はあり、\nやがてほどける。\nForm drifts\ninto emptiness.\n\n鎮座する流転【Seated in Flux】\nHimi City, Toyama, Japan\n\n36°50’16.1”N 137°00’15.5”E\n\nArchive 064\n#InkPaintingNoto\n#InspiredByHasegawaTohaku\n#HimiCity\n#NotoNoOtoMuseum",
+      "ko": "石はあり、\nやがてほどける。\nForm drifts\ninto emptiness.\n\n鎮座する流転【Seated in Flux】\n히미시 City, Toyama, Japan\n\n36°50’16.1”N 137°00’15.5”E\n\nArchive 064\n#InkPaintingNoto\n#InspiredByHasegawaTohaku\n#히미시City\n#NotoNoOtoMuseum",
+      "zh": "石はあり、\nやがてほどける。\nForm drifts\ninto emptiness.\n\n鎮座する流転【Seated in Flux】\n冰见市 City, Toyama, Japan\n\n36°50’16.1”N 137°00’15.5”E\n\nArchive 064\n#InkPaintingNoto\n#InspiredByHasegawaTohaku\n#冰见市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "氷見市",
+      "en": "Himi City",
+      "ko": "히미시",
+      "zh": "冰见市"
+    },
+    "group": "氷見市",
+    "locationText": "36°50’16.1”N 137°00’15.5”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804709991-spot-mr0bw65p-mplkmc-6-line-album-20260630-260630-86.jpg?v=1782804712170",
+        "alt": "LINE_ALBUM_20260630_260630_86.jpg",
+        "path": "media/spots/1782804709991-spot-mr0bw65p-mplkmc-6-line-album-20260630-260630-86.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bw4od-x4uck3",
+    "createdAt": "2026-06-30T07:31:49.933Z",
+    "updatedAt": "2026-06-30T07:31:49.933Z",
+    "title": {
+      "ja": "暮れなずむ。",
+      "en": "暮れなずむ。",
+      "ko": "暮れなずむ。",
+      "zh": "暮れなずむ。"
+    },
+    "description": {
+      "ja": "暮れなずむ。\nDusk lingered.\n\n狼煙海岸【Noroshi Coast】\nSuzu, Noto Peninsula, Japan\n\n37°31’34.2”N 137°19’34.2”E\n\nArchive 063\n#LineworkNoto\n#InspiredByUtagawaHiroshige\n#SuzuCity\n#NoroshiCoast\n#NotoNoOtoMuseum",
+      "en": "暮れなずむ。\nDusk lingered.\n\n狼煙海岸【Noroshi Coast】\nSuzu, Noto Peninsula, Japan\n\n37°31’34.2”N 137°19’34.2”E\n\nArchive 063\n#LineworkNoto\n#InspiredByUtagawaHiroshige\n#SuzuCity\n#NoroshiCoast\n#NotoNoOtoMuseum",
+      "ko": "暮れなずむ。\nDusk lingered.\n\n狼煙바다岸【Noroshi Coast】\n스즈시, Noto Peninsula, Japan\n\n37°31’34.2”N 137°19’34.2”E\n\nArchive 063\n#LineworkNoto\n#InspiredByUtagawaHiroshige\n#스즈시City\n#NoroshiCoast\n#NotoNoOtoMuseum",
+      "zh": "暮れなずむ。\nDusk lingered.\n\n狼煙海岸【Noroshi Coast】\n珠洲市, Noto Peninsula, Japan\n\n37°31’34.2”N 137°19’34.2”E\n\nArchive 063\n#LineworkNoto\n#InspiredByUtagawaHiroshige\n#珠洲市City\n#NoroshiCoast\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "珠洲市",
+      "en": "Suzu",
+      "ko": "스즈시",
+      "zh": "珠洲市"
+    },
+    "group": "珠洲市",
+    "locationText": "37°31’34.2”N 137°19’34.2”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804708075-spot-mr0bw4od-x4uck3-5-line-album-20260630-260630-85.jpg?v=1782804709933",
+        "alt": "LINE_ALBUM_20260630_260630_85.jpg",
+        "path": "media/spots/1782804708075-spot-mr0bw4od-x4uck3-5-line-album-20260630-260630-85.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bw2vn-q6ne5p",
+    "createdAt": "2026-06-30T07:31:48.013Z",
+    "updatedAt": "2026-06-30T07:31:48.013Z",
+    "title": {
+      "ja": "暮らしが、 また、 始まる。",
+      "en": "暮らしが、 また、 始まる。",
+      "ko": "暮らしが、 また、 始まる。",
+      "zh": "暮らしが、 また、 始まる。"
+    },
+    "description": {
+      "ja": "暮らしが、\nまた、\n始まる。\nDaily life\nbegins\nagain.\n\n夜明け【Dawn】\nWajima, Noto Peninsula, Japan\n\n37°23'45.1\"N 136°54'20.8\"E\n\nArchive 062\n#LineworkNoto\n#InspiredByBernardBuffet\n#WajimaCity\n#DawnInNoto\n#NotoNoOtoMuseum",
+      "en": "暮らしが、\nまた、\n始まる。\nDaily life\nbegins\nagain.\n\n夜明け【Dawn】\nWajima, Noto Peninsula, Japan\n\n37°23'45.1\"N 136°54'20.8\"E\n\nArchive 062\n#LineworkNoto\n#InspiredByBernardBuffet\n#WajimaCity\n#DawnInNoto\n#NotoNoOtoMuseum",
+      "ko": "暮らしが、\nまた、\n始まる。\nDaily life\nbegins\nagain.\n\n夜明け【Dawn】\n와지마시, Noto Peninsula, Japan\n\n37°23'45.1\"N 136°54'20.8\"E\n\nArchive 062\n#LineworkNoto\n#InspiredByBernardBuffet\n#와지마시City\n#DawnInNoto\n#NotoNoOtoMuseum",
+      "zh": "暮らしが、\nまた、\n始まる。\nDaily life\nbegins\nagain.\n\n夜明け【Dawn】\n轮岛市, Noto Peninsula, Japan\n\n37°23'45.1\"N 136°54'20.8\"E\n\nArchive 062\n#LineworkNoto\n#InspiredByBernardBuffet\n#轮岛市City\n#DawnInNoto\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°23'45.1\"N 136°54'20.8\"E",
+    "lat": 37.39586111111111,
+    "lng": 136.90577777777779,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804705743-spot-mr0bw2vn-q6ne5p-4-line-album-20260630-260630-84.jpg?v=1782804708012",
+        "alt": "LINE_ALBUM_20260630_260630_84.jpg",
+        "path": "media/spots/1782804705743-spot-mr0bw2vn-q6ne5p-4-line-album-20260630-260630-84.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bw1cu-s1suwx",
+    "createdAt": "2026-06-30T07:31:45.683Z",
+    "updatedAt": "2026-06-30T07:31:45.683Z",
+    "title": {
+      "ja": "岩を、 筆が走る。",
+      "en": "岩を、 筆が走る。",
+      "ko": "岩を、 筆が走る。",
+      "zh": "岩を、 筆が走る。"
+    },
+    "description": {
+      "ja": "岩を、\n筆が走る。\nThe brush runs\nacross the rocks.\n\n緑青の岩礁【Verdigris Reef】\nWajima, Noto Peninsula, Japan\n\n37°24'25.2\"N 136°53'51.5\"E\n\nArchive 070\n#LineworkNoto\n#InspiredByTomiokaTessai\n#RockscapeNoto\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "岩を、\n筆が走る。\nThe brush runs\nacross the rocks.\n\n緑青の岩礁【Verdigris Reef】\nWajima, Noto Peninsula, Japan\n\n37°24'25.2\"N 136°53'51.5\"E\n\nArchive 070\n#LineworkNoto\n#InspiredByTomiokaTessai\n#RockscapeNoto\n#WajimaCity\n#NotoNoOtoMuseum",
+      "ko": "岩を、\n筆が走る。\nThe brush runs\nacross the rocks.\n\n緑青の岩礁【Verdigris Reef】\n와지마시, Noto Peninsula, Japan\n\n37°24'25.2\"N 136°53'51.5\"E\n\nArchive 070\n#LineworkNoto\n#InspiredByTomiokaTessai\n#RockscapeNoto\n#와지마시City\n#NotoNoOtoMuseum",
+      "zh": "岩を、\n筆が走る。\nThe brush runs\nacross the rocks.\n\n緑青の岩礁【Verdigris Reef】\n轮岛市, Noto Peninsula, Japan\n\n37°24'25.2\"N 136°53'51.5\"E\n\nArchive 070\n#LineworkNoto\n#InspiredByTomiokaTessai\n#RockscapeNoto\n#轮岛市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°24'25.2\"N 136°53'51.5\"E",
+    "lat": 37.407,
+    "lng": 136.89763888888888,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804703778-spot-mr0bw1cu-s1suwx-3-line-album-20260630-260630-92.jpg?v=1782804705683",
+        "alt": "LINE_ALBUM_20260630_260630_92.jpg",
+        "path": "media/spots/1782804703778-spot-mr0bw1cu-s1suwx-3-line-album-20260630-260630-92.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bvzvj-8xv050",
+    "createdAt": "2026-06-30T07:31:43.710Z",
+    "updatedAt": "2026-06-30T07:31:43.710Z",
+    "title": {
+      "ja": "岩を切る線",
+      "en": "岩を切る線",
+      "ko": "岩を切る線",
+      "zh": "岩を切る線"
+    },
+    "description": {
+      "ja": "岩を切る線\nLines\ncutting through rock.\n\n不動滝 【Fudo Falls】\nNakanoto, Noto Peninsula, Japan\n\n36°57'27.5\"N 136°56'05.7\"E\n\nArchive 069\n#LineworkNoto\n#InspiredByUtagawaKuniyoshi\n#WaterfallNoto\n#NakanotoTown\n#NotoNoOtoMuseum",
+      "en": "岩を切る線\nLines\ncutting through rock.\n\n不動滝 【Fudo Falls】\nNakanoto, Noto Peninsula, Japan\n\n36°57'27.5\"N 136°56'05.7\"E\n\nArchive 069\n#LineworkNoto\n#InspiredByUtagawaKuniyoshi\n#WaterfallNoto\n#NakanotoTown\n#NotoNoOtoMuseum",
+      "ko": "岩を切る線\nLines\ncutting through rock.\n\n不動滝 【Fudo Falls】\n나카노토마치, Noto Peninsula, Japan\n\n36°57'27.5\"N 136°56'05.7\"E\n\nArchive 069\n#LineworkNoto\n#InspiredByUtagawaKuniyoshi\n#WaterfallNoto\n#나카노토마치Town\n#NotoNoOtoMuseum",
+      "zh": "岩を切る線\nLines\ncutting through rock.\n\n不動滝 【Fudo Falls】\n中能登町, Noto Peninsula, Japan\n\n36°57'27.5\"N 136°56'05.7\"E\n\nArchive 069\n#LineworkNoto\n#InspiredByUtagawaKuniyoshi\n#WaterfallNoto\n#中能登町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "中能登町",
+      "en": "Nakanoto",
+      "ko": "나카노토마치",
+      "zh": "中能登町"
+    },
+    "group": "中能登町",
+    "locationText": "36°57'27.5\"N 136°56'05.7\"E",
+    "lat": 36.957638888888894,
+    "lng": 136.93491666666668,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804701870-spot-mr0bvzvj-8xv050-2-line-album-20260630-260630-91.jpg?v=1782804703709",
+        "alt": "LINE_ALBUM_20260630_260630_91.jpg",
+        "path": "media/spots/1782804701870-spot-mr0bvzvj-8xv050-2-line-album-20260630-260630-91.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr0bvycj-o626lz",
+    "createdAt": "2026-06-30T07:31:41.788Z",
+    "updatedAt": "2026-06-30T07:31:41.789Z",
+    "title": {
+      "ja": "線に沈む杜",
+      "en": "線に沈む杜",
+      "ko": "線に沈む杜",
+      "zh": "線に沈む杜"
+    },
+    "description": {
+      "ja": "線に沈む杜\nA grove\nsinking into lines.\n\n不動堂【Fudo Hall】\nNakanoto, Noto Peninsula, Japan\n\n36°57'07.6\"N 136°55'13.8\"E\n\nArchive 068\n#LineworkNoto\n#InspiredByAlbrechtDurer\n#EtchingNoto\n#NakanotoTown\n#NotoNoOtoMuseum",
+      "en": "線に沈む杜\nA grove\nsinking into lines.\n\n不動堂【Fudo Hall】\nNakanoto, Noto Peninsula, Japan\n\n36°57'07.6\"N 136°55'13.8\"E\n\nArchive 068\n#LineworkNoto\n#InspiredByAlbrechtDurer\n#EtchingNoto\n#NakanotoTown\n#NotoNoOtoMuseum",
+      "ko": "線に沈む杜\nA grove\nsinking into lines.\n\n不動堂【Fudo Hall】\n나카노토마치, Noto Peninsula, Japan\n\n36°57'07.6\"N 136°55'13.8\"E\n\nArchive 068\n#LineworkNoto\n#InspiredByAlbrechtDurer\n#EtchingNoto\n#나카노토마치Town\n#NotoNoOtoMuseum",
+      "zh": "線に沈む杜\nA grove\nsinking into lines.\n\n不動堂【Fudo Hall】\n中能登町, Noto Peninsula, Japan\n\n36°57'07.6\"N 136°55'13.8\"E\n\nArchive 068\n#LineworkNoto\n#InspiredByAlbrechtDurer\n#EtchingNoto\n#中能登町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "中能登町",
+      "en": "Nakanoto",
+      "ko": "나카노토마치",
+      "zh": "中能登町"
+    },
+    "group": "中能登町",
+    "locationText": "36°57'07.6\"N 136°55'13.8\"E",
+    "lat": 36.952111111111115,
+    "lng": 136.9205,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782804699931-spot-mr0bvycj-o626lz-1-line-album-20260630-260630-90.jpg?v=1782804701787",
+        "alt": "LINE_ALBUM_20260630_260630_90.jpg",
+        "path": "media/spots/1782804699931-spot-mr0bvycj-o626lz-1-line-album-20260630-260630-90.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mr0atdxr-b91cdh",
     "createdAt": "2026-06-30T07:01:42.719Z",
     "updatedAt": "2026-06-30T07:01:42.719Z",
