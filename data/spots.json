@@ -1,5 +1,345 @@
 [
   {
+    "id": "spot-mr06m2nh-2an11c",
+    "createdAt": "2026-06-30T05:04:02.749Z",
+    "updatedAt": "2026-06-30T05:04:02.749Z",
+    "title": {
+      "ja": "ベニカナメモチが、 道端で、 昼寝をしていた。",
+      "en": "ベニカナメモチが、 道端で、 昼寝をしていた。",
+      "ko": "ベニカナメモチが、 道端で、 昼寝をしていた。",
+      "zh": "ベニカナメモチが、 道端で、 昼寝をしていた。"
+    },
+    "description": {
+      "ja": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\nNoto Town, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\nNoto Town, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\n노토마치, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\n能登町, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°15'54.9\"N 137°05'26.6\"E",
+    "lat": 37.26525,
+    "lng": 137.09072222222224,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795840829-spot-mr06m2nh-2an11c-10-line-album-20260630-260630-4.jpg?v=1782795842749",
+        "alt": "LINE_ALBUM_20260630_260630_4.jpg",
+        "path": "media/spots/1782795840829-spot-mr06m2nh-2an11c-10-line-album-20260630-260630-4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06m15l-08xr1q",
+    "createdAt": "2026-06-30T05:04:00.749Z",
+    "updatedAt": "2026-06-30T05:04:00.749Z",
+    "title": {
+      "ja": "面と点が、 押し寄せる",
+      "en": "面と点が、 押し寄せる",
+      "ko": "面と点が、 押し寄せる",
+      "zh": "面と点が、 押し寄せる"
+    },
+    "description": {
+      "ja": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\nNoto Town, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\nNoto Town, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\n노토마치, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\n能登町, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18'36.4\"N 137°13'57.1\"E",
+    "lat": 37.310111111111105,
+    "lng": 137.2325277777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795838882-spot-mr06m15l-08xr1q-9-line-album-20260630-260630-3.jpg?v=1782795840749",
+        "alt": "LINE_ALBUM_20260630_260630_3.jpg",
+        "path": "media/spots/1782795838882-spot-mr06m15l-08xr1q-9-line-album-20260630-260630-3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lzi6-qn5uzy",
+    "createdAt": "2026-06-30T05:03:58.809Z",
+    "updatedAt": "2026-06-30T05:03:58.809Z",
+    "title": {
+      "ja": "春は静かに、 昔の時間へと戻っていく。",
+      "en": "springは静かに、 昔の時間へと戻っていく。",
+      "ko": "봄は静かに、 昔の時間へと戻っていく。",
+      "zh": "春天は静かに、 昔の時間へと戻っていく。"
+    },
+    "description": {
+      "ja": "春は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\nNoto Town, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "春は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\nNoto Town, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "봄は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\n노토마치, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "春天は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\n能登町, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°20'27.4\"N 137°03'47.8\"E",
+    "lat": 37.340944444444446,
+    "lng": 137.06327777777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795836733-spot-mr06lzi6-qn5uzy-8-line-album-20260630-260630-13.jpg?v=1782795838809",
+        "alt": "LINE_ALBUM_20260630_260630_13.jpg",
+        "path": "media/spots/1782795836733-spot-mr06lzi6-qn5uzy-8-line-album-20260630-260630-13.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lwtd-o3el8m",
+    "createdAt": "2026-06-30T05:03:56.669Z",
+    "updatedAt": "2026-06-30T05:03:56.669Z",
+    "title": {
+      "ja": "ベニカナメモチが、 道端で、 昼寝をしていた。",
+      "en": "ベニカナメモチが、 道端で、 昼寝をしていた。",
+      "ko": "ベニカナメモチが、 道端で、 昼寝をしていた。",
+      "zh": "ベニカナメモチが、 道端で、 昼寝をしていた。"
+    },
+    "description": {
+      "ja": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\nNoto Town, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\nNoto Town, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\n노토마치, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "ベニカナメモチが、\n道端で、\n昼寝をしていた。\nBenikanamemochi\nwas taking a nap\nby the roadside.\n\nベニカナメモチ【Japanese Red-tip Photinia】\n能登町, Noto Peninsula, Japan\n\n37°15'54.9\"N 137°05'26.6\"E\n\nArchive 005\n#PostImpressionismNoto\n#InspiredByCezanne\n#InspiredByTiffanyGlass\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°15'54.9\"N 137°05'26.6\"E",
+    "lat": 37.26525,
+    "lng": 137.09072222222224,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795833268-spot-mr06lwtd-o3el8m-7-line-album-20260630-260630-12.jpg?v=1782795836669",
+        "alt": "LINE_ALBUM_20260630_260630_12.jpg",
+        "path": "media/spots/1782795833268-spot-mr06lwtd-o3el8m-7-line-album-20260630-260630-12.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lv85-cf7rl8",
+    "createdAt": "2026-06-30T05:03:53.184Z",
+    "updatedAt": "2026-06-30T05:03:53.184Z",
+    "title": {
+      "ja": "春は静かに、 昔の時間へと戻っていく。",
+      "en": "springは静かに、 昔の時間へと戻っていく。",
+      "ko": "봄は静かに、 昔の時間へと戻っていく。",
+      "zh": "春天は静かに、 昔の時間へと戻っていく。"
+    },
+    "description": {
+      "ja": "春は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\nNoto Town, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "春は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\nNoto Town, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "봄は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\n노토마치, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "春天は静かに、\n昔の時間へと戻っていく。\nSpring quietly\ndrifts back\ntoward an older time.\n\n神和住の枝垂れ桜【The Weeping Cherry Tree in Kamiwasumi】\n能登町, Noto Peninsula, Japan\n\n37°20'27.4\"N 137°03'47.8\"E\n\nArchive 008\n#ShinHangaNoto\n#InspiredByShoenUemura\n#InspiredByKawaseHasui\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°20'27.4\"N 137°03'47.8\"E",
+    "lat": 37.340944444444446,
+    "lng": 137.06327777777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795831218-spot-mr06lv85-cf7rl8-6-line-album-20260630-260630-11.jpg?v=1782795833184",
+        "alt": "LINE_ALBUM_20260630_260630_11.jpg",
+        "path": "media/spots/1782795831218-spot-mr06lv85-cf7rl8-6-line-album-20260630-260630-11.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06ltvl-ywl5pl",
+    "createdAt": "2026-06-30T05:03:51.124Z",
+    "updatedAt": "2026-06-30T05:03:51.124Z",
+    "title": {
+      "ja": "街は静かに、 まだ昨日の続きを見ている。",
+      "en": "街は静かに、 まだ昨日の続きを見ている。",
+      "ko": "街は静かに、 まだ昨日の続きを見ている。",
+      "zh": "街は静かに、 まだ昨日の続きを見ている。"
+    },
+    "description": {
+      "ja": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n輪島市遠望【View from Wajima City Hall】\nWajima, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n輪島市遠望【View from Wajima City Hall】\nWajima, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#WajimaCity\n#NotoNoOtoMuseum",
+      "ko": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n와지마시遠望【View from 와지마시 City Hall】\n와지마시, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#와지마시City\n#NotoNoOtoMuseum",
+      "zh": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n轮岛市遠望【View from 轮岛市 City Hall】\n轮岛市, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#轮岛市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°23’26.9”N 136°53’57.3”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795829427-spot-mr06ltvl-ywl5pl-5-line-album-20260630-260630-10.jpg?v=1782795831124",
+        "alt": "LINE_ALBUM_20260630_260630_10.jpg",
+        "path": "media/spots/1782795829427-spot-mr06ltvl-ywl5pl-5-line-album-20260630-260630-10.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lsay-58d5jd",
+    "createdAt": "2026-06-30T05:03:49.377Z",
+    "updatedAt": "2026-06-30T05:03:49.377Z",
+    "title": {
+      "ja": "街は静かに、 まだ昨日の続きを見ている。",
+      "en": "街は静かに、 まだ昨日の続きを見ている。",
+      "ko": "街は静かに、 まだ昨日の続きを見ている。",
+      "zh": "街は静かに、 まだ昨日の続きを見ている。"
+    },
+    "description": {
+      "ja": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n輪島市遠望【View from Wajima City Hall】\nWajima, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n輪島市遠望【View from Wajima City Hall】\nWajima, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#WajimaCity\n#NotoNoOtoMuseum",
+      "ko": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n와지마시遠望【View from 와지마시 City Hall】\n와지마시, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#와지마시City\n#NotoNoOtoMuseum",
+      "zh": "街は静かに、\nまだ昨日の続きを見ている。\nThe city remains quiet,\nstill watching\nyesterday continue.\n\n轮岛市遠望【View from 轮岛市 City Hall】\n轮岛市, Noto Peninsula, Japan\n\n37°23’26.9”N 136°53’57.3”E\n\nArchive 007\n#RealismNoto\n#InspiredByRyuseiKishida\n#InspiredByEdwardHopper\n#轮岛市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°23’26.9”N 136°53’57.3”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795827472-spot-mr06lsay-58d5jd-4-line-album-20260630-260630-9.jpg?v=1782795829377",
+        "alt": "LINE_ALBUM_20260630_260630_9.jpg",
+        "path": "media/spots/1782795827472-spot-mr06lsay-58d5jd-4-line-album-20260630-260630-9.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lq3l-af20ya",
+    "createdAt": "2026-06-30T05:03:47.337Z",
+    "updatedAt": "2026-06-30T05:03:47.337Z",
+    "title": {
+      "ja": "海の色が、 空まで続いていた。",
+      "en": "seaの色が、 空まで続いていた。",
+      "ko": "바다の色が、 空まで続いていた。",
+      "zh": "海の色が、 空まで続いていた。"
+    },
+    "description": {
+      "ja": "海の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\nNoto Town, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "海の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\nNoto Town, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "바다の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\n노토마치, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "海の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\n能登町, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18’04.9”N 137°10’35.7”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795824556-spot-mr06lq3l-af20ya-3-line-album-20260630-260630-8.jpg?v=1782795827337",
+        "alt": "LINE_ALBUM_20260630_260630_8.jpg",
+        "path": "media/spots/1782795824556-spot-mr06lq3l-af20ya-3-line-album-20260630-260630-8.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lofy-59bn83",
+    "createdAt": "2026-06-30T05:03:44.481Z",
+    "updatedAt": "2026-06-30T05:03:44.481Z",
+    "title": {
+      "ja": "……妙だな。 さっきから、空気が ずっと重い。",
+      "en": "……妙だな。 さっきから、空気が ずっと重い。",
+      "ko": "……妙だな。 さっきから、空気が ずっと重い。",
+      "zh": "……妙だな。 さっきから、空気が ずっと重い。"
+    },
+    "description": {
+      "ja": "……妙だな。\nさっきから、空気が\nずっと重い。\n...Strange.\nThe air’s been heavy\nthis whole time.\n\n實相寺【Jissoji Temple】\nNanao, Noto Peninsula, Japan\n\n37°03’00.7”N 136°57’11.8”E\n\nArchive 016\n#ExpressionismNoto\n#InspiredByJoJosBizarreAdventure\n#NanaoCity\n#NotoNoOtoMuseum",
+      "en": "……妙だな。\nさっきから、空気が\nずっと重い。\n...Strange.\nThe air’s been heavy\nthis whole time.\n\n實相寺【Jissoji Temple】\nNanao, Noto Peninsula, Japan\n\n37°03’00.7”N 136°57’11.8”E\n\nArchive 016\n#ExpressionismNoto\n#InspiredByJoJosBizarreAdventure\n#NanaoCity\n#NotoNoOtoMuseum",
+      "ko": "……妙だな。\nさっきから、空気が\nずっと重い。\n...Strange.\nThe air’s been heavy\nthis whole time.\n\n實相寺【Jissoji Temple】\n나나오시, Noto Peninsula, Japan\n\n37°03’00.7”N 136°57’11.8”E\n\nArchive 016\n#ExpressionismNoto\n#InspiredByJoJosBizarreAdventure\n#나나오시City\n#NotoNoOtoMuseum",
+      "zh": "……妙だな。\nさっきから、空気が\nずっと重い。\n...Strange.\nThe air’s been heavy\nthis whole time.\n\n實相寺【Jissoji Temple】\n七尾市, Noto Peninsula, Japan\n\n37°03’00.7”N 136°57’11.8”E\n\nArchive 016\n#ExpressionismNoto\n#InspiredByJoJosBizarreAdventure\n#七尾市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°03’00.7”N 136°57’11.8”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795822426-spot-mr06lofy-59bn83-2-line-album-20260630-260630-20.jpg?v=1782795824481",
+        "alt": "LINE_ALBUM_20260630_260630_20.jpg",
+        "path": "media/spots/1782795822426-spot-mr06lofy-59bn83-2-line-album-20260630-260630-20.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06lmzo-gs85am",
+    "createdAt": "2026-06-30T05:03:42.332Z",
+    "updatedAt": "2026-06-30T05:03:42.332Z",
+    "title": {
+      "ja": "風が吹くまで、 時間は動かない。",
+      "en": "風が吹くまで、 時間は動かない。",
+      "ko": "風が吹くまで、 時間は動かない。",
+      "zh": "風が吹くまで、 時間は動かない。"
+    },
+    "description": {
+      "ja": "風が吹くまで、\n時間は動かない。\nUntil the wind begins,\ntime will not move.\n\nサンセットウィング内灘\n【Sunset Wing Uchinada】\nUchinada, Ishikawa, Japan\n\n36°39’19.8”N 136°39’11.1”E\n\nArchive 015\n#MetaphysicalNoto\n#InspiredByMetaphysicalArt\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "en": "風が吹くまで、\n時間は動かない。\nUntil the wind begins,\ntime will not move.\n\nサンセットウィング内灘\n【Sunset Wing Uchinada】\nUchinada, Ishikawa, Japan\n\n36°39’19.8”N 136°39’11.1”E\n\nArchive 015\n#MetaphysicalNoto\n#InspiredByMetaphysicalArt\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "ko": "風が吹くまで、\n時間は動かない。\nUntil the wind begins,\ntime will not move.\n\nサンセットウィング内灘\n【Sunset Wing Uchinada】\nUchinada, I시카마치wa, Japan\n\n36°39’19.8”N 136°39’11.1”E\n\nArchive 015\n#MetaphysicalNoto\n#InspiredByMetaphysicalArt\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "zh": "風が吹くまで、\n時間は動かない。\nUntil the wind begins,\ntime will not move.\n\nサンセットウィング内灘\n【Sunset Wing Uchinada】\nUchinada, I志贺町wa, Japan\n\n36°39’19.8”N 136°39’11.1”E\n\nArchive 015\n#MetaphysicalNoto\n#InspiredByMetaphysicalArt\n#UchinadaTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "志賀町",
+      "en": "Shika",
+      "ko": "시카마치",
+      "zh": "志贺町"
+    },
+    "group": "志賀町",
+    "locationText": "36°39’19.8”N 136°39’11.1”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795820526-spot-mr06lmzo-gs85am-1-line-album-20260630-260630-19.jpg?v=1782795822332",
+        "alt": "LINE_ALBUM_20260630_260630_19.jpg",
+        "path": "media/spots/1782795820526-spot-mr06lmzo-gs85am-1-line-album-20260630-260630-19.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mr06azqe-10bhk8",
     "createdAt": "2026-06-30T04:55:25.771Z",
     "updatedAt": "2026-06-30T04:55:25.771Z",
