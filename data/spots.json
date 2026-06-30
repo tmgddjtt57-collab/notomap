@@ -1,5 +1,175 @@
 [
   {
+    "id": "spot-mr06azqe-10bhk8",
+    "createdAt": "2026-06-30T04:55:25.771Z",
+    "updatedAt": "2026-06-30T04:55:25.771Z",
+    "title": {
+      "ja": "熊野隧道南口",
+      "en": "Kumano Tunnel South Entrance",
+      "ko": "熊野隧道南口",
+      "zh": "熊野隧道南口"
+    },
+    "description": {
+      "ja": "We are with NOTO\n\n熊野隧道南口【Kumano Tunnel South Entrance】\nWajima, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "We are with NOTO\n\n熊野隧道南口【Kumano Tunnel South Entrance】\nWajima, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "We are with NOTO\n\n熊野隧道南口【Kumano Tunnel South Entrance】\n와지마시, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "We are with NOTO\n\n熊野隧道南口【Kumano Tunnel South Entrance】\n轮岛市, Noto Peninsula, Japan\n\n37°19'58.2\"N 136°53'52.3\"E\n\nArchive 003\n#ExpressionismNoto\n#InspiredByGermanExpressionism\n#InspiredByTangDynasty\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°19'58.2\"N 136°53'52.3\"E",
+    "lat": 37.33283333333333,
+    "lng": 136.8978611111111,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795323897-spot-mr06azqe-10bhk8-5-line-album-20260630-260630-2.jpg?v=1782795325771",
+        "alt": "LINE_ALBUM_20260630_260630_2.jpg",
+        "path": "media/spots/1782795323897-spot-mr06azqe-10bhk8-5-line-album-20260630-260630-2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06ay74-7rih5c",
+    "createdAt": "2026-06-30T04:55:23.750Z",
+    "updatedAt": "2026-06-30T04:55:23.750Z",
+    "title": {
+      "ja": "面と点が、 押し寄せる。",
+      "en": "面と点が、 押し寄せる。",
+      "ko": "面と点が、 押し寄せる。",
+      "zh": "面と点が、 押し寄せる。"
+    },
+    "description": {
+      "ja": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\nNoto Town, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\nNoto Town, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\n노토마치, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "面と点が、\n押し寄せる。\nPlanes and dots\ncome rushing in.\n\n百楽荘貸切風呂 【【Private Bath at Noto Hyakurakusou】\n能登町, Noto Peninsula, Japan\n\n37°18'36.4\"N 137°13'57.1\"E\n\nArchive 004\n#AvantGardeNoto\n#InspiredByPicasso\n#InspiredByYayoiKusama\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18'36.4\"N 137°13'57.1\"E",
+    "lat": 37.310111111111105,
+    "lng": 137.2325277777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795321907-spot-mr06ay74-7rih5c-4-line-album-20260630-260630-1.jpg?v=1782795323736",
+        "alt": "LINE_ALBUM_20260630_260630_1.jpg",
+        "path": "media/spots/1782795321907-spot-mr06ay74-7rih5c-4-line-album-20260630-260630-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06awk0-jzypqb",
+    "createdAt": "2026-06-30T04:55:21.759Z",
+    "updatedAt": "2026-06-30T04:55:21.759Z",
+    "title": {
+      "ja": "海の色が、 空まで続いていた。",
+      "en": "seaの色が、 空まで続いていた。",
+      "ko": "바다の色が、 空まで続いていた。",
+      "zh": "海の色が、 空まで続いていた。"
+    },
+    "description": {
+      "ja": "海の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\nNoto Town, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "海の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\nNoto Town, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "바다の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\n노토마치, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "海の色が、\n空まで続いていた。\nThe color of the sea\nkept continuing\ninto the sky.\n\n羽根八幡神社【Hane Hachiman Shrine】\n能登町, Noto Peninsula, Japan\n\n37°18’04.9”N 137°10’35.7”E\n\nArchive 010\n#NeoImpressionismNoto\n#InspiredBySeurat\n#InspiredByMillet\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토마치",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18’04.9”N 137°10’35.7”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795319801-spot-mr06awk0-jzypqb-3-line-album-20260630-260630-7.jpg?v=1782795321759",
+        "alt": "LINE_ALBUM_20260630_260630_7.jpg",
+        "path": "media/spots/1782795319801-spot-mr06awk0-jzypqb-3-line-album-20260630-260630-7.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06aur6-ki8adw",
+    "createdAt": "2026-06-30T04:55:19.632Z",
+    "updatedAt": "2026-06-30T04:55:19.632Z",
+    "title": {
+      "ja": "ベンチが、 帰りを、 待っていた。",
+      "en": "ベンチが、 帰りを、 待っていた。",
+      "ko": "ベンチが、 帰りを、 待っていた。",
+      "zh": "ベンチが、 帰りを、 待っていた。"
+    },
+    "description": {
+      "ja": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\nWajima, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\nWajima, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\n와지마시, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\n轮岛市, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°22'33.1\"N 136°48'05.0\"E",
+    "lat": 37.375861111111114,
+    "lng": 136.8013888888889,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795317444-spot-mr06aur6-ki8adw-2-line-album-20260630-260630-6.jpg?v=1782795319632",
+        "alt": "LINE_ALBUM_20260630_260630_6.jpg",
+        "path": "media/spots/1782795317444-spot-mr06aur6-ki8adw-2-line-album-20260630-260630-6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mr06at82-m0mh8d",
+    "createdAt": "2026-06-30T04:55:17.297Z",
+    "updatedAt": "2026-06-30T04:55:17.297Z",
+    "title": {
+      "ja": "ベンチが、 帰りを、 待っていた。",
+      "en": "ベンチが、 帰りを、 待っていた。",
+      "ko": "ベンチが、 帰りを、 待っていた。",
+      "zh": "ベンチが、 帰りを、 待っていた。"
+    },
+    "description": {
+      "ja": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\nWajima, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#OuterWajima\n#NotoNoOtoMuseum",
+      "en": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\nWajima, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#OuterWajima\n#NotoNoOtoMuseum",
+      "ko": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\n와지마시, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#Outer와지마시\n#NotoNoOtoMuseum",
+      "zh": "ベンチが、\n帰りを、\n待っていた。\nThe bench\nwas waiting\nfor return.\n\n大沢集落の間垣【The Magaki Fence in the Osawa Hamlet】\n轮岛市, Noto Peninsula, Japan\n\n37°22'33.1\"N 136°48'05.0\"E\n\nArchive 006\n#AbstractExpressionismNoto\n#InspiredByJacksonPollock\n#InspiredByJapaneseMingei\n#Outer轮岛市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°22'33.1\"N 136°48'05.0\"E",
+    "lat": 37.375861111111114,
+    "lng": 136.8013888888889,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1782795315394-spot-mr06at82-m0mh8d-1-line-album-20260630-260630-5.jpg?v=1782795317297",
+        "alt": "LINE_ALBUM_20260630_260630_5.jpg",
+        "path": "media/spots/1782795315394-spot-mr06at82-m0mh8d-1-line-album-20260630-260630-5.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mqzfm87a-l8ox6u",
     "createdAt": "2026-06-29T16:28:20.616Z",
     "updatedAt": "2026-06-30T00:00:00.000Z",
