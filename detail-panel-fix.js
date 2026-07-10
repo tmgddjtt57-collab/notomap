@@ -284,3 +284,49 @@
     });
   }
 })();
+
+(() => {
+  const LINK_URL = "https://notonooto-qr.vercel.app/go/sns";
+  const LINK_LABEL = "のとのおと美術館";
+
+  ensureMuseumLink();
+
+  function ensureMuseumLink() {
+    if (document.querySelector(".museum-link")) return;
+    const toolbar = document.querySelector(".toolbar");
+    if (!toolbar) return;
+    const link = document.createElement("a");
+    link.className = "secondary-button museum-link";
+    link.href = LINK_URL;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", `${LINK_LABEL}を開く`);
+    link.innerHTML = `<i data-lucide="external-link"></i><span>${LINK_LABEL}</span>`;
+    toolbar.insertBefore(link, toolbar.firstElementChild);
+    injectMuseumLinkStyles();
+    if (window.lucide?.createIcons) window.lucide.createIcons();
+  }
+
+  function injectMuseumLinkStyles() {
+    if (document.getElementById("museumLinkStyles")) return;
+    const style = document.createElement("style");
+    style.id = "museumLinkStyles";
+    style.textContent = `
+      .museum-link {
+        flex: 0 0 auto;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .museum-link:visited {
+        color: var(--navy-900);
+      }
+      @media (max-width: 430px) {
+        .museum-link {
+          padding-inline: 10px;
+          font-size: .82rem;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+})();
