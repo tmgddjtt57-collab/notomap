@@ -872,8 +872,8 @@ svg {
   }
 
   .details-panel {
-    right: auto;
-    left: 0;
+    right: 0;
+    left: auto;
   }
 
   .form-grid,

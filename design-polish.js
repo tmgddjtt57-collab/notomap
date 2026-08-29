@@ -368,8 +368,8 @@
         border-radius: 8px 8px 0 0;
       }
       .details-panel {
-        right: auto;
-        left: 0;
+        right: 0;
+        left: auto;
       }
       .spot-card {
         grid-template-columns: 74px minmax(0, 1fr);
