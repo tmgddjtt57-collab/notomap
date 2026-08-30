@@ -1,5 +1,107 @@
 [
   {
+    "id": "spot-mtfw21gw-rk4rsy",
+    "createdAt": "2026-08-30T14:12:15.328Z",
+    "updatedAt": "2026-08-30T14:12:15.328Z",
+    "title": {
+      "ja": "崩落は、 律動する。",
+      "en": "崩落は、 律動する。",
+      "ko": "崩落は、 律動する。",
+      "zh": "崩落は、 律動する。"
+    },
+    "description": {
+      "ja": "崩落は、\n律動する。\nCollapse \nfinds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\nSuzu City, Noto Peninsula, Japan\n\n37°28'38.2\"N 137°05'41.9\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#SuzuCity\n#NotoNoOtoMuseum",
+      "en": "崩落は、\n律動する。\nCollapse \nfinds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\nSuzu City, Noto Peninsula, Japan\n\n37°28'38.2\"N 137°05'41.9\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#SuzuCity\n#NotoNoOtoMuseum",
+      "ko": "崩落は、\n律動する。\nCollapse \nfinds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\n스즈시 City, Noto Peninsula, Japan\n\n37°28'38.2\"N 137°05'41.9\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#스즈시City\n#NotoNoOtoMuseum",
+      "zh": "崩落は、\n律動する。\nCollapse \nfinds its rhythm.\n\n山肌のアラベスク【Arabesque of the Hillside】\n珠洲市 City, Noto Peninsula, Japan\n\n37°28'38.2\"N 137°05'41.9\"E\n\nArchive 065\n#ArtNouveauNoto\n#InspiredByAlphonseMucha\n#珠洲市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "珠洲市",
+      "en": "Suzu",
+      "ko": "스즈시",
+      "zh": "珠洲市"
+    },
+    "group": "珠洲市",
+    "locationText": "37°28'38.2\"N 137°05'41.9\"E",
+    "lat": 37.47727777777778,
+    "lng": 137.09497222222222,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788099133508-spot-mtfw21gw-rk4rsy-3-065a.jpg?v=1788099135328",
+        "alt": "065a.png",
+        "path": "media/spots/1788099133508-spot-mtfw21gw-rk4rsy-3-065a.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mtfw1yxl-h2k31z",
+    "createdAt": "2026-08-30T14:12:13.423Z",
+    "updatedAt": "2026-08-30T14:12:13.423Z",
+    "title": {
+      "ja": "町は、 いちどほどけ、 また編まれる。",
+      "en": "町は、 いちどほどけ、 また編まれる。",
+      "ko": "町は、 いちどほどけ、 また編まれる。",
+      "zh": "町は、 いちどほどけ、 また編まれる。"
+    },
+    "description": {
+      "ja": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n輪島朝市通り【Wajima Asaichi Street】\nWajima, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#WajimaAsaichi\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n輪島朝市通り【Wajima Asaichi Street】\nWajima, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#WajimaAsaichi\n#WajimaCity\n#NotoNoOtoMuseum",
+      "ko": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n와지마시朝市通り【와지마시 Asaichi Street】\n와지마시, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#와지마시Asaichi\n#와지마시City\n#NotoNoOtoMuseum",
+      "zh": "町は、\nいちどほどけ、\nまた編まれる。\n\nThe town unravels,\nthen is woven again.\n\n轮岛市朝市通り【轮岛市 Asaichi Street】\n轮岛市, Noto Peninsula, Japan\n\n37°23'47.9\"N 136°54'05.3\"E\n\nArchive 066\n#LineworkNoto\n#InspiredByPaulKlee\n#轮岛市Asaichi\n#轮岛市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°23'47.9\"N 136°54'05.3\"E",
+    "lat": 37.39663888888889,
+    "lng": 136.90147222222222,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788099130220-spot-mtfw1yxl-h2k31z-2-066a.jpg?v=1788099133423",
+        "alt": "066a.png",
+        "path": "media/spots/1788099130220-spot-mtfw1yxl-h2k31z-2-066a.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mtfw1xa4-y2qebp",
+    "createdAt": "2026-08-30T14:12:10.129Z",
+    "updatedAt": "2026-08-30T14:12:10.134Z",
+    "title": {
+      "ja": "現役の近代",
+      "en": "現役の近代",
+      "ko": "現役の近代",
+      "zh": "現役の近代"
+    },
+    "description": {
+      "ja": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\nSuzu, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#SuzuCity\n#NotoNoOtoMuseum",
+      "en": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\nSuzu, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#SuzuCity\n#NotoNoOtoMuseum",
+      "ko": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\n스즈시, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#스즈시City\n#NotoNoOtoMuseum",
+      "zh": "現役の近代\nLiving modernity\n\n宗玄酒造の搾り機【Pressing Machine at Sogen Sake Brewery】\n珠洲市, Noto Peninsula, Japan\n\n37°22'30.2\"N 137°14'13.0\"E\n\nArchive 067\n#LineworkNoto\n#InspiredByFernandLeger\n#IndustrialNoto\n#珠洲市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "珠洲市",
+      "en": "Suzu",
+      "ko": "스즈시",
+      "zh": "珠洲市"
+    },
+    "group": "珠洲市",
+    "locationText": "37°22'30.2\"N 137°14'13.0\"E",
+    "lat": 37.375055555555555,
+    "lng": 137.23694444444442,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788099128114-spot-mtfw1xa4-y2qebp-1-067a.jpg?v=1788099130103",
+        "alt": "067a.png",
+        "path": "media/spots/1788099128114-spot-mtfw1xa4-y2qebp-1-067a.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mr0eij12-ot2o9a",
     "createdAt": "2026-06-30T05:03:58.809Z",
     "updatedAt": "2026-06-30T08:45:14.249Z",
@@ -220,12 +322,12 @@
       "zh": "赤が、\nゆらゆらと、\n漂っている。\nRed was drifting softly.\n\n黄砂【Yellow Dust】\nNotono Café & Marche\nNoto Peninsula, Japan\n\n37°20’05.7”N 137°08’06.6”E\n\nArchive 042\n#PsychologicalNoto\n#NegotiatingWithNaraYoshitomo\n#ModernismNoto\n#NotoTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "能登半島",
-      "en": "Noto Peninsula",
-      "ko": "노토반도",
-      "zh": "能登半岛"
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토초",
+      "zh": "能登町"
     },
-    "group": "能登半島",
+    "group": "能登町",
     "locationText": "37°20’05.7”N 137°08’06.6”E",
     "lat": 37.33491666666667,
     "lng": 137.13516666666666,
