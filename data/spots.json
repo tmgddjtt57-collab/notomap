@@ -1,5 +1,39 @@
 [
   {
+    "id": "spot-mtfzkc81-u8u2y5",
+    "createdAt": "2026-08-30T15:50:30.876Z",
+    "updatedAt": "2026-08-30T15:50:30.876Z",
+    "title": {
+      "ja": "iOS の画像 (12)",
+      "en": "iOS の画像 (12)",
+      "ko": "iOS の画像 (12)",
+      "zh": "iOS の画像 (12)"
+    },
+    "description": {
+      "ja": "ポストは、\n飛ばない。\nThe post\ndoes not\nfly.\n\n羽咋市役所前ポスト【Post Box in Front of Hakui City Hall】\nHakui, Noto Peninsula, Japan\n\n36°53’37.6”N 136°46’43.8”E\n\nArchive 094\n#FuturismNoto\n#InspiredByUmbertoBoccioni\n#HakuiCity\n#NotoNoOtoMuseum",
+      "en": "ポストは、\n飛ばない。\nThe post\ndoes not\nfly.\n\n羽咋市役所前ポスト【Post Box in Front of Hakui City Hall】\nHakui, Noto Peninsula, Japan\n\n36°53’37.6”N 136°46’43.8”E\n\nArchive 094\n#FuturismNoto\n#InspiredByUmbertoBoccioni\n#HakuiCity\n#NotoNoOtoMuseum",
+      "ko": "ポストは、\n飛ばない。\nThe post\ndoes not\nfly.\n\n하쿠이시役所前ポスト【Post Box in Front of 하쿠이시 City Hall】\n하쿠이시, Noto Peninsula, Japan\n\n36°53’37.6”N 136°46’43.8”E\n\nArchive 094\n#FuturismNoto\n#InspiredByUmbertoBoccioni\n#하쿠이시City\n#NotoNoOtoMuseum",
+      "zh": "ポストは、\n飛ばない。\nThe post\ndoes not\nfly.\n\n羽咋市市役所前ポスト【Post Box in Front of 羽咋市 City Hall】\n羽咋市, Noto Peninsula, Japan\n\n36°53’37.6”N 136°46’43.8”E\n\nArchive 094\n#FuturismNoto\n#InspiredByUmbertoBoccioni\n#羽咋市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "羽咋市",
+      "en": "Hakui",
+      "ko": "하쿠이시",
+      "zh": "羽咋市"
+    },
+    "group": "羽咋市",
+    "locationText": "36°53’37.6”N 136°46’43.8”E",
+    "lat": 0,
+    "lng": 0,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788105026081-spot-mtfzkc81-u8u2y5-1-ios-12.jpg?v=1788105030876",
+        "alt": "iOS の画像 (12).jpg",
+        "path": "media/spots/1788105026081-spot-mtfzkc81-u8u2y5-1-ios-12.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mtfzidc8-9o9mvd",
     "createdAt": "2026-08-30T15:48:55.961Z",
     "updatedAt": "2026-08-30T15:48:55.961Z",
@@ -125,8 +159,8 @@
     },
     "group": "志賀町",
     "locationText": "36°41’01.0”N 136°43’52.3”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.683611111111105,
+    "lng": 136.73119444444444,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104926866-spot-mtfzi7oc-31qw1p-22-ios-3.jpg?v=1788104928934",
@@ -159,8 +193,8 @@
     },
     "group": "志賀町",
     "locationText": "36°39’41.7”N 136°46’04.5”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.66158333333333,
+    "lng": 136.76791666666668,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104925115-spot-mtfzi6c1-a4fgmj-21-ios-4.jpg?v=1788104926811",
@@ -465,8 +499,8 @@
     },
     "group": "七尾市",
     "locationText": "37°02’30.4”N 136°58’01.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.041777777777774,
+    "lng": 136.96716666666666,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104904228-spot-mtfzhq7l-l1l224-12-ios-5.jpg?v=1788104905908",
@@ -499,8 +533,8 @@
     },
     "group": "穴水町",
     "locationText": "37°14’12.6”N 136°54’10.6”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.23683333333334,
+    "lng": 136.90294444444444,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104901930-spot-mtfzhofh-rnnq7x-11-ios-6.jpg?v=1788104904176",
@@ -601,8 +635,8 @@
     },
     "group": "七尾市",
     "locationText": "37°04’54.8”N 136°55’16.5”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.08188888888889,
+    "lng": 136.92125,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104895054-spot-mtfzhj4k-k8md3n-8-ios-9.jpg?v=1788104897041",
@@ -635,8 +669,8 @@
     },
     "group": "七尾市",
     "locationText": "37°06’01.5”N 136°50’37.3”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.10041666666667,
+    "lng": 136.84369444444445,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104891535-spot-mtfzhgf2-6va08g-7-img-6988.jpg?v=1788104894996",
@@ -669,8 +703,8 @@
     },
     "group": "輪島市",
     "locationText": "37°23’45.1”N 136°54’20.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.39586111111111,
+    "lng": 136.90577777777779,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104890159-spot-mtfzhfc5-dbo1l9-6-5b01bc2c-2441-4ad2-a150-7a260d26a9d0.jpg?v=1788104891486",
@@ -703,8 +737,8 @@
     },
     "group": "志賀町",
     "locationText": "37°05’41.9”N 136°43’34.0”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.094972222222225,
+    "lng": 136.72611111111112,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104887562-spot-mtfzhdc9-tozcag-5-ios-10.jpg?v=1788104890084",
@@ -737,8 +771,8 @@
     },
     "group": "能登町",
     "locationText": "37°18’44.5”N 137°08’53.6”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.31236111111111,
+    "lng": 137.14822222222222,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104885476-spot-mtfzhbqa-q3snz9-4-img-7005.jpg?v=1788104887497",
@@ -771,8 +805,8 @@
     },
     "group": "氷見市",
     "locationText": "36°51’48.4”N 136°47’50.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.86344444444445,
+    "lng": 136.79744444444444,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104882670-spot-mtfzh9k7-6z6ldc-3-img-7004.jpg?v=1788104885409",
@@ -805,8 +839,8 @@
     },
     "group": "志賀町",
     "locationText": "36°42’20.8”N 136°40’27.1”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.70577777777778,
+    "lng": 136.67419444444442,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104880687-spot-mtfzh81k-00wxms-2-ios-11.jpg?v=1788104882598",
@@ -839,8 +873,8 @@
     },
     "group": "氷見市",
     "locationText": "36°51’22.4”N 136°58’21.3”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.85622222222222,
+    "lng": 136.97258333333335,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788104878966-spot-mtfzh6ox-vre74e-1-8dade66c-9a0b-44e3-83c8-46823bf66b35.jpg?v=1788104880630",
