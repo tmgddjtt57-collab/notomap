@@ -160,6 +160,15 @@ summary,
   position: relative;
 }
 
+/* The topbar has its own z-index, so it is a stacking context and the
+   dropdown inside it cannot outrank the editor drawer (z-index: 900) while
+   the drawer is fixed, at 1080px and below. The drawer then covers the
+   GitHub sync / export / import buttons. Lift the topbar while the menu is
+   open so those stay clickable; it drops back as soon as the menu closes. */
+.topbar:has(.details-menu[open]) {
+  z-index: 1100;
+}
+
 .details-trigger {
   list-style: none;
   min-height: 40px;
@@ -872,8 +881,8 @@ svg {
   }
 
   .details-panel {
-    right: auto;
-    left: 0;
+    right: 0;
+    left: auto;
   }
 
   .form-grid,
