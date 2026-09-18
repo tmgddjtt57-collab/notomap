@@ -29,19 +29,25 @@ const NEAR_KM = 30; /* 座標から自治体を推定するときの上限距離
 
 /* ======================== 2. 自治体データ ======================== */
 
-/* 能登地方10市町 + 氷見市。lat/lng は役所の位置で、本文に地名が無いときの
-   推定に使う。aliases は本文・ハッシュタグの表記ゆれ。 */
+/* 能登地方12市町（河北郡の津幡町・内灘町を含む）+ 氷見市。
+   lat/lng は役所の位置で、本文に地名が無いときの推定に使う。
+   aliases は本文・ハッシュタグの表記ゆれと、判別できる地名。 */
 const MUNICIPAL = [
   { ja: "七尾市", en: "Nanao", ko: "나나오시", zh: "七尾市", lat: 37.0433, lng: 136.9676,
     aliases: ["七尾", "nanao", "和倉", "wakura", "中島町"] },
   { ja: "輪島市", en: "Wajima", ko: "와지마시", zh: "轮岛市", lat: 37.3906, lng: 136.8991,
-    aliases: ["輪島", "wajima", "outerwajima", "門前", "monzen", "白米千枚田", "曽々木"] },
+    aliases: ["輪島", "wajima", "outerwajima", "門前", "monzen", "白米千枚田", "曽々木",
+              "のと里山空港", "noto satoyama airport", "notosatoyamaairport"] },
   { ja: "珠洲市", en: "Suzu", ko: "스즈시", zh: "珠洲市", lat: 37.4360, lng: 137.2611,
     aliases: ["珠洲", "suzu", "禄剛崎", "見附島"] },
   { ja: "羽咋市", en: "Hakui", ko: "하쿠이시", zh: "羽咋市", lat: 36.8931, lng: 136.7792,
     aliases: ["羽咋", "hakui", "千里浜", "chirihama"] },
   { ja: "かほく市", en: "Kahoku", ko: "가호쿠시", zh: "河北市", lat: 36.7166, lng: 136.7085,
     aliases: ["かほく", "kahoku", "高松町", "宇ノ気"] },
+  { ja: "津幡町", en: "Tsubata", ko: "쓰바타마치", zh: "津幡町", lat: 36.6683, lng: 136.7292,
+    aliases: ["津幡", "tsubata", "倶利伽羅", "河北潟"] },
+  { ja: "内灘町", en: "Uchinada", ko: "우치나다마치", zh: "内滩町", lat: 36.6486, lng: 136.6503,
+    aliases: ["内灘", "uchinada"] },
   { ja: "志賀町", en: "Shika", ko: "시카마치", zh: "志贺町", lat: 37.0061, lng: 136.7791,
     aliases: ["志賀", "shika", "富来", "巌門", "増穂浦"] },
   { ja: "宝達志水町", en: "Hodatsushimizu", ko: "호다쓰시미즈마치", zh: "宝达志水町", lat: 36.8089, lng: 136.7981,
@@ -1279,16 +1285,51 @@ function isPlaceLine(line) {
 
 /* ---- 自治体の判定 ---- */
 
-/* 本文の地名を最長一致で探す。「中能登町」が「能登町」に負けないようにする。 */
-function inferByText(text) {
+/* ローマ字の地名は語頭でしか認めない。単純な部分一致だと
+   Ishikawa の shika が志賀町に、Hodatsushimizu の himi が氷見市に
+   誤って当たる。日本語には語の切れ目が無いので部分一致のままでよい。 */
+function hasTerm(text, key) {
+  if (!/^[\x20-\x7e]+$/.test(key)) return text.includes(key);
+  let from = 0;
+  for (;;) {
+    const at = text.indexOf(key, from);
+    if (at < 0) return false;
+    const before = at === 0 ? "" : text[at - 1];
+    if (!/[a-z0-9]/.test(before)) return true;
+    from = at + 1;
+  }
+}
+
+/* 本文に出てくる自治体を全部拾う。「中能登町」のように、
+   他の地名を内側に含むものは長いほうだけ残す。 */
+function textMatches(text) {
   const s = String(text || "").toLowerCase();
-  let best = null;
-  let bestLen = 0;
+  const hits = [];
   MUNICIPAL.forEach((m) => {
+    let key = "";
     [m.ja, m.en, m.ko, m.zh, ...m.aliases].forEach((raw) => {
-      const key = String(raw).toLowerCase();
-      if (key.length > bestLen && s.includes(key)) { best = m; bestLen = key.length; }
+      const k = String(raw).toLowerCase();
+      if (k.length > key.length && hasTerm(s, k)) key = k;
     });
+    if (key) hits.push({ m, key });
+  });
+  return hits.filter((h) => !hits.some((o) => o !== h && o.key.length > h.key.length && o.key.includes(h.key)));
+}
+
+function inferByText(text) {
+  const hits = textMatches(text);
+  return hits.length === 1 ? hits[0].m : null;
+}
+
+/* 候補のうち、写真の位置にいちばん近いものを返す */
+function nearestOf(list, lat, lng) {
+  if (!list.length) return null;
+  if (!valid(lat, lng)) return list[0];
+  let best = list[0];
+  let bestKm = Infinity;
+  list.forEach((m) => {
+    const km = distanceKm(lat, lng, m.lat, m.lng);
+    if (km < bestKm) { bestKm = km; best = m; }
   });
   return best;
 }
@@ -1314,8 +1355,16 @@ function distanceKm(aLat, aLng, bLat, bLng) {
   return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
 }
 
+/* 判定の順番
+   1. 本文に地名が1つ      → それを採る
+   2. 本文に地名が複数      → 複数の市町にまたがる作品。そのうち写真の位置に
+                             最も近いものを採る（役所からの距離で判断しない）
+   3. 本文に地名が無い      → 最寄りの自治体。30kmより遠ければ「能登半島」 */
 function inferMunicipality(text, lat, lng) {
-  const m = inferByText(text) || inferByCoords(lat, lng);
+  const hits = textMatches(text).map((h) => h.m);
+  const m = hits.length === 1 ? hits[0]
+    : hits.length > 1 ? nearestOf(hits, lat, lng)
+    : inferByCoords(lat, lng);
   return m ? { ja: m.ja, en: m.en, ko: m.ko, zh: m.zh } : { ...REGION };
 }
 
