@@ -50,12 +50,12 @@
       "zh": "線に沈む杜\nA grove\nsinking into lines.\n\n不動堂【Fudo Hall】\n中能登町, Noto Peninsula, Japan\n\n36°57'07.6\"N 136°55'13.8\"E\n\nArchive 068\n#LineworkNoto\n#InspiredByAlbrechtDurer\n#EtchingNoto\n#Naka能登町\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "能登町",
-      "en": "Noto Town",
-      "ko": "노토마치",
-      "zh": "能登町"
+      "ja": "中能登町",
+      "en": "Nakanoto",
+      "ko": "나카노토마치",
+      "zh": "中能登町"
     },
-    "group": "能登町",
+    "group": "中能登町",
     "locationText": "36°57'07.6\"N 136°55'13.8\"E",
     "lat": 36.952111111111115,
     "lng": 136.9205,
@@ -84,12 +84,12 @@
       "zh": "岩を切る線\nLines\ncutting through rock.\n\n不動滝 【Fudo Falls】\n中能登町, Noto Peninsula, Japan\n\n36°57'27.5\"N 136°56'05.7\"E\n\nArchive 069\n#LineworkNoto\n#InspiredByUtagawaKuniyoshi\n#WaterfallNoto\n#Naka能登町\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "能登町",
-      "en": "Noto Town",
-      "ko": "노토마치",
-      "zh": "能登町"
+      "ja": "中能登町",
+      "en": "Nakanoto",
+      "ko": "나카노토마치",
+      "zh": "中能登町"
     },
-    "group": "能登町",
+    "group": "中能登町",
     "locationText": "36°57'27.5\"N 136°56'05.7\"E",
     "lat": 36.957638888888894,
     "lng": 136.93491666666668,
@@ -152,12 +152,12 @@
       "zh": "いにしえに咲く花\nA flower\nblooming in antiquity.\n\n能登の位相【Phases of Noto】\nTsubata Town, I志贺町wa, Japan\n\n36°41’01.0”N 136°43’52.3”E\n\nArchive 071\n#NihongaNoto\n#InspiredByHirayamaIkuo\n#TsubataTown\n#PhasesOfNoto\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
     },
-    "group": "志賀町",
+    "group": "津幡町",
     "locationText": "36°41’01.0”N 136°43’52.3”E",
     "lat": 36.683611111111105,
     "lng": 136.73119444444444,
@@ -186,12 +186,12 @@
       "zh": "釉薬に、\n花びらが溶けた。\nPetals\ndissolved into the glaze.\n\n白磁【White Porcelain】\nTsubata Town, I志贺町wa, Japan\n\n36°39’41.7”N 136°46’04.5”E\n\nArchive 072\n#CeramicNoto\n#InspiredByAokiMokubei\n#WhitePorcelain\n#TsubataTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
     },
-    "group": "志賀町",
+    "group": "津幡町",
     "locationText": "36°39’41.7”N 136°46’04.5”E",
     "lat": 36.66158333333333,
     "lng": 136.76791666666668,
@@ -254,12 +254,12 @@
       "zh": "公園で、\nみんなを、\n待っている。\nWaiting\nfor them all\nin the park.\n\nカブトムシ【Rhinoceros Beetle】\nHodatsus冰见市zu, Noto Peninsula, Japan\n\n36°51'48.9\"N 136°47'47.9\"E\n\nArchive 074\n#ModernismNoto\n#InspiredByWhitney\n#PlaygroundNoto\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
+      "ja": "宝達志水町",
+      "en": "Hodatsushimizu",
+      "ko": "호다쓰시미즈마치",
+      "zh": "宝达志水町"
     },
-    "group": "氷見市",
+    "group": "宝達志水町",
     "locationText": "36°51'48.9\"N 136°47'47.9\"E",
     "lat": 36.86358333333334,
     "lng": 136.79663888888888,
@@ -288,12 +288,12 @@
       "zh": "能登へ、\n来まっし。\nCome on over\nto Noto.\n\nのと里山空港【Noto Satoyama Airport】\nCentral Noto Peninsula, Japan\n\n37°17'44.9\"N 136°57'26.1\"E\n\nArchive 075\n#CubismNoto\n#InspiredByPicasso\n#NotoSatoyamaAirport\n#CentralNotoPeninsula\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "能登半島",
-      "en": "Noto Peninsula",
-      "ko": "노토반도",
-      "zh": "能登半岛"
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
     },
-    "group": "能登半島",
+    "group": "輪島市",
     "locationText": "37°17'44.9\"N 136°57'26.1\"E",
     "lat": 37.29580555555555,
     "lng": 136.95725,
@@ -322,12 +322,12 @@
       "zh": "枝は、\n春天を待つ。\nThe branches\nwait for spring.\n\n芽吹き【Budding】\nHodatsus冰见市zu, Noto Peninsula, Japan\n\n36°48'09.2\"N 136°46'24.7\"E\n\nArchive 076\n\n#NeoImpressionismNoto\n#InspiredBySmet\n#InspiredBySignac\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
+      "ja": "宝達志水町",
+      "en": "Hodatsushimizu",
+      "ko": "호다쓰시미즈마치",
+      "zh": "宝达志水町"
     },
-    "group": "氷見市",
+    "group": "宝達志水町",
     "locationText": "36°48'09.2\"N 136°46'24.7\"E",
     "lat": 36.80255555555555,
     "lng": 136.7735277777778,
@@ -356,12 +356,12 @@
       "zh": "道は、\n続く。\nThe road\ncontinues.\n\n鉛色の曇天【Leaden Clouded Sky】\nŌsaki Beach Entrance, Kahoku, I志贺町wa, Japan\n\n36°42'13.1\"N 136°40'27.2\"E\n\nArchive 077\n#ExpressionismNoto\n#InspiredByKazumasaNakagawa\n#SeaOfNoto\n#KahokuCity\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "かほく市",
+      "en": "Kahoku",
+      "ko": "가호쿠시",
+      "zh": "河北市"
     },
-    "group": "志賀町",
+    "group": "かほく市",
     "locationText": "36°42'13.1\"N 136°40'27.2\"E",
     "lat": 36.70363888888889,
     "lng": 136.67422222222223,
@@ -390,12 +390,12 @@
       "zh": "たたみと\nすなかべ。\nTatami\nand sand wall.\n\n和の抽象【Japanese Abstraction】\nTsubata, I志贺町wa, Japan\n\n36°39'46.0\"N 136°46'06.6\"E\n\nArchive 078\n#AbstractNoto\n#InspiredByMarkRothko\n#TsubataTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
     },
-    "group": "志賀町",
+    "group": "津幡町",
     "locationText": "36°39'46.0\"N 136°46'06.6\"E",
     "lat": 36.66277777777778,
     "lng": 136.76850000000002,
@@ -798,12 +798,12 @@
       "zh": "宝達志水町役場の木【Tree at Hodatsus冰见市zu Town Hall】\nLocation: Hodatsus冰见市zu, I志贺町wa, Japan\n\n36°51’48.4”N 136°47’50.8”E\n\nArchive 091\n#StaticDynamism \n#Hodatsus冰见市zu \n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
+      "ja": "宝達志水町",
+      "en": "Hodatsushimizu",
+      "ko": "호다쓰시미즈마치",
+      "zh": "宝达志水町"
     },
-    "group": "氷見市",
+    "group": "宝達志水町",
     "locationText": "36°51’48.4”N 136°47’50.8”E",
     "lat": 36.86344444444445,
     "lng": 136.79744444444444,
@@ -832,12 +832,12 @@
       "zh": "風は、\n白く、\n吹いていた。\nThe wind\nblew\nwhite.\n\n大崎海水浴場【Ōsaki Beach】\nKahoku, I志贺町wa, Japan\n\n36°42’20.8”N 136°40’27.1”E\n\nArchive 092\n#ModernismNoto\n#InspiredByLeonardFoujita\n#KahokuCity\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "かほく市",
+      "en": "Kahoku",
+      "ko": "가호쿠시",
+      "zh": "河北市"
     },
-    "group": "志賀町",
+    "group": "かほく市",
     "locationText": "36°42’20.8”N 136°40’27.1”E",
     "lat": 36.70577777777778,
     "lng": 136.67419444444442,
@@ -1002,12 +1002,12 @@
       "zh": "轍があった。\nThere were ruts.\n\n轍【Ruts】\n千里浜なぎさドライブウェイ\n【Chirihama Nagisa Driveway】\nHodatsus冰见市zu, Noto Peninsula, Japan\n\n36°51’53.5”N 136°45’28.8”E\n\nArchive040\n#PostmodernRinpa\n#InspiredByTawarayaSotatsu\n#InkTraceNoto\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
+      "ja": "羽咋市",
+      "en": "Hakui",
+      "ko": "하쿠이시",
+      "zh": "羽咋市"
     },
-    "group": "氷見市",
+    "group": "羽咋市",
     "locationText": "36°51’53.5”N 136°45’28.8”E",
     "lat": 36.86486111111111,
     "lng": 136.758,
@@ -1444,12 +1444,12 @@
       "zh": "青空も、\n行き先を知らなかった。\n Even the blue sky\ndid not know where the road would lead.\n\n蓮湖渚公園の路【Road at Renko Nagisa Park】\nUchinada, I志贺町wa, Japan\n\n36°39’27.9”N 136°39’13.1”E\n\nArchive 049\n#PostwarLandscapeNoto\n#InspiredByYasuoKazuki\n#RoadsOfNoto\n#UchinadaTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
     },
-    "group": "志賀町",
+    "group": "内灘町",
     "locationText": "36°39’27.9”N 136°39’13.1”E",
     "lat": 36.65775,
     "lng": 136.6536388888889,
@@ -1512,12 +1512,12 @@
       "zh": "線による芽吹き。\nEmerging Through Lines.\n\n能登を線で編む【Weaving Noto with Lines】\nHodatsus冰见市zu Town, Noto Peninsula, Japan\n\n36°48’06.9”N 136°46’13.3”E\n\nArchive 061\n#DrawingNotoWithLines\n#InspiredByTsuguharuFoujita\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
+      "ja": "宝達志水町",
+      "en": "Hodatsushimizu",
+      "ko": "호다쓰시미즈마치",
+      "zh": "宝达志水町"
     },
-    "group": "氷見市",
+    "group": "宝達志水町",
     "locationText": "36°48’06.9”N 136°46’13.3”E",
     "lat": 36.80191666666666,
     "lng": 136.77036111111113,
@@ -1614,12 +1614,12 @@
       "zh": "白濁\nMilky White\n\n弁天島【Bentenjima】\nNoto, I志贺町wa, Japan\n\n37°22'14.5\"N 137°14'25.7\"E\n\nArchive 058\n#MinimalismNoto\n#InspiredByAgnesMartin\n#SeaOfNoto\n#NotoTown\n#NotoNoOtoMuseum （"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토초",
+      "zh": "能登町"
     },
-    "group": "志賀町",
+    "group": "能登町",
     "locationText": "37°22'14.5\"N 137°14'25.7\"E",
     "lat": 37.370694444444446,
     "lng": 137.2404722222222,
@@ -2056,12 +2056,12 @@
       "zh": "春天が来た。\nSpring arrived.\n\n宝達志水町の銀杏並木【The Ginkgo Tree Avenue in Hodatsus冰见市zu】\nHodatsus冰见市zu, Noto Peninsula, Japan\n36°47'58.9\"N 136°46'14.9\"E\n\nArchive 031\n#ShinHangaNoto\n#InspiredByNeoImpressionism\n#InspiredByJapaneseWatercolorPainting\n#Hodatsus冰见市zuTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "氷見市",
-      "en": "Himi City",
-      "ko": "히미시",
-      "zh": "冰见市"
+      "ja": "宝達志水町",
+      "en": "Hodatsushimizu",
+      "ko": "호다쓰시미즈마치",
+      "zh": "宝达志水町"
     },
-    "group": "氷見市",
+    "group": "宝達志水町",
     "locationText": "36°47'58.9\"N 136°46'14.9\"E",
     "lat": 36.79969444444444,
     "lng": 136.77080555555557,
@@ -2090,12 +2090,12 @@
       "zh": "空が、\nイカの海だった。\nThe sky\nwas an ocean\nfor Ika King.\n\nイカキング【Ika King】\nNoto, I志贺町wa, Japan\n\n37°18’44.2”N 137°13’47.8”E\n\nArchive 030\n#ModernismNoto\n#InspiredByTaroOkamoto\n#LiminalJapan\n#NotoTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토초",
+      "zh": "能登町"
     },
-    "group": "志賀町",
+    "group": "能登町",
     "locationText": "37°18’44.2”N 137°13’47.8”E",
     "lat": 37.31227777777777,
     "lng": 137.22994444444444,
@@ -2158,12 +2158,12 @@
       "zh": "モザイクの祈り。\nMosaic prayers.\n\n妙成寺浄行堂【Jōgyō-dō Hall at Myōjōji Temple】\nしらやま橋【Shirayama Bridge】\n羽咋市, Noto Peninsula, Japan\n穴水町, Noto Peninsula, Japan\n\n\n37°14'01.8\"N 136°54'08.6\"E\n\nArchive 036\n#MosaicNoto\n#FaultLineNoto\n#InspiredByRavennaMosaics\n#羽咋市CityAnd穴水町Town\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "羽咋市",
-      "en": "Hakui",
-      "ko": "하쿠이시",
-      "zh": "羽咋市"
+      "ja": "穴水町",
+      "en": "Anamizu",
+      "ko": "아나미즈마치",
+      "zh": "穴水町"
     },
-    "group": "羽咋市",
+    "group": "穴水町",
     "locationText": "37°14'01.8\"N 136°54'08.6\"E",
     "lat": 37.23383333333334,
     "lng": 136.9023888888889,
@@ -2226,12 +2226,12 @@
       "zh": "空より遠くに、\n雪があった。\nThere was snow\nfarther away than the sky.\n\n内灘大橋【Uchinada Bridge】\nUchinada, I志贺町wa, Japan\n\n36°39’45.5”N 136°39’02.7”E\n\nArchive 035\n#PostImpressionismNoto\n#InspiredBySotaroYasui\n#UchinadaTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
     },
-    "group": "志賀町",
+    "group": "内灘町",
     "locationText": "36°39’45.5”N 136°39’02.7”E",
     "lat": 36.662638888888885,
     "lng": 136.65075000000002,
@@ -3178,12 +3178,12 @@
       "zh": "風が吹くまで、\n時間は動かない。\nUntil the wind begins,\ntime will not move.\n\nサンセットウィング内灘\n【Sunset Wing Uchinada】\nUchinada, I志贺町wa, Japan\n\n36°39’19.8”N 136°39’11.1”E\n\nArchive 015\n#MetaphysicalNoto\n#InspiredByMetaphysicalArt\n#UchinadaTown\n#NotoNoOtoMuseum"
     },
     "municipality": {
-      "ja": "志賀町",
-      "en": "Shika",
-      "ko": "시카마치",
-      "zh": "志贺町"
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
     },
-    "group": "志賀町",
+    "group": "内灘町",
     "locationText": "36°39’19.8”N 136°39’11.1”E",
     "lat": 36.655499999999996,
     "lng": 136.65308333333334,
