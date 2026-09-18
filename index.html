@@ -1,225 +1,270 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-text="normal">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>のとのおと美術館デジタルマップ</title>
+    <meta name="description" content="能登半島と氷見市の海、里山、集落、季節の色を写真と位置情報で記録するデジタル美術館の地図です。" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#124a6b" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1821" media="(prefers-color-scheme: dark)" />
+
+    <script>
+      /* 描画前に配色と文字サイズを反映して、ちらつきを防ぐ */
+      (function () {
+        try {
+          var t = localStorage.getItem("noto-no-oto-theme");
+          if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+          var s = localStorage.getItem("noto-no-oto-textsize");
+          document.documentElement.setAttribute("data-text", s === "large" ? "large" : "normal");
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      crossorigin=""
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
-    />
-    <link rel="stylesheet" href="styles.css?v=20260829b" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="styles.css?v=20260918a" />
   </head>
-  <body class="viewer">
-    <div class="app-shell">
+
+  <body class="is-viewer">
+    <a class="skip-link" id="skipLink" href="#map" data-i18n="skipToMap">本文へ移動</a>
+
+    <div class="app">
       <header class="topbar">
-        <div class="brand-block">
+        <div class="brand">
           <p class="eyebrow" data-i18n="eyebrow">Noto Peninsula Digital Museum</p>
-          <h1 data-i18n="siteTitle">のとのおと美術館デジタルマップ</h1>
+          <h1 class="brand-title" data-i18n="siteTitle">のとのおと美術館デジタルマップ</h1>
         </div>
 
-        <div class="toolbar" aria-label="Primary controls">
+        <div class="toolbar">
           <a
-            class="secondary-button museum-link"
+            class="button button-ghost museum-link"
             href="https://notonooto-qr.vercel.app/go/sns"
             target="_blank"
             rel="noopener noreferrer"
-            style="text-decoration: none; white-space: nowrap;"
-            aria-label="のとのおと美術館を開く"
+            data-i18n-label="museumAria"
           >
-            <i data-lucide="external-link"></i>
-            <span>のとのおと美術館</span>
+            <i data-lucide="external-link" aria-hidden="true"></i>
+            <span data-i18n="museum">のとのおと美術館</span>
           </a>
 
-          <label class="field field-compact language-control">
-            <span data-i18n="language">言語</span>
-            <select id="languageSelect">
-              <option value="ja" selected>日本語</option>
-              <option value="en">English</option>
-              <option value="ko">한국어</option>
-              <option value="zh">简体中文</option>
-            </select>
-          </label>
+          <div class="field field-inline">
+            <label class="visually-hidden" for="languageSelect" data-i18n="language">言語</label>
+            <span class="select-wrap">
+              <i data-lucide="languages" aria-hidden="true"></i>
+              <select id="languageSelect">
+                <option value="ja">日本語</option>
+                <option value="en">English</option>
+                <option value="ko">한국어</option>
+                <option value="zh">简体中文</option>
+              </select>
+            </span>
+          </div>
 
-          <details class="details-menu" id="detailsMenu">
-            <summary class="details-trigger">
-              <i data-lucide="sliders-horizontal"></i>
-              <span data-i18n="details">詳細</span>
+          <details class="menu" id="settingsMenu">
+            <summary class="button button-ghost menu-trigger" data-i18n-label="settingsOpen">
+              <i data-lucide="settings-2" aria-hidden="true"></i>
+              <span data-i18n="settings">表示と設定</span>
             </summary>
-            <div class="details-panel">
-              <div class="mode-controls">
-                <span class="mode-label" data-i18n="role">権限</span>
-                <div class="mode-buttons">
-                  <button class="secondary-button mode-button" id="viewerModeButton" type="button">
-                    <i data-lucide="eye"></i>
-                    <span data-i18n="viewerMode">閲覧者</span>
+
+            <div class="menu-panel" id="settingsPanel">
+              <section class="menu-section">
+                <h2 class="menu-heading" data-i18n="theme">配色</h2>
+                <div class="segmented" id="themeGroup" role="group" data-i18n-label="theme">
+                  <button type="button" class="segment" data-theme-value="system" aria-pressed="true">
+                    <i data-lucide="monitor" aria-hidden="true"></i><span data-i18n="themeSystem">端末に合わせる</span>
                   </button>
-                  <button class="primary-button mode-button" id="editorModeButton" type="button">
-                    <i data-lucide="lock-keyhole"></i>
-                    <span data-i18n="openEditor">編集者</span>
+                  <button type="button" class="segment" data-theme-value="light" aria-pressed="false">
+                    <i data-lucide="sun" aria-hidden="true"></i><span data-i18n="themeLight">明るい</span>
+                  </button>
+                  <button type="button" class="segment" data-theme-value="dark" aria-pressed="false">
+                    <i data-lucide="moon" aria-hidden="true"></i><span data-i18n="themeDark">暗い</span>
                   </button>
                 </div>
-              </div>
+              </section>
 
-              <div class="details-actions editor-only">
-                <button class="icon-button" id="githubSyncButton" type="button" title="GitHub sync" aria-label="GitHub sync">
-                  <i data-lucide="cloud-upload"></i>
-                </button>
-                <button class="icon-button" id="exportButton" type="button" title="Export JSON" aria-label="Export JSON">
-                  <i data-lucide="download"></i>
-                </button>
-                <label class="icon-button file-button" title="Import JSON" aria-label="Import JSON">
-                  <i data-lucide="upload"></i>
-                  <input id="importInput" type="file" accept="application/json" />
-                </label>
-              </div>
+              <section class="menu-section">
+                <h2 class="menu-heading" data-i18n="textSize">文字の大きさ</h2>
+                <div class="segmented" id="textSizeGroup" role="group" data-i18n-label="textSize">
+                  <button type="button" class="segment" data-size-value="normal" aria-pressed="true">
+                    <span class="size-sample" aria-hidden="true">A</span><span data-i18n="textNormal">標準</span>
+                  </button>
+                  <button type="button" class="segment" data-size-value="large" aria-pressed="false">
+                    <span class="size-sample size-sample-lg" aria-hidden="true">A</span><span data-i18n="textLarge">大きい</span>
+                  </button>
+                </div>
+              </section>
+
+              <section class="menu-section">
+                <h2 class="menu-heading" data-i18n="role">権限</h2>
+                <div class="menu-actions">
+                  <button type="button" class="button button-ghost" id="viewerModeButton">
+                    <i data-lucide="eye" aria-hidden="true"></i><span data-i18n="viewerMode">閲覧者</span>
+                  </button>
+                  <button type="button" class="button button-primary" id="editorModeButton">
+                    <i data-lucide="lock-keyhole" aria-hidden="true"></i><span data-i18n="editorMode">編集者</span>
+                  </button>
+                </div>
+              </section>
+
+              <section class="menu-section editor-only">
+                <h2 class="menu-heading" data-i18n="editorTools">編集者の道具</h2>
+                <div class="menu-actions menu-actions-stack">
+                  <button type="button" class="button button-ghost" id="githubSyncButton">
+                    <i data-lucide="cloud-upload" aria-hidden="true"></i><span data-i18n="syncButton">GitHub に接続</span>
+                  </button>
+                  <button type="button" class="button button-ghost" id="exportButton">
+                    <i data-lucide="download" aria-hidden="true"></i><span data-i18n="exportButton">JSON を書き出す</span>
+                  </button>
+                  <label class="button button-ghost file-button">
+                    <i data-lucide="upload" aria-hidden="true"></i><span data-i18n="importButton">JSON を読み込む</span>
+                    <input id="importInput" type="file" accept="application/json" class="visually-hidden" />
+                  </label>
+                </div>
+              </section>
             </div>
           </details>
         </div>
       </header>
 
       <main class="workspace">
-        <aside class="panel">
-          <section class="region-summary" aria-labelledby="regionTitle">
-            <p class="eyebrow" data-i18n="regionEyebrow">Noto Peninsula</p>
-            <h2 id="regionTitle" data-i18n="regionTitle">能登の風景をめぐるデジタル美術館</h2>
-            <p data-i18n="regionCopy">
-              能登半島の海、里山、集落、季節の色を写真と位置情報で記録し、世界の来訪者に紹介する地図です。
+        <aside class="side" id="sidePanel" aria-labelledby="sideTitle">
+          <section class="intro">
+            <p class="eyebrow" data-i18n="regionEyebrow">能登半島・氷見市</p>
+            <h2 id="sideTitle" data-i18n="regionTitle">能登・氷見の風景をめぐるデジタル美術館</h2>
+            <p class="intro-copy" data-i18n="regionCopy">
+              能登半島と氷見市の海、里山、集落、季節の色を写真と位置情報で記録し、世界の来訪者に紹介する地図です。
             </p>
           </section>
 
-          <section class="filter-section" aria-labelledby="groupsTitle">
-            <div class="section-head">
-              <h2 id="groupsTitle" data-i18n="groups">グループ</h2>
-              <button class="text-button" id="clearFilterButton" type="button" data-i18n="all">すべて</button>
-            </div>
-            <div class="group-list" id="groupList"></div>
+          <section class="block" aria-labelledby="groupsTitle">
+            <h2 class="block-title" id="groupsTitle" data-i18n="groups">市区町村</h2>
+            <p class="hint" data-i18n="groupsHint">市区町村を選ぶと、地図と一覧が絞り込まれます。</p>
+            <div class="chips" id="groupList"></div>
           </section>
 
-          <section class="spot-section" aria-labelledby="spotsTitle">
-            <div class="section-head">
-              <h2 id="spotsTitle" data-i18n="photos">写真</h2>
-              <button class="primary-button editor-only" id="newSpotButton" type="button">
-                <i data-lucide="image-plus"></i>
-                <span data-i18n="newPost">投稿</span>
-              </button>
+          <section class="block block-grow" aria-labelledby="spotsTitle">
+            <div class="block-head">
+              <h2 class="block-title" id="spotsTitle" data-i18n="photos">写真</h2>
+              <span class="count" id="spotCount"></span>
             </div>
-            <div class="spot-list" id="spotList"></div>
+            <button type="button" class="button button-primary button-wide editor-only" id="newSpotButton">
+              <i data-lucide="image-plus" aria-hidden="true"></i><span data-i18n="newPost">新しく投稿</span>
+            </button>
+            <div class="cards" id="spotList"></div>
           </section>
         </aside>
 
-        <section class="map-wrap" aria-label="Map">
+        <section class="mapzone" aria-label="Map">
           <div id="map"></div>
-          <div class="map-status" id="mapStatus" aria-live="polite"></div>
+          <p class="map-status" id="mapStatus" role="status" aria-live="polite"></p>
         </section>
 
-        <aside class="drawer editor-only" id="editorDrawer" aria-labelledby="formTitle">
-          <div class="drawer-head">
+        <aside class="detail" id="detailPanel" aria-live="polite" hidden></aside>
+
+        <aside class="editor editor-only" id="editorPanel" aria-labelledby="editorTitle">
+          <div class="editor-head">
             <div>
-              <p class="eyebrow" data-i18n="editorPanel">Editor panel</p>
-              <h2 id="formTitle" data-i18n="formTitle">写真を地図に表示</h2>
+              <p class="eyebrow" data-i18n="editorPanel">編集パネル</p>
+              <h2 id="editorTitle" data-i18n="formTitle">写真を地図に表示</h2>
             </div>
-            <button class="icon-button" id="closeDrawerButton" type="button" title="Close" aria-label="Close">
-              <i data-lucide="x"></i>
+            <button type="button" class="icon-button" id="closeEditorButton" data-i18n-label="close">
+              <i data-lucide="x" aria-hidden="true"></i>
             </button>
           </div>
 
-          <form id="spotForm">
-            <input id="spotId" type="hidden" />
+          <p class="notice" id="editingNotice" hidden></p>
 
-            <div class="photo-upload-block">
-              <label class="field photo-source">
-                <span data-i18n="uploadPhoto">写真</span>
-                <span class="secondary-button photo-picker-button" role="button">
-                  <i data-lucide="image-plus"></i>
-                  <span data-i18n="choosePhoto">写真を複数選択</span>
-                </span>
-                <input id="photoFile" class="photo-input" type="file" accept="image/*,.heic,.heif" multiple />
-              </label>
-
-              <label class="paste-import-field">
-                <span data-i18n="pasteImport">ペーストから自動入力</span>
-                <textarea
-                  id="pasteInput"
-                  rows="4"
-                  data-i18n-placeholder="pastePlaceholder"
-                  placeholder="タイトル・説明・位置情報をまとめて貼り付け"
-                ></textarea>
-              </label>
-              <button class="secondary-button" id="applyPasteButton" type="button">
-                <i data-lucide="clipboard-paste"></i>
-                <span data-i18n="applyPaste">反映</span>
+          <form id="spotForm" novalidate>
+            <div class="form-body">
+            <div class="block-inset">
+              <p class="field-label" data-i18n="uploadPhoto">写真</p>
+              <button type="button" class="button button-ghost button-wide" id="photoPicker">
+                <i data-lucide="image-plus" aria-hidden="true"></i><span data-i18n="choosePhoto">写真を選ぶ（複数可）</span>
               </button>
-
-              <div class="photo-preview" id="photoPreview"></div>
+              <input id="photoFile" type="file" accept="image/*,.heic,.heif" multiple class="visually-hidden" />
+              <div id="currentPhotos" hidden></div>
+              <div id="photoPreview"></div>
             </div>
 
-            <label class="field common-spot-field">
-              <span data-i18n="title">タイトル</span>
+            <div class="block-inset">
+              <label class="field">
+                <span class="field-label" data-i18n="pasteImport">貼り付けて自動入力</span>
+                <textarea id="pasteInput" rows="3" data-i18n-placeholder="pastePlaceholder"
+                  placeholder="タイトル・説明・位置情報をまとめて貼り付け"></textarea>
+              </label>
+              <button type="button" class="button button-ghost" id="applyPasteButton">
+                <i data-lucide="clipboard-paste" aria-hidden="true"></i><span data-i18n="applyPaste">反映する</span>
+              </button>
+            </div>
+
+            <label class="field single-only">
+              <span class="field-label" data-i18n="title">タイトル</span>
               <input id="titleJa" type="text" maxlength="100" autocomplete="off" />
             </label>
 
-            <label class="field common-spot-field">
-              <span data-i18n="description">説明</span>
-              <textarea id="descriptionJa" rows="3" maxlength="700"></textarea>
+            <label class="field single-only">
+              <span class="field-label" data-i18n="description">説明</span>
+              <textarea id="descriptionJa" rows="4" maxlength="700"></textarea>
             </label>
 
-            <label class="field common-spot-field">
-              <span data-i18n="locationInfo">位置情報</span>
-              <input id="locationInfo" type="text" inputmode="text" placeholder="37°22'14.5&quot;N 137°14'25.7&quot;E" />
-            </label>
+            <div class="field single-only">
+              <label class="field-label" for="locationInfo" data-i18n="locationInfo">位置情報</label>
+              <input id="locationInfo" type="text" inputmode="text" aria-describedby="locationHint"
+                placeholder="37°22'14.5&quot;N 137°14'25.7&quot;E" />
+              <p class="hint" id="locationHint" data-i18n="locationHint">
+                「37°22'14.5"N 137°14'25.7"E」や「37.370694, 137.240472」の形式で入力できます。
+              </p>
+            </div>
 
-            <div class="coordinate-actions common-spot-actions">
-              <button class="secondary-button" id="currentLocationButton" type="button">
-                <i data-lucide="locate-fixed"></i>
-                <span data-i18n="currentLocation">現在地</span>
+            <div class="row single-only">
+              <button type="button" class="button button-ghost" id="currentLocationButton">
+                <i data-lucide="locate-fixed" aria-hidden="true"></i><span data-i18n="currentLocation">現在地を使う</span>
               </button>
-              <button class="secondary-button" id="pickOnMapButton" type="button">
-                <i data-lucide="map-pin"></i>
-                <span data-i18n="pickOnMap">地図で指定</span>
+              <button type="button" class="button button-ghost" id="pickOnMapButton" aria-pressed="false">
+                <i data-lucide="map-pin" aria-hidden="true"></i><span data-i18n="pickOnMap">地図で指定</span>
               </button>
             </div>
 
-            <div class="advanced-fields">
-              <label class="field">
-                <span data-i18n="group">グループ</span>
-                <input id="spotGroup" type="text" placeholder="輪島市 / Wajima" />
-              </label>
-              <div class="form-grid">
+            <details class="advanced single-only">
+              <summary data-i18n="coordDetail">緯度・経度を直接入力</summary>
+              <div class="advanced-body">
                 <label class="field">
-                  <span data-i18n="latitude">緯度</span>
-                  <input id="latitude" type="number" step="0.000001" />
+                  <span class="field-label" data-i18n="group">市区町村</span>
+                  <input id="spotGroup" type="text" data-i18n-placeholder="groupAuto" placeholder="自動で判定" />
                 </label>
-                <label class="field">
-                  <span data-i18n="longitude">経度</span>
-                  <input id="longitude" type="number" step="0.000001" />
-                </label>
+                <div class="grid-2">
+                  <label class="field">
+                    <span class="field-label" data-i18n="latitude">緯度</span>
+                    <input id="latitude" type="number" step="0.000001" inputmode="decimal" />
+                  </label>
+                  <label class="field">
+                    <span class="field-label" data-i18n="longitude">経度</span>
+                    <input id="longitude" type="number" step="0.000001" inputmode="decimal" />
+                  </label>
+                </div>
               </div>
+            </details>
+
             </div>
 
             <div class="form-actions">
-              <button class="danger-button" id="deleteButton" type="button">
-                <i data-lucide="trash-2"></i>
-                <span data-i18n="delete">削除</span>
+              <button type="button" class="button button-danger" id="deleteButton" hidden>
+                <i data-lucide="trash-2" aria-hidden="true"></i><span data-i18n="delete">削除</span>
               </button>
-              <button class="secondary-button" id="resetButton" type="button">
-                <i data-lucide="rotate-ccw"></i>
-                <span data-i18n="reset">リセット</span>
+              <button type="button" class="button button-ghost" id="resetButton">
+                <i data-lucide="rotate-ccw" aria-hidden="true"></i><span data-i18n="reset">入力を消す</span>
               </button>
-              <button class="primary-button" type="submit">
-                <i data-lucide="save"></i>
-                <span data-i18n="save">地図に表示</span>
+              <button type="submit" class="button button-primary" id="submitButton">
+                <i data-lucide="check" aria-hidden="true"></i><span id="submitLabel" data-i18n="save">地図に表示</span>
               </button>
             </div>
           </form>
@@ -227,86 +272,72 @@
       </main>
     </div>
 
-    <div class="passkey-modal" id="passkeyModal" aria-hidden="true">
-      <form class="passkey-card" id="passkeyForm" aria-labelledby="passkeyTitle">
-        <div>
-          <p class="eyebrow" data-i18n="editorAccess">Editor access</p>
-          <h2 id="passkeyTitle" data-i18n="passkeyTitle">編集者パスワードを入力</h2>
-        </div>
-        <p class="passkey-copy" data-i18n="passkeyCopy">編集者画面は閲覧者用とは別にしています。</p>
+    <div class="modal" id="passkeyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="passkeyTitle">
+      <form class="modal-card" id="passkeyForm">
+        <p class="eyebrow" data-i18n="editorAccess">Editor access</p>
+        <h2 id="passkeyTitle" data-i18n="passkeyTitle">編集者パスワードを入力</h2>
+        <p class="hint" data-i18n="passkeyCopy">編集者画面は閲覧者用とは別にしています。</p>
         <label class="field">
-          <span data-i18n="password">パスワード</span>
+          <span class="field-label" data-i18n="password">パスワード</span>
           <input id="editorPasskeyInput" type="password" autocomplete="current-password" required />
         </label>
-        <p class="passkey-error" id="passkeyError" hidden data-i18n="passkeyError">パスワードが違います。</p>
-        <div class="passkey-actions">
-          <button class="secondary-button" id="passkeyCancelButton" type="button" data-i18n="cancel">キャンセル</button>
-          <button class="primary-button" type="submit">
-            <i data-lucide="lock-keyhole"></i>
-            <span data-i18n="unlock">開く</span>
+        <p class="error" id="passkeyError" hidden data-i18n="passkeyError">パスワードが違います。</p>
+        <div class="modal-actions">
+          <button type="button" class="button button-ghost" id="passkeyCancelButton" data-i18n="cancel">キャンセル</button>
+          <button type="submit" class="button button-primary">
+            <i data-lucide="lock-keyhole" aria-hidden="true"></i><span data-i18n="unlock">開く</span>
           </button>
         </div>
       </form>
     </div>
 
-    <div class="passkey-modal" id="githubSyncModal" aria-hidden="true">
-      <form class="passkey-card sync-card" id="githubSyncForm" aria-labelledby="githubSyncTitle">
-        <div>
-          <p class="eyebrow">GitHub sync</p>
-          <h2 id="githubSyncTitle" data-i18n="syncTitle">全デバイスに反映</h2>
-        </div>
-        <p class="passkey-copy" data-i18n="syncCopy">
-          GitHub token を入れると、投稿・削除が公開サイトの data/spots.json と media/spots に保存されます。
+    <div class="modal" id="githubSyncModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="githubSyncTitle">
+      <form class="modal-card modal-card-wide" id="githubSyncForm">
+        <p class="eyebrow">GitHub sync</p>
+        <h2 id="githubSyncTitle" data-i18n="syncTitle">全デバイスに反映</h2>
+        <p class="hint" data-i18n="syncCopy">
+          GitHub token を入れると、投稿・修正・削除が公開サイトの data/spots.json と media/spots に保存されます。
         </p>
         <label class="field">
-          <span data-i18n="repo">Repository</span>
+          <span class="field-label" data-i18n="repo">リポジトリ</span>
           <input id="githubRepoInput" type="text" value="tmgddjtt57-collab/notomap" autocomplete="off" />
         </label>
         <label class="field">
-          <span data-i18n="branch">Branch</span>
+          <span class="field-label" data-i18n="branch">ブランチ</span>
           <input id="githubBranchInput" type="text" value="main" autocomplete="off" />
         </label>
         <label class="field">
-          <span data-i18n="token">GitHub token</span>
-          <input id="githubTokenInput" type="password" autocomplete="off" placeholder="github_pat_..." />
+          <span class="field-label" data-i18n="token">GitHub token</span>
+          <input id="githubTokenInput" type="password" autocomplete="off" placeholder="github_pat_..." aria-describedby="githubSyncStatus" />
         </label>
-        <p class="passkey-copy sync-status" id="githubSyncStatus" data-i18n="tokenCopy">
-          token はこのブラウザ内だけに保存されます。
-        </p>
-        <p class="passkey-error" id="githubSyncError" hidden></p>
-        <div class="passkey-actions">
-          <button class="secondary-button" id="githubSyncCancelButton" type="button" data-i18n="cancel">キャンセル</button>
-          <button class="primary-button" type="submit">
-            <i data-lucide="refresh-cw"></i>
-            <span data-i18n="connect">接続</span>
+        <p class="hint" id="githubSyncStatus" data-i18n="tokenCopy">token はこのブラウザ内だけに保存されます。</p>
+        <p class="error" id="githubSyncError" hidden></p>
+        <div class="modal-actions">
+          <button type="button" class="button button-ghost" id="githubSyncCancelButton" data-i18n="cancel">キャンセル</button>
+          <button type="submit" class="button button-primary">
+            <i data-lucide="refresh-cw" aria-hidden="true"></i><span data-i18n="connect">接続</span>
           </button>
         </div>
       </form>
     </div>
 
-    <div class="completion-toast" id="completionToast" role="status" aria-live="polite">
-      <i data-lucide="check-circle-2"></i>
-      <span data-i18n="postComplete">投稿が完了しました。地図に反映しました。</span>
-    </div>
+    <p class="toast" id="toast" role="status" aria-live="polite">
+      <i data-lucide="circle-check" aria-hidden="true"></i><span id="toastText"></span>
+    </p>
 
-    <div class="image-lightbox" id="imageLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="拡大画像">
-      <button class="icon-button image-lightbox-close" id="imageLightboxClose" type="button" title="閉じる" aria-label="閉じる">
-        <i data-lucide="x"></i>
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" data-i18n-label="detail">
+      <button type="button" class="icon-button lightbox-close" id="lightboxClose" data-i18n-label="close">
+        <i data-lucide="x" aria-hidden="true"></i>
       </button>
-      <figure class="image-lightbox-frame">
-        <img id="imageLightboxImage" alt="" />
-        <figcaption id="imageLightboxCaption"></figcaption>
+      <figure class="lightbox-frame">
+        <img id="lightboxImage" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
       </figure>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-    <script src="app.js?v=20260829b" defer></script>
-    <script src="sync-fix.js?v=20260829c" defer></script>
-    <script src="sync-submit-fix.js?v=20260829b" defer></script>
-    <script src="ui-map-fix.js?v=20260630h" defer></script>
-    <script src="detail-panel-fix.js?v=20260710b" defer></script>
-    <script src="design-polish.js?v=20260829a" defer></script>
+    <script src="app.js?v=20260918a" defer></script>
   </body>
 </html>
