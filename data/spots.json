@@ -2,12 +2,12 @@
   {
     "id": "spot-mtfzkc81-u8u2y5",
     "createdAt": "2026-08-30T15:50:30.876Z",
-    "updatedAt": "2026-08-30T15:50:30.876Z",
+    "updatedAt": "2026-09-22T17:39:52.981Z",
     "title": {
-      "ja": "iOS の画像 (12)",
-      "en": "iOS の画像 (12)",
-      "ko": "iOS の画像 (12)",
-      "zh": "iOS の画像 (12)"
+      "ja": "ポストは、 飛ばない。",
+      "en": "ポストは、 飛ばない。",
+      "ko": "ポストは、 飛ばない。",
+      "zh": "ポストは、 飛ばない。"
     },
     "description": {
       "ja": "ポストは、\n飛ばない。\nThe post\ndoes not\nfly.\n\n羽咋市役所前ポスト【Post Box in Front of Hakui City Hall】\nHakui, Noto Peninsula, Japan\n\n36°53’37.6”N 136°46’43.8”E\n\nArchive 094\n#FuturismNoto\n#InspiredByUmbertoBoccioni\n#HakuiCity\n#NotoNoOtoMuseum",
@@ -23,8 +23,8 @@
     },
     "group": "羽咋市",
     "locationText": "36°53’37.6”N 136°46’43.8”E",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.89377777777778,
+    "lng": 136.77883333333335,
     "photos": [
       {
         "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1788105026081-spot-mtfzkc81-u8u2y5-1-ios-12.jpg?v=1788105030876",
