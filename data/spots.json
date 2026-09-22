@@ -1,5 +1,243 @@
 [
   {
+    "id": "spot-muczroq1-ymx05o",
+    "createdAt": "2026-09-22T18:12:35.889Z",
+    "updatedAt": "2026-09-22T18:12:35.889Z",
+    "title": {
+      "ja": "ななおのうなぎ",
+      "en": "ななおのうなぎ",
+      "ko": "ななおのうなぎ",
+      "zh": "ななおのうなぎ"
+    },
+    "description": {
+      "ja": "ななおのうなぎ\nEel in Nanao.\n\nななおあめや【Nanao Ameya】\nあめや（Ameya）\nNanao City, Ishikawa, Japan\n\n37°02'41.3\"N 136°57'53.3\"E\n\nArchive 109\n#ColorfulNoto\n#InspiredByJoanMiro\n#StillLifeNoto\n#NanaoCity\n#NotoNoOtoMuseum",
+      "en": "ななおのうなぎ\nEel in Nanao.\n\nななおあめや【Nanao Ameya】\nあめや（Ameya）\nNanao City, Ishikawa, Japan\n\n37°02'41.3\"N 136°57'53.3\"E\n\nArchive 109\n#ColorfulNoto\n#InspiredByJoanMiro\n#StillLifeNoto\n#NanaoCity\n#NotoNoOtoMuseum",
+      "ko": "ななおのうなぎ\nEel in 나나오시.\n\nななおあめや【나나오시 Ameya】\nあめや（Ameya）\n나나오시 City, I시카마치wa, Japan\n\n37°02'41.3\"N 136°57'53.3\"E\n\nArchive 109\n#ColorfulNoto\n#InspiredByJoanMiro\n#StillLifeNoto\n#나나오시City\n#NotoNoOtoMuseum",
+      "zh": "ななおのうなぎ\nEel in 七尾市.\n\nななおあめや【七尾市 Ameya】\nあめや（Ameya）\n七尾市 City, I志贺町wa, Japan\n\n37°02'41.3\"N 136°57'53.3\"E\n\nArchive 109\n#ColorfulNoto\n#InspiredByJoanMiro\n#StillLifeNoto\n#七尾市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°02'41.3\"N 136°57'53.3\"E",
+    "lat": 37.044805555555556,
+    "lng": 136.96480555555556,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100752766-spot-muczroq1-ymx05o-1-image-10.jpg?v=1790100755889",
+        "alt": "image (10).png",
+        "path": "media/spots/1790100752766-spot-muczroq1-ymx05o-1-image-10.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-muczrmzc-889w2w",
+    "createdAt": "2026-09-22T18:12:32.616Z",
+    "updatedAt": "2026-09-22T18:12:32.616Z",
+    "title": {
+      "ja": "湾に滲む色",
+      "en": "湾に滲む色",
+      "ko": "湾に滲む色",
+      "zh": "湾に滲む色"
+    },
+    "description": {
+      "ja": "湾に滲む色\nColor\nseeping into the bay.\n\n七尾湾【Nanao Bay】\nNanao, Noto Peninsula, Japan\n\n37°04'48.0\"N, 137°00'40.0\"E\n\nArchive 108\n#ColorfulNoto\n#InspiredBySamFrancis\n#NanaoBay\n#NanaoCity\n#NotoNoOtoMuseum",
+      "en": "湾に滲む色\nColor\nseeping into the bay.\n\n七尾湾【Nanao Bay】\nNanao, Noto Peninsula, Japan\n\n37°04'48.0\"N, 137°00'40.0\"E\n\nArchive 108\n#ColorfulNoto\n#InspiredBySamFrancis\n#NanaoBay\n#NanaoCity\n#NotoNoOtoMuseum",
+      "ko": "湾に滲む色\nColor\nseeping into the bay.\n\n나나오시湾【나나오시 Bay】\n나나오시, Noto Peninsula, Japan\n\n37°04'48.0\"N, 137°00'40.0\"E\n\nArchive 108\n#ColorfulNoto\n#InspiredBySamFrancis\n#나나오시Bay\n#나나오시City\n#NotoNoOtoMuseum",
+      "zh": "湾に滲む色\nColor\nseeping into the bay.\n\n七尾市湾【七尾市 Bay】\n七尾市, Noto Peninsula, Japan\n\n37°04'48.0\"N, 137°00'40.0\"E\n\nArchive 108\n#ColorfulNoto\n#InspiredBySamFrancis\n#七尾市Bay\n#七尾市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°04'48.0\"N, 137°00'40.0\"E",
+    "lat": 37.080000000000005,
+    "lng": 137.01111111111112,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100750489-spot-muczrmzc-889w2w-1-image-11.jpg?v=1790100752616",
+        "alt": "image (11).png",
+        "path": "media/spots/1790100750489-spot-muczrmzc-889w2w-1-image-11.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-muczrl8y-s9azbz",
+    "createdAt": "2026-09-22T18:12:30.359Z",
+    "updatedAt": "2026-09-22T18:12:30.359Z",
+    "title": {
+      "ja": "蔵で、 酔いどれる。",
+      "en": "蔵で、 酔いどれる。",
+      "ko": "蔵で、 酔いどれる。",
+      "zh": "蔵で、 酔いどれる。"
+    },
+    "description": {
+      "ja": "蔵で、\n酔いどれる。\nColor\ngets drunk\nin the brewery.\n\n竹葉 【Chikuha】\nNoto Town, Noto Peninsula, Japan\n\n37°18'28.8\"N 137°09'03.3\"E\n\nArchive 107\n#ColorfulNoto\n#InspiredBySoniaDelaunay\n#NotoSake\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "蔵で、\n酔いどれる。\nColor\ngets drunk\nin the brewery.\n\n竹葉 【Chikuha】\nNoto Town, Noto Peninsula, Japan\n\n37°18'28.8\"N 137°09'03.3\"E\n\nArchive 107\n#ColorfulNoto\n#InspiredBySoniaDelaunay\n#NotoSake\n#NotoTown\n#NotoNoOtoMuseum",
+      "ko": "蔵で、\n酔いどれる。\nColor\ngets drunk\nin the brewery.\n\n竹葉 【Chikuha】\n노토초, Noto Peninsula, Japan\n\n37°18'28.8\"N 137°09'03.3\"E\n\nArchive 107\n#ColorfulNoto\n#InspiredBySoniaDelaunay\n#NotoSake\n#노토초\n#NotoNoOtoMuseum",
+      "zh": "蔵で、\n酔いどれる。\nColor\ngets drunk\nin the brewery.\n\n竹葉 【Chikuha】\n能登町, Noto Peninsula, Japan\n\n37°18'28.8\"N 137°09'03.3\"E\n\nArchive 107\n#ColorfulNoto\n#InspiredBySoniaDelaunay\n#NotoSake\n#能登町\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토초",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18'28.8\"N 137°09'03.3\"E",
+    "lat": 37.308,
+    "lng": 137.15091666666666,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100748315-spot-muczrl8y-s9azbz-1-image-12.jpg?v=1790100750359",
+        "alt": "image (12).png",
+        "path": "media/spots/1790100748315-spot-muczrl8y-s9azbz-1-image-12.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-muczrj6x-fyf8dh",
+    "createdAt": "2026-09-22T18:12:28.112Z",
+    "updatedAt": "2026-09-22T18:12:28.112Z",
+    "title": {
+      "ja": "色彩が、 輪になって踊る。",
+      "en": "色彩が、 輪になって踊る。",
+      "ko": "色彩が、 輪になって踊る。",
+      "zh": "色彩が、 輪になって踊る。"
+    },
+    "description": {
+      "ja": "色彩が、\n輪になって踊る。\nColors\ndance\nin circles.\n\n輪島大祭【Wajima Grand Festival】\nWajima, Noto Peninsula, Japan\n\n37°23'33.3\"N, 136°53'46.7\"E\n\nArchive 106\n#ColorfulNoto\n#InspiredByRobertDelaunay\n#MatsuriNoto\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "色彩が、\n輪になって踊る。\nColors\ndance\nin circles.\n\n輪島大祭【Wajima Grand Festival】\nWajima, Noto Peninsula, Japan\n\n37°23'33.3\"N, 136°53'46.7\"E\n\nArchive 106\n#ColorfulNoto\n#InspiredByRobertDelaunay\n#MatsuriNoto\n#WajimaCity\n#NotoNoOtoMuseum",
+      "ko": "色彩が、\n輪になって踊る。\nColors\ndance\nin circles.\n\n와지마시大祭【와지마시 Grand Festival】\n와지마시, Noto Peninsula, Japan\n\n37°23'33.3\"N, 136°53'46.7\"E\n\nArchive 106\n#ColorfulNoto\n#InspiredByRobertDelaunay\n#MatsuriNoto\n#와지마시City\n#NotoNoOtoMuseum",
+      "zh": "色彩が、\n輪になって踊る。\nColors\ndance\nin circles.\n\n轮岛市大祭【轮岛市 Grand Festival】\n轮岛市, Noto Peninsula, Japan\n\n37°23'33.3\"N, 136°53'46.7\"E\n\nArchive 106\n#ColorfulNoto\n#InspiredByRobertDelaunay\n#MatsuriNoto\n#轮岛市City\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°23'33.3\"N, 136°53'46.7\"E",
+    "lat": 37.392583333333334,
+    "lng": 136.89630555555556,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100745557-spot-muczrj6x-fyf8dh-1-image-13.jpg?v=1790100748112",
+        "alt": "image (13).png",
+        "path": "media/spots/1790100745557-spot-muczrj6x-fyf8dh-1-image-13.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-muczrh11-hzci06",
+    "createdAt": "2026-09-22T18:12:25.449Z",
+    "updatedAt": "2026-09-22T18:12:25.449Z",
+    "title": {
+      "ja": "落ちて、 なお、 色づく。",
+      "en": "落ちて、 なお、 色づく。",
+      "ko": "落ちて、 なお、 色づく。",
+      "zh": "落ちて、 なお、 色づく。"
+    },
+    "description": {
+      "ja": "落ちて、\nなお、\n色づく。\nFallen,\nyet still\nvivid.\n\n風に落ちたダリア【Dahlias Fallen in the Wind】\nTsubata, Ishikawa, Japan\n\n36°40'58.5\"N 136°43'46.9\"E\n\nArchive 105\n#ColorfulNoto\n#InspiredByVincentVanGogh\n#StillLifeNoto\n#TsubataTown\n#NotoNoOtoMuseum",
+      "en": "落ちて、\nなお、\n色づく。\nFallen,\nyet still\nvivid.\n\n風に落ちたダリア【Dahlias Fallen in the Wind】\nTsubata, Ishikawa, Japan\n\n36°40'58.5\"N 136°43'46.9\"E\n\nArchive 105\n#ColorfulNoto\n#InspiredByVincentVanGogh\n#StillLifeNoto\n#TsubataTown\n#NotoNoOtoMuseum",
+      "ko": "落ちて、\nなお、\n色づく。\nFallen,\nyet still\nvivid.\n\n風に落ちたダリア【Dahlias Fallen in the Wind】\n쓰바타마치, I시카마치wa, Japan\n\n36°40'58.5\"N 136°43'46.9\"E\n\nArchive 105\n#ColorfulNoto\n#InspiredByVincentVanGogh\n#StillLifeNoto\n#쓰바타마치Town\n#NotoNoOtoMuseum",
+      "zh": "落ちて、\nなお、\n色づく。\nFallen,\nyet still\nvivid.\n\n風に落ちたダリア【Dahlias Fallen in the Wind】\n津幡町, I志贺町wa, Japan\n\n36°40'58.5\"N 136°43'46.9\"E\n\nArchive 105\n#ColorfulNoto\n#InspiredByVincentVanGogh\n#StillLifeNoto\n#津幡町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
+    },
+    "group": "津幡町",
+    "locationText": "36°40'58.5\"N 136°43'46.9\"E",
+    "lat": 36.682916666666664,
+    "lng": 136.72969444444445,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100742765-spot-muczrh11-hzci06-1-image-14.jpg?v=1790100745449",
+        "alt": "image (14).png",
+        "path": "media/spots/1790100742765-spot-muczrh11-hzci06-1-image-14.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-muczrfi1-yij6vj",
+    "createdAt": "2026-09-22T18:12:22.644Z",
+    "updatedAt": "2026-09-22T18:12:22.644Z",
+    "title": {
+      "ja": "二次元の遺跡",
+      "en": "二次元の遺跡",
+      "ko": "二次元の遺跡",
+      "zh": "二次元の遺跡"
+    },
+    "description": {
+      "ja": "二次元の遺跡\nRuins\nin two dimensions,\n\n加茂遺跡【Kamo Ruins】\nTsubata, Ishikawa, Japan\n\n36°41’08.9”N 136°43’34.7”E\n\nArchive 104\n#ColorfulNoto\n#InspiredByMiltonAvery\n#KamoRuins\n#TsubataTown\n#NotoNoOtoMuseum",
+      "en": "二次元の遺跡\nRuins\nin two dimensions,\n\n加茂遺跡【Kamo Ruins】\nTsubata, Ishikawa, Japan\n\n36°41’08.9”N 136°43’34.7”E\n\nArchive 104\n#ColorfulNoto\n#InspiredByMiltonAvery\n#KamoRuins\n#TsubataTown\n#NotoNoOtoMuseum",
+      "ko": "二次元の遺跡\nRuins\nin two dimensions,\n\n加茂遺跡【Kamo Ruins】\n쓰바타마치, I시카마치wa, Japan\n\n36°41’08.9”N 136°43’34.7”E\n\nArchive 104\n#ColorfulNoto\n#InspiredByMiltonAvery\n#KamoRuins\n#쓰바타마치Town\n#NotoNoOtoMuseum",
+      "zh": "二次元の遺跡\nRuins\nin two dimensions,\n\n加茂遺跡【Kamo Ruins】\n津幡町, I志贺町wa, Japan\n\n36°41’08.9”N 136°43’34.7”E\n\nArchive 104\n#ColorfulNoto\n#InspiredByMiltonAvery\n#KamoRuins\n#津幡町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
+    },
+    "group": "津幡町",
+    "locationText": "36°41’08.9”N 136°43’34.7”E",
+    "lat": 36.685805555555554,
+    "lng": 136.72630555555557,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100740775-spot-muczrfi1-yij6vj-1-ios-13.jpg?v=1790100742643",
+        "alt": "iOS の画像 (13).jpg",
+        "path": "media/spots/1790100740775-spot-muczrfi1-yij6vj-1-ios-13.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-muczrd99-449l7a",
+    "createdAt": "2026-09-22T18:12:20.661Z",
+    "updatedAt": "2026-09-22T18:12:20.662Z",
+    "title": {
+      "ja": "健友愛華",
+      "en": "健友愛華",
+      "ko": "健友愛華",
+      "zh": "健友愛華"
+    },
+    "description": {
+      "ja": "健友愛華\nHealth,\nFriendship,\nLove,\nFlourishing.\n\n内灘町役場【Uchinada Town Hall】\nUchinada, Ishikawa, Japan\n\n36°39'11.8\"N 136°38'44.7\"E\n\nArchive 103\n#ColorfulNoto\n#InspiredByRaoulDufy\n#FauvismNoto\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "en": "健友愛華\nHealth,\nFriendship,\nLove,\nFlourishing.\n\n内灘町役場【Uchinada Town Hall】\nUchinada, Ishikawa, Japan\n\n36°39'11.8\"N 136°38'44.7\"E\n\nArchive 103\n#ColorfulNoto\n#InspiredByRaoulDufy\n#FauvismNoto\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "ko": "健友愛華\nHealth,\nFriendship,\nLove,\nFlourishing.\n\n우치나다마치役場【우치나다마치 Town Hall】\n우치나다마치, I시카마치wa, Japan\n\n36°39'11.8\"N 136°38'44.7\"E\n\nArchive 103\n#ColorfulNoto\n#InspiredByRaoulDufy\n#FauvismNoto\n#우치나다마치Town\n#NotoNoOtoMuseum",
+      "zh": "健友愛華\nHealth,\nFriendship,\nLove,\nFlourishing.\n\n内滩町役場【内滩町 Town Hall】\n内滩町, I志贺町wa, Japan\n\n36°39'11.8\"N 136°38'44.7\"E\n\nArchive 103\n#ColorfulNoto\n#InspiredByRaoulDufy\n#FauvismNoto\n#内滩町Town\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
+    },
+    "group": "内灘町",
+    "locationText": "36°39'11.8\"N 136°38'44.7\"E",
+    "lat": 36.653277777777774,
+    "lng": 136.64575,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100737900-spot-muczrd99-449l7a-1-image-15.jpg?v=1790100740660",
+        "alt": "image (15).png",
+        "path": "media/spots/1790100737900-spot-muczrd99-449l7a-1-image-15.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-muczkqg1-rbzv5i",
     "createdAt": "2026-09-22T18:07:10.925Z",
     "updatedAt": "2026-09-22T18:07:10.926Z",
