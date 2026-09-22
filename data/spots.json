@@ -1,5 +1,39 @@
 [
   {
+    "id": "spot-muczkqg1-rbzv5i",
+    "createdAt": "2026-09-22T18:07:10.925Z",
+    "updatedAt": "2026-09-22T18:07:10.926Z",
+    "title": {
+      "ja": "青が泳ぐ",
+      "en": "青が泳ぐ",
+      "ko": "青が泳ぐ",
+      "zh": "青が泳ぐ"
+    },
+    "description": {
+      "ja": "青が泳ぐ\nBlue\nswims.\nのとじま水族館【Notojima Aquarium】\nNotojima, Nanao, Noto Peninsula, Japan\n\n37°08'57.6\"N 136°58'58.3\"E\n\nArchive 110\n#ColorfulNoto\n#InspiredByHelenFrankenthaler\n#NotojimaAquarium\n#NotojimaNanao\n#NotoNoOtoMuseum",
+      "en": "青が泳ぐ\nBlue\nswims.\nのとじま水族館【Notojima Aquarium】\nNotojima, Nanao, Noto Peninsula, Japan\n\n37°08'57.6\"N 136°58'58.3\"E\n\nArchive 110\n#ColorfulNoto\n#InspiredByHelenFrankenthaler\n#NotojimaAquarium\n#NotojimaNanao\n#NotoNoOtoMuseum",
+      "ko": "青が泳ぐ\nBlue\nswims.\nのとじま水族館【Notojima Aquarium】\nNotojima, 나나오시, Noto Peninsula, Japan\n\n37°08'57.6\"N 136°58'58.3\"E\n\nArchive 110\n#ColorfulNoto\n#InspiredByHelenFrankenthaler\n#NotojimaAquarium\n#Notojima나나오시\n#NotoNoOtoMuseum",
+      "zh": "青が泳ぐ\nBlue\nswims.\nのとじま水族館【Notojima Aquarium】\nNotojima, 七尾市, Noto Peninsula, Japan\n\n37°08'57.6\"N 136°58'58.3\"E\n\nArchive 110\n#ColorfulNoto\n#InspiredByHelenFrankenthaler\n#NotojimaAquarium\n#Notojima七尾市\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "Notojima, Nanao, Noto Peninsula, Japan",
+    "locationText": "37°08'57.6\"N 136°58'58.3\"E",
+    "lat": 37.14933333333333,
+    "lng": 136.9828611111111,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790100428485-spot-muczkqg1-rbzv5i-1-image-9.jpg?v=1790100430924",
+        "alt": "image (9).png",
+        "path": "media/spots/1790100428485-spot-muczkqg1-rbzv5i-1-image-9.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mtfzkc81-u8u2y5",
     "createdAt": "2026-08-30T15:50:30.876Z",
     "updatedAt": "2026-09-22T17:39:52.981Z",
