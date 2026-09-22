@@ -1781,7 +1781,10 @@ function openModal(el, focusTarget) {
   el.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
   (focusTarget || el.querySelector("input, button"))?.focus();
-  el.onkeydown = (ev) => ev.key === "Tab" && trapFocus(ev, el);
+  /* 必ずブロックで書く。式のまま書くと Tab 以外のキーで false が返り、
+     onkeydown に直接代入したハンドラの戻り値 false は入力の取り消しになる。
+     つまり文字が1つも打てなくなる。 */
+  el.onkeydown = (ev) => { if (ev.key === "Tab") trapFocus(ev, el); };
 }
 
 function closeModal(el) {
