@@ -1,0 +1,15 @@
+{
+  "name": "のとのおと美術館デジタルマップ",
+  "short_name": "のとのおとマップ",
+  "description": "能登半島と氷見市の海、里山、集落、季節の色を写真と位置情報で記録するデジタル美術館の地図です。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eceff4",
+  "theme_color": "#124a6b",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

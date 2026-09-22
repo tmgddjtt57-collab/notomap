@@ -22,6 +22,8 @@ const GHCFG = "noto-no-oto-gh-cfg";
 const GHTOKEN = "noto-no-oto-gh-token";
 const THEME = "noto-no-oto-theme";
 const TEXTSIZE = "noto-no-oto-textsize";
+const VIEW = "noto-no-oto-view";
+const FORMDRAFT = "noto-no-oto-form-draft";
 
 const MAX_SIDE = 1280;
 const JPEG_Q = 0.78;
@@ -68,16 +70,6 @@ const REGION = { ja: "能登半島", en: "Noto Peninsula", ko: "노토반도", z
 /* 地図の初期表示範囲（能登半島と氷見市が収まる矩形） */
 const HOME_BOUNDS = [[36.62, 136.48], [37.58, 137.40]];
 
-const WORDS = {
-  能登半島: { en: "Noto Peninsula", ko: "노토반도", zh: "能登半岛" },
-  水芭蕉: { en: "Asian skunk cabbage", ko: "물파초", zh: "水芭蕉" },
-  春: { en: "spring", ko: "봄", zh: "春天" },
-  夏: { en: "summer", ko: "여름", zh: "夏天" },
-  秋: { en: "autumn", ko: "가을", zh: "秋天" },
-  冬: { en: "winter", ko: "겨울", zh: "冬天" },
-  海: { en: "sea", ko: "바다", zh: "海" },
-  里山: { en: "satoyama", ko: "사토야마", zh: "里山" },
-};
 
 /* ========================== 3. 多言語 ========================== */
 
@@ -186,6 +178,50 @@ const I = {
     selected: "選択中",
     showMore: "続きを読む",
     showLess: "閉じる",
+    find: "さがす",
+    search: "検索",
+    searchPlaceholder: "題名・説明・地名・タグ",
+    searchClear: "検索語を消す",
+    topics: "様式・主題",
+    artists: "作家",
+    clearFilters: "絞り込みを解除",
+    sortBy: "並べ替え",
+    sortNew: "新しい順",
+    sortOld: "古い順",
+    sortArchive: "Archive番号順",
+    sortTitle: "題名順",
+    viewList: "一覧",
+    viewGrid: "写真",
+    viewMode: "表示の形",
+    share: "共有",
+    linkCopied: "リンクをコピーしました。",
+    route: "ここへ行く",
+    cardImage: "カード画像",
+    cardMaking: "カード画像を作っています。",
+    cardDone: "カード画像を保存しました。",
+    cardFailed: "カード画像を作れませんでした。",
+    takenAt: "撮影日",
+    postedAt: "投稿日",
+    prevWork: "前の作品",
+    nextWork: "次の作品",
+    nearby: "近くの作品",
+    draft: "下書き",
+    isDraft: "下書きにする（公開しない）",
+    draftRestored: "書きかけの入力を戻しました。",
+    undo: "元に戻す",
+    restored: "投稿を元に戻しました。",
+    exifLocation: "写真の撮影位置を読み取りました。",
+    layerStandard: "標準地図",
+    layerPhoto: "航空写真",
+    layerPale: "淡色地図",
+    bulk: "市区町村を一括で変える",
+    bulkTitle: "市区町村の一括付け替え",
+    bulkFrom: "対象",
+    bulkTo: "変更先",
+    bulkAll: "いま絞り込んでいる分",
+    bulkCount: "{count}件が対象です。",
+    bulkDone: "{count}件の市区町村を変えました。",
+    bulkApply: "まとめて変える",
   },
   en: {
     siteTitle: "Noto no Oto Museum Digital Map",
@@ -291,6 +327,50 @@ const I = {
     selected: "Selected",
     showMore: "Read more",
     showLess: "Show less",
+    find: "Find",
+    search: "Search",
+    searchPlaceholder: "Title, text, place or tag",
+    searchClear: "Clear the search",
+    topics: "Style and theme",
+    artists: "Artists",
+    clearFilters: "Clear filters",
+    sortBy: "Sort",
+    sortNew: "Newest first",
+    sortOld: "Oldest first",
+    sortArchive: "By archive number",
+    sortTitle: "By title",
+    viewList: "List",
+    viewGrid: "Photos",
+    viewMode: "View",
+    share: "Share",
+    linkCopied: "Link copied.",
+    route: "Directions",
+    cardImage: "Card image",
+    cardMaking: "Making the card image.",
+    cardDone: "Card image saved.",
+    cardFailed: "The card image could not be made.",
+    takenAt: "Taken",
+    postedAt: "Posted",
+    prevWork: "Previous",
+    nextWork: "Next",
+    nearby: "Nearby works",
+    draft: "Draft",
+    isDraft: "Keep as a draft (not published)",
+    draftRestored: "Your unsaved entry was restored.",
+    undo: "Undo",
+    restored: "The post was restored.",
+    exifLocation: "Location read from the photo.",
+    layerStandard: "Standard",
+    layerPhoto: "Aerial",
+    layerPale: "Pale",
+    bulk: "Reassign municipalities",
+    bulkTitle: "Reassign municipalities",
+    bulkFrom: "From",
+    bulkTo: "To",
+    bulkAll: "Everything currently filtered",
+    bulkCount: "{count} works selected.",
+    bulkDone: "{count} works reassigned.",
+    bulkApply: "Reassign",
   },
   ko: {
     siteTitle: "노토노오토 미술관 디지털 지도",
@@ -396,6 +476,50 @@ const I = {
     selected: "선택됨",
     showMore: "더 보기",
     showLess: "접기",
+    find: "찾기",
+    search: "검색",
+    searchPlaceholder: "제목・설명・지명・태그",
+    searchClear: "검색어 지우기",
+    topics: "양식・주제",
+    artists: "작가",
+    clearFilters: "필터 해제",
+    sortBy: "정렬",
+    sortNew: "최신순",
+    sortOld: "오래된순",
+    sortArchive: "Archive 번호순",
+    sortTitle: "제목순",
+    viewList: "목록",
+    viewGrid: "사진",
+    viewMode: "보기 형식",
+    share: "공유",
+    linkCopied: "링크를 복사했습니다.",
+    route: "길찾기",
+    cardImage: "카드 이미지",
+    cardMaking: "카드 이미지를 만들고 있습니다.",
+    cardDone: "카드 이미지를 저장했습니다.",
+    cardFailed: "카드 이미지를 만들지 못했습니다.",
+    takenAt: "촬영일",
+    postedAt: "게시일",
+    prevWork: "이전 작품",
+    nextWork: "다음 작품",
+    nearby: "가까운 작품",
+    draft: "초안",
+    isDraft: "초안으로 저장(비공개)",
+    draftRestored: "작성 중이던 입력을 복원했습니다.",
+    undo: "되돌리기",
+    restored: "게시물을 복원했습니다.",
+    exifLocation: "사진에서 촬영 위치를 읽었습니다.",
+    layerStandard: "표준 지도",
+    layerPhoto: "항공사진",
+    layerPale: "담색 지도",
+    bulk: "시정촌 일괄 변경",
+    bulkTitle: "시정촌 일괄 변경",
+    bulkFrom: "대상",
+    bulkTo: "변경 후",
+    bulkAll: "현재 필터된 전체",
+    bulkCount: "{count}건이 대상입니다.",
+    bulkDone: "{count}건의 시정촌을 변경했습니다.",
+    bulkApply: "일괄 변경",
   },
   zh: {
     siteTitle: "能登之音美术馆数字地图",
@@ -501,6 +625,50 @@ const I = {
     selected: "已选择",
     showMore: "展开",
     showLess: "收起",
+    find: "查找",
+    search: "搜索",
+    searchPlaceholder: "标题・说明・地名・标签",
+    searchClear: "清除搜索词",
+    topics: "样式与主题",
+    artists: "艺术家",
+    clearFilters: "清除筛选",
+    sortBy: "排序",
+    sortNew: "最新优先",
+    sortOld: "最早优先",
+    sortArchive: "按 Archive 编号",
+    sortTitle: "按标题",
+    viewList: "列表",
+    viewGrid: "照片",
+    viewMode: "显示方式",
+    share: "分享",
+    linkCopied: "已复制链接。",
+    route: "前往这里",
+    cardImage: "卡片图片",
+    cardMaking: "正在生成卡片图片。",
+    cardDone: "已保存卡片图片。",
+    cardFailed: "无法生成卡片图片。",
+    takenAt: "拍摄日期",
+    postedAt: "发布日期",
+    prevWork: "上一件",
+    nextWork: "下一件",
+    nearby: "附近的作品",
+    draft: "草稿",
+    isDraft: "保存为草稿（不公开）",
+    draftRestored: "已恢复未保存的输入。",
+    undo: "撤销",
+    restored: "已恢复该投稿。",
+    exifLocation: "已从照片读取拍摄位置。",
+    layerStandard: "标准地图",
+    layerPhoto: "航空影像",
+    layerPale: "淡色地图",
+    bulk: "批量更改市区町村",
+    bulkTitle: "批量更改市区町村",
+    bulkFrom: "对象",
+    bulkTo: "更改为",
+    bulkAll: "当前筛选的全部",
+    bulkCount: "共 {count} 条。",
+    bulkDone: "已更改 {count} 条的市区町村。",
+    bulkApply: "批量更改",
   },
 };
 
@@ -515,6 +683,10 @@ const S = {
   drafts: [],        /* これから追加する写真 */
   keptPhotos: [],    /* 修正中、残す既存写真 */
   group: "all",
+  q: "",             /* 検索語 */
+  tags: new Set(),   /* 絞り込み中のタグ */
+  sort: "new",
+  view: "list",
   selected: "",      /* 地図と一覧で選択中の投稿 */
   editingId: "",     /* フォームで修正中の投稿。selected とは別に持つ */
   role: "viewer",
@@ -535,6 +707,9 @@ async function start() {
     "skipLink", "languageSelect", "settingsMenu", "settingsPanel", "themeGroup", "textSizeGroup",
     "viewerModeButton", "editorModeButton", "githubSyncButton", "exportButton", "importInput",
     "groupList", "spotList", "spotCount", "newSpotButton", "sidePanel",
+    "searchInput", "searchClear", "topicList", "artistList", "tagBox", "artistBox",
+    "clearFiltersButton", "sortSelect", "viewToggle",
+    "bulkButton", "bulkModal", "bulkForm", "bulkFrom", "bulkTo", "bulkCount", "bulkCancelButton",
     "map", "mapStatus", "detailPanel",
     "editorPanel", "closeEditorButton", "editorTitle", "editingNotice", "spotForm",
     "photoFile", "photoPicker", "currentPhotos", "photoPreview", "pasteInput", "applyPasteButton",
@@ -544,20 +719,80 @@ async function start() {
     "githubSyncModal", "githubSyncForm", "githubRepoInput", "githubBranchInput", "githubTokenInput",
     "githubSyncStatus", "githubSyncError", "githubSyncCancelButton",
     "toast", "toastText", "lightbox", "lightboxImage", "lightboxCaption", "lightboxClose",
+    "lightboxPrev", "lightboxNext", "lightboxPos", "takenAt", "draftToggle", "undoButton",
   ].forEach((id) => (E[id] = $(id)));
 
   trackHeaderHeight();
   applyTheme(store(THEME) || "system");
   applyTextSize(store(TEXTSIZE) || "normal");
   E.languageSelect.value = S.lang;
+  readUrl();          /* ?lang= を i18n() より先に反映する */
   bind();
   i18n();
   initMap();
   S.spots = localSpots();
   render();
   await loadRemote();
+  applyUrlSelection();
   render();
   icons();
+}
+
+/* ---- 共有できる URL ----
+   ?id= で1作品、?group= ?tag= ?q= で絞り込みの状態を持ち回る。 */
+
+function readUrl() {
+  const q = new URLSearchParams(location.search);
+  if (q.get("lang") && I[q.get("lang")]) {
+    S.lang = q.get("lang");
+    store(LANG, S.lang);
+    E.languageSelect.value = S.lang;
+  }
+  S.group = q.get("group") || "all";
+  S.q = q.get("q") || "";
+  E.searchInput.value = S.q;
+  (q.get("tag") || "").split(",").filter(Boolean).forEach((t) => S.tags.add(t));
+  if (q.get("sort")) S.sort = q.get("sort");
+  S.pendingId = q.get("id") || "";
+}
+
+function applyUrlSelection() {
+  if (!S.pendingId) return;
+  const p = S.spots.find((x) => x.id === S.pendingId);
+  S.pendingId = "";
+  if (p) selectSpot(p.id, false);
+}
+
+function syncUrl() {
+  const q = new URLSearchParams();
+  if (S.selected) q.set("id", S.selected);
+  if (S.group !== "all") q.set("group", S.group);
+  if (S.tags.size) q.set("tag", [...S.tags].join(","));
+  if (S.q.trim()) q.set("q", S.q.trim());
+  if (S.sort !== "new") q.set("sort", S.sort);
+  if (S.lang !== "ja") q.set("lang", S.lang);
+  const url = q.toString() ? `${location.pathname}?${q}` : location.pathname;
+  history.replaceState(null, "", url);
+}
+
+function shareUrl(id) {
+  const q = new URLSearchParams();
+  if (id) q.set("id", id);
+  if (S.lang !== "ja") q.set("lang", S.lang);
+  return `${location.origin}${location.pathname}${q.toString() ? `?${q}` : ""}`;
+}
+
+async function share(id) {
+  const p = S.spots.find((x) => x.id === id);
+  const url = shareUrl(id);
+  const title = p ? `${txt(p, "title")}｜${tr("siteTitle")}` : tr("siteTitle");
+  try {
+    if (navigator.share) { await navigator.share({ title, url }); return; }
+    await navigator.clipboard.writeText(url);
+    toast(tr("linkCopied"));
+  } catch (e) {
+    if (e?.name !== "AbortError") status(url);
+  }
 }
 
 function bind() {
@@ -565,7 +800,9 @@ function bind() {
     S.lang = E.languageSelect.value;
     store(LANG, S.lang);
     i18n();
+    relabelLayers();
     render();
+    syncUrl();
   };
 
   E.themeGroup.onclick = (ev) => {
@@ -595,7 +832,12 @@ function bind() {
   };
   E.passkeyCancelButton.onclick = () => closeModal(E.passkeyModal);
 
-  E.newSpotButton.onclick = () => { resetForm(); openEditor(); E.titleJa.focus(); };
+  E.newSpotButton.onclick = () => {
+    resetForm();
+    if (restoreFormDraft()) status(tr("draftRestored"));
+    openEditor();
+    E.titleJa.focus();
+  };
   E.closeEditorButton.onclick = closeEditor;
   E.photoFile.onchange = filesChanged;
   E.photoPicker.onclick = () => E.photoFile.click();
@@ -604,10 +846,16 @@ function bind() {
   };
   E.applyPasteButton.onclick = applyPaste;
   E.spotForm.onsubmit = saveForm;
-  E.resetButton.onclick = () => { resetForm(); E.titleJa.focus(); };
+  E.resetButton.onclick = () => { resetForm(); clearFormDraft(); E.titleJa.focus(); };
   E.deleteButton.onclick = () => S.editingId && removeSpot(S.editingId);
   E.currentLocationButton.onclick = useCurrentPosition;
   E.pickOnMapButton.onclick = startPick;
+  E.undoButton.onclick = undoDelete;
+  ["titleJa", "descriptionJa", "locationInfo", "spotGroup", "latitude", "longitude", "takenAt", "pasteInput"]
+    .forEach((id) => { E[id].oninput = saveFormDraft; });
+  E.bulkButton.onclick = openBulk;
+  E.bulkForm.onsubmit = applyBulk;
+  E.bulkCancelButton.onclick = () => closeModal(E.bulkModal);
 
   E.currentPhotos.onclick = (ev) => {
     const b = ev.target.closest("[data-remove-kept]");
@@ -640,13 +888,54 @@ function bind() {
     const b = ev.target.closest("[data-group]");
     if (b) setGroup(b.dataset.group);
   };
+
+  let searchTimer;
+  E.searchInput.oninput = () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      S.q = E.searchInput.value;
+      S.fitKey = "";
+      render();
+      syncUrl();
+    }, 200);
+  };
+  E.searchInput.onsearch = () => { S.q = E.searchInput.value; render(); syncUrl(); };
+  E.searchClear.onclick = () => { E.searchInput.value = ""; S.q = ""; S.fitKey = ""; render(); syncUrl(); E.searchInput.focus(); };
+  E.clearFiltersButton.onclick = clearFilters;
+
+  const tagClick = (ev) => {
+    const b = ev.target.closest("[data-tag]");
+    if (!b) return;
+    const t = b.dataset.tag;
+    S.tags.has(t) ? S.tags.delete(t) : S.tags.add(t);
+    S.fitKey = "";
+    render();
+    syncUrl();
+  };
+  E.topicList.onclick = tagClick;
+  E.artistList.onclick = tagClick;
+
+  E.sortSelect.onchange = () => { S.sort = E.sortSelect.value; render(); syncUrl(); };
+  E.viewToggle.onclick = (ev) => {
+    const b = ev.target.closest("[data-view]");
+    if (!b) return;
+    S.view = b.dataset.view;
+    store(VIEW, S.view);
+    render();
+  };
   E.spotList.onclick = listClick;
   E.detailPanel.onclick = detailClick;
 
   E.lightboxClose.onclick = closeLightbox;
   E.lightbox.onclick = (ev) => ev.target === E.lightbox && closeLightbox();
+  E.lightboxPrev.onclick = () => stepLightbox(-1);
+  E.lightboxNext.onclick = () => stepLightbox(1);
 
   document.addEventListener("keydown", (ev) => {
+    if (E.lightbox.getAttribute("aria-hidden") === "false") {
+      if (ev.key === "ArrowLeft") { ev.preventDefault(); return stepLightbox(-1); }
+      if (ev.key === "ArrowRight") { ev.preventDefault(); return stepLightbox(1); }
+    }
     if (ev.key !== "Escape") return;
     if (E.lightbox.getAttribute("aria-hidden") === "false") return closeLightbox();
     if (E.passkeyModal.getAttribute("aria-hidden") === "false") return closeModal(E.passkeyModal);
@@ -677,7 +966,55 @@ function i18n() {
     n.setAttribute("title", tr(n.dataset.i18nTitle)));
 }
 
-function render() { groups(); list(); markers(); renderDetail(); renderPhotoFields(); icons(); }
+function render() {
+  document.body.classList.toggle("view-grid", S.view === "grid");
+  E.sortSelect.value = S.sort;
+  E.viewToggle.querySelectorAll("[data-view]").forEach((b) =>
+    b.setAttribute("aria-pressed", String(b.dataset.view === S.view)));
+  E.searchClear.hidden = !E.searchInput.value;
+  E.clearFiltersButton.hidden = !filtersActive();
+  groups();
+  tagFilters();
+  list();
+  markers();
+  renderDetail();
+  renderPhotoFields();
+  icons();
+}
+
+/* タグの絞り込み。件数の多い順に出し、選択中のものは必ず見えるようにする。 */
+function tagFilters() {
+  const paint = (el, box, entries, prefix, label) => {
+    if (!entries.length) { box.hidden = true; return; }
+    box.hidden = false;
+    el.innerHTML = entries.map(([key, v]) => {
+      const on = S.tags.has(key);
+      return `<button type="button" class="chip chip-sm${on ? " is-on" : ""}" data-tag="${attr(key)}" aria-pressed="${on}">
+        <span class="chip-label">${esc(v.label)}</span><span class="chip-count">${v.n}</span></button>`;
+    }).join("");
+    box.querySelector("summary span.tag-sum").textContent = `${label}（${entries.length}）`;
+  };
+
+  const base = S.spots.filter((p) => S.role === "editor" || !p.draft);
+  const topics = new Map();
+  const artists = new Map();
+  base.forEach((p) => {
+    (p.topics || []).forEach((t) => {
+      const e = topics.get(t) || { label: spaceCamel(t), n: 0 };
+      e.n += 1; topics.set(t, e);
+    });
+    (p.artists || []).forEach((a) => {
+      const key = `@${a}`;
+      const e = artists.get(key) || { label: spaceCamel(a), n: 0 };
+      e.n += 1; artists.set(key, e);
+    });
+  });
+  const rank = (m) => [...m.entries()]
+    .sort((a, b) => b[1].n - a[1].n || a[1].label.localeCompare(b[1].label))
+    .filter(([k], i) => i < 24 || S.tags.has(k));
+  paint(E.topicList, E.tagBox, rank(topics), "", tr("topics"));
+  paint(E.artistList, E.artistBox, rank(artists), "@", tr("artists"));
+}
 
 function viewer() {
   S.role = "viewer";
@@ -712,6 +1049,7 @@ function setGroup(id) {
   S.group = id || "all";
   S.fitKey = "";
   render();
+  syncUrl();
 }
 
 function groups() {
@@ -743,7 +1081,7 @@ function list() {
   }
   E.spotList.innerHTML = rows.map((p) => {
     const img = photo(p);
-    const full = txt(p, "description");
+    const full = readableBody(p);
     const open = S.expanded.has(p.id);
     const long = full.length > 110;
     const body = long && !open ? short(full, 110) : full;
@@ -754,11 +1092,13 @@ function list() {
       ? `<div class="card-tools"><button type="button" class="button button-quiet" data-action="edit" data-id="${attr(p.id)}">
            <i data-lucide="pencil" aria-hidden="true"></i><span>${esc(tr("editShort"))}</span></button></div>`
       : "";
+    const badge = p.draft ? `<span class="badge badge-draft">${esc(tr("draft"))}</span>` : "";
+    const no = p.archive ? `<span class="badge badge-no">No.${p.archive}</span>` : "";
     return `<article class="card${p.id === S.selected ? " is-active" : ""}${open ? " is-expanded" : ""}">
       <button type="button" class="card-main" data-action="select" data-id="${attr(p.id)}" aria-current="${p.id === S.selected}">
-        <span class="card-thumb">${img ? `<img src="${attr(img)}" alt="" loading="lazy" onerror="this.remove()">` : ""}</span>
+        <span class="card-thumb">${img ? `<img src="${attr(img)}" alt="${attr(txt(p, "title"))}" loading="lazy" onerror="this.remove()">` : ""}</span>
         <span class="card-text">
-          <span class="card-title">${esc(txt(p, "title"))}</span>
+          <span class="card-title">${esc(txt(p, "title"))}${badge}${no}</span>
           <span class="card-place"><i data-lucide="map-pin" aria-hidden="true"></i>${esc(txt(p, "municipality"))}</span>
           <span class="card-body">${esc(body)}</span>
         </span>
@@ -791,6 +1131,7 @@ function selectSpot(id, focusDetail) {
     E.detailPanel.scrollIntoView({ block: "nearest", behavior: reducedMotion() ? "auto" : "smooth" });
   }
   if (focusDetail) E.detailPanel.querySelector(".detail-close")?.focus();
+  syncUrl();
 }
 
 function renderDetail() {
@@ -804,39 +1145,112 @@ function renderDetail() {
   const title = txt(p, "title");
   const shots = p.photos || [];
   const place = p.locationText || (valid(p.lat, p.lng) ? `${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}` : "");
-  const gallery = shots.map((x, i) => `
+  const gallery = shots.map((x, i) => {
+    const label = shots.length > 1 ? `${title}（${i + 1}/${shots.length}）` : title;
+    return `
     <button type="button" class="thumb" data-action="lightbox" data-src="${attr(x.src)}" data-caption="${attr(title)}"
-      aria-label="${attr(`${title} ${i + 1}`)}">
-      <img src="${attr(x.src)}" alt="${attr(`${title} ${i + 1}`)}" loading="lazy">
-    </button>`).join("");
+      data-index="${i}" aria-label="${attr(label)}">
+      <img src="${attr(x.src)}" alt="${attr(label)}" loading="lazy">
+    </button>`;
+  }).join("");
   const editBtn = S.role === "editor"
     ? `<button type="button" class="button button-primary" data-action="edit" data-id="${attr(p.id)}">
          <i data-lucide="pencil" aria-hidden="true"></i><span>${esc(tr("edit"))}</span></button>`
     : "";
+  const rows = filtered();
+  const at = rows.findIndex((x) => x.id === p.id);
+  const prev = at > 0 ? rows[at - 1] : null;
+  const next = at >= 0 && at < rows.length - 1 ? rows[at + 1] : null;
+
+  const tagChips = [
+    ...(p.topics || []).map((t) => ({ key: t, label: spaceCamel(t) })),
+    ...(p.artists || []).map((a) => ({ key: `@${a}`, label: spaceCamel(a) })),
+  ].map((t) => `<button type="button" class="chip chip-sm" data-action="tag" data-tag="${attr(t.key)}">${esc(t.label)}</button>`).join("");
+
+  const near = nearbySpots(p, 3).map((n) => `
+    <button type="button" class="near" data-action="select" data-id="${attr(n.p.id)}">
+      <span class="near-thumb">${photo(n.p) ? `<img src="${attr(photo(n.p))}" alt="" loading="lazy" onerror="this.remove()">` : ""}</span>
+      <span class="near-text"><span class="near-title">${esc(txt(n.p, "title"))}</span>
+      <span class="near-dist">${esc(txt(n.p, "municipality"))}・${n.km < 1 ? `${Math.round(n.km * 1000)}m` : `${n.km.toFixed(1)}km`}</span></span>
+    </button>`).join("");
+
   document.body.classList.add("detail-open");
   E.detailPanel.hidden = false;
   E.detailPanel.innerHTML = `
     <div class="detail-head">
-      <p class="eyebrow">${esc(tr("detail"))}</p>
+      <p class="eyebrow">${esc(tr("detail"))}${p.archive ? ` · No.${p.archive}` : ""}</p>
       <button type="button" class="icon-button detail-close" data-action="close" aria-label="${attr(tr("close"))}">
         <i data-lucide="x" aria-hidden="true"></i>
       </button>
     </div>
-    <h2 class="detail-title">${esc(title)}</h2>
+    <h2 class="detail-title">${p.draft ? `<span class="badge badge-draft">${esc(tr("draft"))}</span>` : ""}${esc(title)}</h2>
     <p class="detail-place"><i data-lucide="map-pin" aria-hidden="true"></i>${esc(txt(p, "municipality"))}</p>
     ${shots.length ? `<div class="detail-gallery">${gallery}</div>` : ""}
-    <p class="detail-body">${esc(txt(p, "description"))}</p>
-    ${place ? `<p class="detail-coord"><span class="label">${esc(tr("locationInfo"))}</span><span class="value">${esc(place)}</span></p>` : ""}
-    ${editBtn ? `<div class="detail-actions">${editBtn}</div>` : ""}`;
+    <p class="detail-body">${esc(readableBody(p))}</p>
+    ${tagChips ? `<div class="chips detail-tags">${tagChips}</div>` : ""}
+    <dl class="detail-meta">
+      ${place ? `<div><dt>${esc(tr("locationInfo"))}</dt><dd class="value">${esc(place)}</dd></div>` : ""}
+      ${p.takenAt ? `<div><dt>${esc(tr("takenAt"))}</dt><dd>${esc(showDate(p.takenAt))}</dd></div>` : ""}
+      <div><dt>${esc(tr("postedAt"))}</dt><dd>${esc(showDate(p.createdAt))}</dd></div>
+    </dl>
+    <div class="detail-actions">
+      <button type="button" class="button button-ghost" data-action="share" data-id="${attr(p.id)}">
+        <i data-lucide="share-2" aria-hidden="true"></i><span>${esc(tr("share"))}</span></button>
+      ${valid(p.lat, p.lng) ? `<a class="button button-ghost" target="_blank" rel="noopener noreferrer"
+        href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}">
+        <i data-lucide="navigation" aria-hidden="true"></i><span>${esc(tr("route"))}</span></a>` : ""}
+      <button type="button" class="button button-ghost" data-action="card" data-id="${attr(p.id)}">
+        <i data-lucide="image-down" aria-hidden="true"></i><span>${esc(tr("cardImage"))}</span></button>
+      ${editBtn}
+    </div>
+    <nav class="detail-nav" aria-label="${attr(tr("detail"))}">
+      <button type="button" class="button button-quiet" data-action="select" data-id="${attr(prev?.id || "")}" ${prev ? "" : "disabled"}>
+        <i data-lucide="chevron-left" aria-hidden="true"></i><span>${esc(tr("prevWork"))}</span></button>
+      <span class="detail-pos">${at + 1} / ${rows.length}</span>
+      <button type="button" class="button button-quiet" data-action="select" data-id="${attr(next?.id || "")}" ${next ? "" : "disabled"}>
+        <span>${esc(tr("nextWork"))}</span><i data-lucide="chevron-right" aria-hidden="true"></i></button>
+    </nav>
+    ${near ? `<section class="detail-near"><h3 class="block-title">${esc(tr("nearby"))}</h3><div class="near-list">${near}</div></section>` : ""}`;
   icons();
+}
+
+/* 選んだ作品に近い順に n 件返す */
+function nearbySpots(p, n) {
+  if (!valid(p.lat, p.lng)) return [];
+  return S.spots
+    .filter((x) => x.id !== p.id && valid(x.lat, x.lng) && (S.role === "editor" || !x.draft))
+    .map((x) => ({ p: x, km: distanceKm(p.lat, p.lng, x.lat, x.lng) }))
+    .sort((a, b) => a.km - b.km)
+    .slice(0, n);
+}
+
+function showDate(iso) {
+  const d = new Date(iso || "");
+  if (Number.isNaN(d.getTime())) return "";
+  try {
+    return new Intl.DateTimeFormat(S.lang === "zh" ? "zh-CN" : S.lang, { dateStyle: "long" }).format(d);
+  } catch {
+    return d.toISOString().slice(0, 10);
+  }
 }
 
 function detailClick(ev) {
   const act = ev.target.closest("[data-action]");
   if (!act) return;
-  if (act.dataset.action === "close") { S.selected = ""; list(); renderDetail(); return; }
-  if (act.dataset.action === "lightbox") return openLightbox(act.dataset.src, act.dataset.caption);
-  if (act.dataset.action === "edit") return editSpot(act.dataset.id);
+  const a = act.dataset.action;
+  if (a === "close") { S.selected = ""; list(); renderDetail(); syncUrl(); return; }
+  if (a === "lightbox") return openLightbox(act.dataset.src, act.dataset.caption, Number(act.dataset.index || 0));
+  if (a === "edit") return editSpot(act.dataset.id);
+  if (a === "share") return share(act.dataset.id);
+  if (a === "card") return exportCard(act.dataset.id);
+  if (a === "select" && act.dataset.id) return selectSpot(act.dataset.id, false);
+  if (a === "tag") {
+    const t = act.dataset.tag;
+    S.tags.has(t) ? S.tags.delete(t) : S.tags.add(t);
+    S.fitKey = "";
+    render();
+    syncUrl();
+  }
 }
 
 /* ========================== 7. 地図 ========================== */
@@ -845,10 +1259,21 @@ function initMap() {
   if (!window.L) { status(tr("mapLibraryMissing")); return; }
   S.map = L.map("map", { zoomControl: true, attributionControl: true });
   S.map.fitBounds(L.latLngBounds(HOME_BOUNDS), { padding: [20, 20] });
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution: "&copy; OpenStreetMap",
-  }).addTo(S.map);
+  /* 標準地図に加えて、国土地理院の航空写真と淡色地図を選べるようにする */
+  const layers = {
+    [tr("layerStandard")]: L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, attribution: "&copy; OpenStreetMap",
+    }),
+    [tr("layerPhoto")]: L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg", {
+      maxZoom: 18, attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank' rel='noopener'>国土地理院</a>",
+    }),
+    [tr("layerPale")]: L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png", {
+      maxZoom: 18, attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank' rel='noopener'>国土地理院</a>",
+    }),
+  };
+  Object.values(layers)[0].addTo(S.map);
+  S.layers = layers;
+  S.layerControl = L.control.layers(layers, null, { position: "topright" }).addTo(S.map);
   S.layer = L.markerClusterGroup
     ? L.markerClusterGroup({ showCoverageOnHover: false, disableClusteringAtZoom: 13, maxClusterRadius: 54, chunkedLoading: true })
     : L.layerGroup();
@@ -909,6 +1334,18 @@ function fitMarkers(bounds) {
   S.map.fitBounds(L.latLngBounds(target), { padding: [28, 28], maxZoom: all ? 10 : 13, animate: false });
 }
 
+/* 地図の切替ラベルも選んだ言語に合わせる */
+function relabelLayers() {
+  if (!S.layerControl || !S.map) return;
+  const keys = ["layerStandard", "layerPhoto", "layerPale"];
+  const list = Object.values(S.layers || {});
+  S.map.removeControl(S.layerControl);
+  const next = {};
+  list.forEach((layer, i) => { next[tr(keys[i])] = layer; });
+  S.layers = next;
+  S.layerControl = L.control.layers(next, null, { position: "topright" }).addTo(S.map);
+}
+
 function startPick() {
   S.pick = true;
   document.body.classList.add("picking");
@@ -924,6 +1361,38 @@ function stopPick() {
 
 /* ======================= 8. 編集フォーム ======================= */
 
+/* 通信に失敗しても書いたものが消えないよう、入力を控えておく */
+function saveFormDraft() {
+  if (S.editingId) return;
+  const body = {
+    title: E.titleJa.value, description: E.descriptionJa.value,
+    location: E.locationInfo.value, group: E.spotGroup.value,
+    lat: E.latitude.value, lng: E.longitude.value,
+    takenAt: E.takenAt.value, paste: E.pasteInput.value,
+  };
+  const empty = Object.values(body).every((v) => !String(v).trim());
+  try { empty ? localStorage.removeItem(FORMDRAFT) : localStorage.setItem(FORMDRAFT, JSON.stringify(body)); } catch {}
+}
+
+function restoreFormDraft() {
+  let body = null;
+  try { body = JSON.parse(localStorage.getItem(FORMDRAFT) || "null"); } catch {}
+  if (!body) return false;
+  E.titleJa.value = body.title || "";
+  E.descriptionJa.value = body.description || "";
+  E.locationInfo.value = body.location || "";
+  E.spotGroup.value = body.group || "";
+  E.latitude.value = body.lat || "";
+  E.longitude.value = body.lng || "";
+  E.takenAt.value = body.takenAt || "";
+  E.pasteInput.value = body.paste || "";
+  return true;
+}
+
+function clearFormDraft() {
+  try { localStorage.removeItem(FORMDRAFT); } catch {}
+}
+
 function resetForm() {
   S.drafts.forEach((d) => URL.revokeObjectURL(d.preview));
   S.drafts = [];
@@ -932,6 +1401,8 @@ function resetForm() {
   E.spotForm.reset();
   E.photoFile.value = "";
   E.deleteButton.hidden = true;
+  E.takenAt.value = "";
+  E.draftToggle.checked = false;
   E.editorTitle.textContent = tr("formTitle");
   E.submitLabel.textContent = tr("save");
   E.editingNotice.hidden = true;
@@ -953,6 +1424,8 @@ function editSpot(id) {
   E.spotGroup.value = p.group || p.municipality?.ja || "";
   E.latitude.value = valid(p.lat, p.lng) ? p.lat.toFixed(6) : "";
   E.longitude.value = valid(p.lat, p.lng) ? p.lng.toFixed(6) : "";
+  E.takenAt.value = p.takenAt || "";
+  E.draftToggle.checked = !!p.draft;
   E.deleteButton.hidden = false;
   E.editorTitle.textContent = tr("formTitleEdit");
   E.submitLabel.textContent = tr("saveEdit");
@@ -963,18 +1436,135 @@ function editSpot(id) {
   E.titleJa.focus();
 }
 
-function filesChanged(ev) {
+async function filesChanged(ev) {
   const files = [...(ev.target.files || [])];
-  files.forEach((file) => S.drafts.push({
-    file,
-    preview: URL.createObjectURL(file),
-    title: file.name.replace(/\.[^.]+$/, "").replace(/[-_]+/g, " "),
-    description: "",
-    location: "",
-  }));
+  for (const file of files) {
+    const d = {
+      file,
+      preview: URL.createObjectURL(file),
+      title: file.name.replace(/\.[^.]+$/, "").replace(/[-_]+/g, " "),
+      description: "",
+      location: "",
+    };
+    /* 写真に埋め込まれた撮影位置・日時を取り出して、空欄なら自動で入れる */
+    const ex = await readExif(file).catch(() => null);
+    if (ex?.lat != null && valid(ex.lat, ex.lng)) {
+      d.location = `${ex.lat.toFixed(6)}, ${ex.lng.toFixed(6)}`;
+      d.exif = ex;
+    }
+    if (ex?.taken) d.taken = ex.taken;
+    S.drafts.push(d);
+  }
   E.photoFile.value = "";
   openEditor();
+
+  const first = S.drafts.find((d) => d.exif || d.taken);
+  if (first && !S.editingId && !isBatch()) {
+    if (first.exif && !E.locationInfo.value.trim()) {
+      setCoord(first.exif.lat, first.exif.lng);
+      status(tr("exifLocation"));
+    }
+    if (first.taken && !E.takenAt.value) E.takenAt.value = first.taken;
+  }
   renderPhotoFields();
+  saveFormDraft();
+}
+
+/* ---- 写真の EXIF ----
+   canvas で作り直すと EXIF は消えるので、変換する前に読む。 */
+async function readExif(file) {
+  if (!/jpe?g/i.test(file.type) && !/\.jpe?g$/i.test(file.name)) return null;
+  const buf = await file.slice(0, 256 * 1024).arrayBuffer();
+  const v = new DataView(buf);
+  if (v.byteLength < 8 || v.getUint16(0) !== 0xffd8) return null;
+  let off = 2;
+  while (off + 4 < v.byteLength) {
+    if (v.getUint8(off) !== 0xff) break;
+    const marker = v.getUint8(off + 1);
+    if (marker === 0xda) break;
+    const size = v.getUint16(off + 2);
+    if (marker === 0xe1 && off + 10 < v.byteLength && v.getUint32(off + 4) === 0x45786966) {
+      return readTiff(v, off + 10);
+    }
+    off += 2 + size;
+  }
+  return null;
+}
+
+function readTiff(v, base) {
+  const le = v.getUint16(base) === 0x4949;
+  const u16 = (o) => v.getUint16(o, le);
+  const u32 = (o) => v.getUint32(o, le);
+  if (u16(base + 2) !== 0x002a) return null;
+  const SIZE = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8 };
+  const each = (start, fn) => {
+    if (start + 2 > v.byteLength) return;
+    const n = u16(start);
+    for (let i = 0; i < n; i++) {
+      const e = start + 2 + i * 12;
+      if (e + 12 > v.byteLength) return;
+      fn(e);
+    }
+  };
+  const where = (e) => {
+    const type = u16(e + 2);
+    const count = u32(e + 4);
+    const len = (SIZE[type] || 1) * count;
+    return { count, off: len > 4 ? base + u32(e + 8) : e + 8 };
+  };
+  const ascii = (e) => {
+    const { off, count } = where(e);
+    let out = "";
+    for (let i = 0; i < count && off + i < v.byteLength; i++) {
+      const c = v.getUint8(off + i);
+      if (!c) break;
+      out += String.fromCharCode(c);
+    }
+    return out;
+  };
+  const rationals = (e) => {
+    const { off, count } = where(e);
+    const out = [];
+    for (let i = 0; i < count; i++) {
+      if (off + i * 8 + 8 > v.byteLength) return out;
+      out.push(u32(off + i * 8) / (u32(off + i * 8 + 4) || 1));
+    }
+    return out;
+  };
+
+  const res = {};
+  let gpsIfd = 0;
+  let exifIfd = 0;
+  each(base + u32(base + 4), (e) => {
+    const tag = u16(e);
+    if (tag === 0x8825) gpsIfd = base + u32(e + 8);
+    if (tag === 0x8769) exifIfd = base + u32(e + 8);
+  });
+  if (exifIfd) each(exifIfd, (e) => {
+    if (u16(e) === 0x9003) {
+      const raw = ascii(e).trim();
+      const m = raw.match(/^(\d{4}):(\d{2}):(\d{2})/);
+      if (m) res.taken = `${m[1]}-${m[2]}-${m[3]}`;
+    }
+  });
+  if (gpsIfd) {
+    let latRef = "N";
+    let lngRef = "E";
+    let lat = null;
+    let lng = null;
+    each(gpsIfd, (e) => {
+      const tag = u16(e);
+      if (tag === 1) latRef = ascii(e);
+      if (tag === 2) lat = rationals(e);
+      if (tag === 3) lngRef = ascii(e);
+      if (tag === 4) lng = rationals(e);
+    });
+    if (lat?.length === 3 && lng?.length === 3) {
+      res.lat = dms(lat[0], lat[1], lat[2], latRef);
+      res.lng = dms(lng[0], lng[1], lng[2], lngRef);
+    }
+  }
+  return res;
 }
 
 /* 一括投稿モード: 修正中ではなく、新しい写真が2枚以上あるとき */
@@ -983,6 +1573,10 @@ function isBatch() { return !S.editingId && S.drafts.length > 1; }
 function renderPhotoFields() {
   E.spotForm.classList.toggle("is-batch", isBatch());
   E.photoPicker.querySelector("span").textContent = tr(S.editingId || S.drafts.length ? "addPhoto" : "choosePhoto");
+  const photoLabel = (i, n) => {
+    const t = (E.titleJa.value || "").trim() || tr("photos");
+    return n > 1 ? `${t}（${i + 1}/${n}）` : t;
+  };
 
   /* 登録済みの写真（修正中のみ） */
   if (!S.keptPhotos.length) {
@@ -993,9 +1587,9 @@ function renderPhotoFields() {
     E.currentPhotos.innerHTML = `<p class="field-label">${esc(tr("currentPhotos"))}</p>
       <ul class="photo-grid">${S.keptPhotos.map((x, i) => `
         <li class="photo-item">
-          <img src="${attr(x.src)}" alt="${attr(x.alt || `${tr("photos")} ${i + 1}`)}" loading="lazy">
+          <img src="${attr(x.src)}" alt="${attr(photoLabel(i, S.keptPhotos.length))}" loading="lazy">
           <button type="button" class="photo-remove" data-remove-kept="${i}"
-            aria-label="${attr(tr("removePhoto", { name: `${tr("photos")} ${i + 1}` }))}">
+            aria-label="${attr(tr("removePhoto", { name: photoLabel(i, S.keptPhotos.length) }))}">
             <i data-lucide="x" aria-hidden="true"></i>
           </button>
         </li>`).join("")}</ul>`;
@@ -1092,7 +1686,7 @@ async function saveForm(ev) {
         id,
         createdAt: editing?.createdAt || new Date().toISOString(),
         updatedAt: new Date().toISOString(),
-        title: titleObj(title),
+        title: titleObj(title, description),
         description: bodyObj(description),
         municipality: muni,
         group: manualGroup || muni.ja,
@@ -1101,6 +1695,9 @@ async function saveForm(ev) {
         lng: c.lng,
         photos,
       };
+      const taken = E.takenAt.value.trim() || drafts.find((d) => d?.taken)?.taken || editing?.takenAt || "";
+      if (taken) spot.takenAt = taken;
+      if (E.draftToggle.checked) spot.draft = true;
       if (editing) {
         const at = next.findIndex((x) => x.id === id);
         at >= 0 ? (next[at] = spot) : next.unshift(spot);
@@ -1110,6 +1707,7 @@ async function saveForm(ev) {
     }
     S.spots = next;
     await syncGh(editing ? "Edit Noto museum map post" : "Update Noto museum map posts");
+    clearFormDraft();
     render();
     const count = entries.length;
     resetForm();
@@ -1169,7 +1767,7 @@ async function removeSpot(id) {
     resetForm();
     closeEditor();
     render();
-    toast(tr("deleted"));
+    offerUndo(p);
   } catch (e) {
     S.spots = before;
     saveLocal();
@@ -1368,6 +1966,51 @@ function inferMunicipality(text, lat, lng) {
   return m ? { ja: m.ja, en: m.en, ko: m.ko, zh: m.zh } : { ...REGION };
 }
 
+/* ---- 市区町村の一括付け替え ---- */
+
+function openBulk() {
+  const opts = (sel) => MUNICIPAL.map((m) => `<option value="${attr(m.ja)}"${m.ja === sel ? " selected" : ""}>${esc(m[S.lang] || m.ja)}</option>`).join("");
+  E.bulkFrom.innerHTML = `<option value="">${esc(tr("bulkAll"))}</option>` +
+    `<option value="${attr(REGION.ja)}">${esc(REGION[S.lang])}</option>` + opts("");
+  E.bulkTo.innerHTML = opts(MUNICIPAL[0].ja);
+  E.bulkFrom.onchange = showBulkCount;
+  showBulkCount();
+  openModal(E.bulkModal, E.bulkFrom);
+}
+
+function bulkTargets() {
+  const from = E.bulkFrom.value;
+  return from ? S.spots.filter((p) => (p.municipality?.ja || "") === from) : filtered();
+}
+
+function showBulkCount() {
+  E.bulkCount.textContent = tr("bulkCount", { count: bulkTargets().length });
+}
+
+async function applyBulk(ev) {
+  ev.preventDefault();
+  const rows = bulkTargets();
+  const to = MUNICIPAL.find((m) => m.ja === E.bulkTo.value);
+  if (!rows.length || !to) return closeModal(E.bulkModal);
+  const before = S.spots;
+  const ids = new Set(rows.map((p) => p.id));
+  S.spots = S.spots.map((p) => (ids.has(p.id)
+    ? { ...p, municipality: { ja: to.ja, en: to.en, ko: to.ko, zh: to.zh }, group: to.ja, updatedAt: new Date().toISOString() }
+    : p));
+  status(tr("saving"));
+  try {
+    await syncGh("Reassign Noto map municipalities");
+    closeModal(E.bulkModal);
+    render();
+    toast(tr("bulkDone", { count: rows.length }));
+  } catch (e) {
+    S.spots = before;
+    saveLocal();
+    render();
+    status(`${tr("syncFailed")} ${e.message || ""}`);
+  }
+}
+
 /* ======================= 10. GitHub 連携 ======================= */
 
 function ghCfg() {
@@ -1466,6 +2109,9 @@ async function syncGh(message) {
   for (const spot of S.spots) {
     const item = { ...spot };
     delete item.localOnly;
+    delete item.artists;
+    delete item.topics;
+    delete item.archive;
     item.photos = await persistPhotos(spot);
     clean.push(item);
   }
@@ -1473,6 +2119,48 @@ async function syncGh(message) {
   await putGh(DATA, b64(`${JSON.stringify(clean, null, 2)}\n`), message, cur?.sha || null, true);
   S.spots = clean.map(norm).filter(Boolean);
   saveLocal();
+  await publishFeeds(clean).catch((e) => console.warn("feed", e));
+}
+
+/* 投稿を保存するたびに sitemap.xml と feed.xml も更新する。
+   静的サイトなので、ここで書かないと新着が検索・購読に載らない。 */
+async function publishFeeds(rows) {
+  const live = rows.filter((p) => !p.draft);
+  const site = `${location.origin}${location.pathname}`.replace(/index\.html$/, "");
+  const esc2 = (t) => String(t ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+  const when = (p) => (p.updatedAt || p.createdAt || new Date().toISOString());
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${esc2(site)}</loc><changefreq>weekly</changefreq></url>
+${live.map((p) => `  <url><loc>${esc2(`${site}?id=${p.id}`)}</loc><lastmod>${when(p).slice(0, 10)}</lastmod></url>`).join("\n")}
+</urlset>
+`;
+
+  const items = live.slice(0, 40).map((p) => `    <item>
+      <title>${esc2(p.title?.ja || "")}</title>
+      <link>${esc2(`${site}?id=${p.id}`)}</link>
+      <guid isPermaLink="true">${esc2(`${site}?id=${p.id}`)}</guid>
+      <pubDate>${new Date(when(p)).toUTCString()}</pubDate>
+      <category>${esc2(p.municipality?.ja || "")}</category>
+      <description>${esc2((p.description?.ja || "").slice(0, 400))}</description>
+    </item>`).join("\n");
+
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+    <title>のとのおと美術館デジタルマップ</title>
+    <link>${esc2(site)}</link>
+    <description>能登半島と氷見市の風景を写真と位置情報で記録するデジタル美術館</description>
+    <language>ja</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${items}
+</channel></rss>
+`;
+
+  for (const [path, text] of [["sitemap.xml", sitemap], ["feed.xml", feed]]) {
+    const cur = await getGh(path).catch(() => null);
+    await putGh(path, b64(text), "Update Noto map feeds", cur?.sha || null, true);
+  }
 }
 
 async function persistPhotos(spot) {
@@ -1582,6 +2270,85 @@ function raw(path) {
   return `https://raw.githubusercontent.com/${c.repo}/${c.branch}/${path}?v=${Date.now()}`;
 }
 
+/* 写真・題名・地名を1枚の画像にして保存する（SNS投稿用） */
+async function exportCard(id) {
+  const p = S.spots.find((x) => x.id === id);
+  if (!p) return;
+  const src = photo(p);
+  if (!src) return status(tr("noPreview"));
+  status(tr("cardMaking"));
+  try {
+    const img = await loadImage(src);
+    const W = 1200;
+    const H = 630;
+    const c = document.createElement("canvas");
+    c.width = W;
+    c.height = H;
+    const g = c.getContext("2d");
+    g.fillStyle = "#0f2a3d";
+    g.fillRect(0, 0, W, H);
+    /* 写真は左 62% を覆う形で配置 */
+    const bw = Math.round(W * 0.62);
+    const scale = Math.max(bw / img.width, H / img.height);
+    const dw = img.width * scale;
+    const dh = img.height * scale;
+    g.save();
+    g.beginPath();
+    g.rect(0, 0, bw, H);
+    g.clip();
+    g.drawImage(img, (bw - dw) / 2, (H - dh) / 2, dw, dh);
+    g.restore();
+
+    const x = bw + 44;
+    const w = W - x - 44;
+    g.fillStyle = "#cfe0ea";
+    g.font = "600 22px 'BIZ UDPGothic', sans-serif";
+    g.fillText(txt(p, "municipality"), x, 132);
+    if (p.archive) g.fillText(`Archive ${p.archive}`, x, 100);
+    g.fillStyle = "#ffffff";
+    g.font = "700 40px 'BIZ UDPGothic', sans-serif";
+    wrapText(g, txt(p, "title"), x, 200, w, 54, 5);
+    g.fillStyle = "#9fc3d8";
+    g.font = "400 22px 'BIZ UDPGothic', sans-serif";
+    g.fillText(tr("siteTitle"), x, H - 48);
+
+    const url = c.toDataURL("image/png");
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${slug(txt(p, "title")) || "noto"}-card.png`;
+    a.click();
+    toast(tr("cardDone"));
+  } catch (e) {
+    status(`${tr("cardFailed")} ${e.message || ""}`);
+  }
+}
+
+function loadImage(src) {
+  return new Promise((ok, no) => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => ok(img);
+    img.onerror = () => no(new Error("image"));
+    img.src = src;
+  });
+}
+
+function wrapText(g, text, x, y, maxW, lineH, maxLines) {
+  const chars = [...String(text || "")];
+  let line = "";
+  let n = 0;
+  for (const ch of chars) {
+    if (g.measureText(line + ch).width > maxW && line) {
+      g.fillText(line, x, y + n * lineH);
+      line = ch;
+      if (++n >= maxLines - 1) break;
+    } else {
+      line += ch;
+    }
+  }
+  if (line && n < maxLines) g.fillText(line, x, y + n * lineH);
+}
+
 function exportJson() {
   const url = URL.createObjectURL(new Blob([`${JSON.stringify(S.spots, null, 2)}\n`], { type: "application/json" }));
   const a = document.createElement("a");
@@ -1637,8 +2404,11 @@ function norm(p) {
     lat = c.lat;
     lng = c.lng;
   }
-  const title = typeof p.title === "string" ? titleObj(p.title) : p.title || titleObj("Untitled");
-  const description = typeof p.description === "string" ? bodyObj(p.description) : p.description || bodyObj("");
+  /* 保存済みの en/ko/zh は語中一致で壊れているものがあるので、ja から作り直す */
+  const rawTitle = typeof p.title === "string" ? p.title : p.title?.ja || "Untitled";
+  const rawBody = typeof p.description === "string" ? p.description : p.description?.ja || "";
+  const title = titleObj(rawTitle, rawBody);
+  const description = bodyObj(rawBody);
   let municipality = p.municipality;
   let group = p.group;
   /* 未分類のまま残っている投稿は、地名か座標から入れ直す */
@@ -1656,30 +2426,94 @@ function norm(p) {
     lat,
     lng,
     photos: Array.isArray(p.photos) ? p.photos.filter((x) => x?.src) : [],
+    /* 本文から読み取るだけの項目。保存はしない（syncGh で外す）。 */
+    artists: parseArtists(rawBody),
+    topics: parseTopics(rawBody),
+    archive: parseArchive(rawBody),
   };
 }
 
-function titleObj(s) {
+/* ---- 本文のハッシュタグを読み解く ----
+   作者は #InspiredByPaulKlee のように作家を、#ModernismNoto のように
+   様式・主題を書いている。市区町村タグと美術館名は絞り込みに使わない。 */
+
+const TAG_SKIP = /^(NotoNoOtoMuseum|CentralNotoPeninsula)$/i;
+
+function hashtags(body) {
+  return [...String(body || "").matchAll(/#([A-Za-z][A-Za-z0-9]*)/g)].map((m) => m[1]);
+}
+
+function isPlaceTag(tag) {
+  if (/(City|Town|Village)$/.test(tag)) return true;
+  const low = tag.toLowerCase();
+  return MUNICIPAL.some((m) => [m.en, ...m.aliases].some((a) => low === String(a).toLowerCase().replace(/\s+/g, "")));
+}
+
+function parseArtists(body) {
+  return [...new Set(hashtags(body).filter((t) => /^InspiredBy./.test(t)).map((t) => t.slice(10)))];
+}
+
+function parseTopics(body) {
+  return [...new Set(hashtags(body).filter((t) => !/^InspiredBy/.test(t) && !TAG_SKIP.test(t) && !isPlaceTag(t)))];
+}
+
+function parseArchive(body) {
+  const m = String(body || "").match(/Archive\s+(\d+)/i);
+  return m ? Number(m[1]) : null;
+}
+
+/* 人名タグを読みやすく割る: PaulKlee → Paul Klee */
+function spaceCamel(s) {
+  return String(s).replace(/([a-z0-9])([A-Z])/g, "$1 $2").replace(/\s+/g, " ").trim();
+}
+
+/* ---- 多言語 ----
+   作者は本文に「日本語の行 → その英訳の行」の順で書いている（102件中92件）。
+   機械置換ではなく、その英訳をそのまま使う。
+   韓国語・中国語の訳は存在しないので日本語を出す。以前は語中一致で
+   Ishikawa が I시카마치wa のように壊れていた。訳せないものは訳さない。 */
+
+function isLatinLine(line) {
+  const jp = (line.match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
+  const la = (line.match(/[A-Za-z]/g) || []).length;
+  return la > 0 && jp === 0;
+}
+
+function isPlaceLine(line) {
+  return /,\s*(Japan|Ishikawa|Toyama|Noto Peninsula)\b/i.test(line);
+}
+
+function isMetaLine(line) {
+  return !line || line.startsWith("#") || /^Archive\s+\d+/i.test(line) || !!coords(line);
+}
+
+/* 本文から作者自身の英訳を取り出す */
+function englishParts(body) {
+  const lines = String(body || "").split(/\r?\n/).map((l) => l.trim());
+  const kept = lines.filter((l) => l && !isMetaLine(l) && isLatinLine(l));
+  const lead = [];
+  for (const l of kept) {
+    if (isPlaceLine(l)) break;
+    lead.push(l);
+    if (lead.length >= 3) break;
+  }
+  return { title: lead.join(" ").trim(), body: kept.join("\n").trim() };
+}
+
+function titleObj(s, body) {
   const m = String(s).trim().match(/^(.*?)【(.+?)】/);
   const ja = m ? m[1].trim() || String(s).trim() : String(s).trim();
   const inside = m ? m[2].replace(/[｜|]/g, " / ").trim() : "";
-  return { ja, en: inside || trans(ja, "en"), ko: trans(ja, "ko"), zh: trans(ja, "zh") };
+  const en = inside || englishParts(body).title || ja;
+  return { ja, en, ko: ja, zh: ja };
 }
 
 function bodyObj(s) {
   const clean = String(s || "").trim();
-  return { ja: clean, en: mostlyLatin(clean) ? clean : trans(clean, "en"), ko: trans(clean, "ko"), zh: trans(clean, "zh") };
-}
-
-function trans(text, lang) {
-  let s = String(text || "");
-  if (lang === "ja") return s;
-  MUNICIPAL.forEach((m) => {
-    s = s.replaceAll(m.ja, m[lang]);
-    m.aliases.forEach((a) => { s = s.replace(new RegExp(rx(a), "gi"), m[lang]); });
-  });
-  Object.entries(WORDS).forEach(([ja, vals]) => { s = s.replaceAll(ja, vals[lang]); });
-  return s;
+  /* ハッシュタグのローマ字が多いので「英字が多いか」では判定できない。
+     ローマ字だけの行が取れればそれが作者の英訳。 */
+  const en = englishParts(clean).body || clean;
+  return { ja: clean, en, ko: clean, zh: clean };
 }
 
 function tr(key, vars = {}) {
@@ -1688,13 +2522,74 @@ function tr(key, vars = {}) {
   return s;
 }
 
+/* 画面に出す本文。ハッシュタグ・Archive 番号・座標は別に表示しているので省く。
+   保存してある文章そのものは変えない。 */
+function readableBody(p) {
+  return txt(p, "description")
+    .split(/\r?\n/)
+    .filter((l) => {
+      const t = l.trim();
+      if (!t) return true;
+      if (t.startsWith("#")) return false;
+      if (/^Archive\s+\d+/i.test(t)) return false;
+      if (coords(t) && t.replace(/[\d\s°'"NSEW.,+-]/gi, "") === "") return false;
+      return true;
+    })
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function txt(p, key) {
   const v = p[key];
   return typeof v === "string" ? v : v?.[S.lang] || v?.ja || v?.en || "";
 }
 
+/* 市区町村・タグ・検索語の3つで絞り、選ばれた順に並べる */
 function filtered(id = S.group) {
-  return id === "all" ? S.spots : S.spots.filter((p) => gid(p.group || p.municipality?.ja) === id);
+  let rows = S.spots;
+  if (S.role !== "editor") rows = rows.filter((p) => !p.draft);
+  if (id !== "all") rows = rows.filter((p) => gid(p.group || p.municipality?.ja) === id);
+  if (S.tags.size) rows = rows.filter((p) => [...S.tags].every((t) => spotTags(p).includes(t)));
+  const q = S.q.trim().toLowerCase();
+  if (q) rows = rows.filter((p) => searchText(p).includes(q));
+  return sortRows(rows);
+}
+
+function spotTags(p) {
+  return [...(p.topics || []), ...(p.artists || []).map((a) => `@${a}`)];
+}
+
+function searchText(p) {
+  return [
+    p.title?.ja, p.title?.en, p.description?.ja, p.description?.en,
+    p.municipality?.ja, p.municipality?.en, p.group, p.locationText,
+    ...(p.topics || []), ...(p.artists || []).map(spaceCamel),
+    p.archive ? `archive ${p.archive}` : "",
+  ].join("\n").toLowerCase();
+}
+
+function sortRows(rows) {
+  const at = (s) => Date.parse(s?.updatedAt || s?.createdAt || "") || 0;
+  const copy = [...rows];
+  if (S.sort === "old") return copy.sort((a, b) => at(a) - at(b));
+  if (S.sort === "archive") return copy.sort((a, b) => (a.archive ?? 1e9) - (b.archive ?? 1e9) || at(b) - at(a));
+  if (S.sort === "title") return copy.sort((a, b) => txt(a, "title").localeCompare(txt(b, "title"), S.lang));
+  return copy.sort((a, b) => at(b) - at(a));
+}
+
+function filtersActive() {
+  return S.group !== "all" || S.tags.size > 0 || !!S.q.trim();
+}
+
+function clearFilters() {
+  S.group = "all";
+  S.tags.clear();
+  S.q = "";
+  E.searchInput.value = "";
+  S.fitKey = "";
+  render();
+  syncUrl();
 }
 
 function photo(p) { return p.photos?.[0]?.src || ""; }
@@ -1715,9 +2610,6 @@ function ext(file) {
 function slug(s) {
   return String(s || "photo").toLowerCase().replace(/\.[^.]+$/, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 42) || "photo";
-}
-function mostlyLatin(s) {
-  return (String(s).match(/[A-Za-z]/g) || []).length > (String(s).match(/[぀-ヿ㐀-鿿]/g) || []).length;
 }
 function short(s, n) { s = String(s || ""); return s.length > n ? `${s.slice(0, n - 1)}…` : s; }
 function esc(s) {
@@ -1804,14 +2696,40 @@ function trapFocus(ev, el) {
   else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
 }
 
-function openLightbox(src, caption) {
+function openLightbox(src, caption, index = 0) {
   lastFocus = document.activeElement;
+  S.lightRows = filtered();
+  S.lightAt = S.lightRows.findIndex((x) => x.id === S.selected);
+  S.lightShot = index;
+  E.lightbox.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  paintLightbox(src, caption);
+  E.lightboxClose.focus();
+}
+
+function paintLightbox(src, caption) {
   E.lightboxImage.src = src;
   E.lightboxImage.alt = caption || "";
   E.lightboxCaption.textContent = caption || "";
-  E.lightbox.setAttribute("aria-hidden", "false");
-  document.body.classList.add("modal-open");
-  E.lightboxClose.focus();
+  const rows = S.lightRows || [];
+  E.lightboxPrev.disabled = !(S.lightAt > 0);
+  E.lightboxNext.disabled = !(S.lightAt >= 0 && S.lightAt < rows.length - 1);
+  E.lightboxPos.textContent = rows.length ? `${S.lightAt + 1} / ${rows.length}` : "";
+}
+
+/* 拡大したまま隣の作品へ送る */
+function stepLightbox(dir) {
+  const rows = S.lightRows || [];
+  const at = S.lightAt + dir;
+  if (at < 0 || at >= rows.length) return;
+  S.lightAt = at;
+  const p = rows[at];
+  S.selected = p.id;
+  S.lightShot = 0;
+  list();
+  renderDetail();
+  syncUrl();
+  paintLightbox(photo(p), txt(p, "title"));
 }
 
 function closeLightbox() {
@@ -1821,6 +2739,34 @@ function closeLightbox() {
   lastFocus?.focus();
 }
 
+/* 消した直後だけ、戻せるようにしておく */
+function offerUndo(spot) {
+  S.undo = spot;
+  toast(tr("deleted"), true);
+  clearTimeout(offerUndo.timer);
+  offerUndo.timer = setTimeout(() => { S.undo = null; E.undoButton.hidden = true; }, 12000);
+}
+
+async function undoDelete() {
+  const spot = S.undo;
+  if (!spot) return;
+  S.undo = null;
+  E.undoButton.hidden = true;
+  const before = S.spots;
+  S.spots = [spot, ...S.spots];
+  status(tr("saving"));
+  try {
+    await syncGh("Restore Noto map post");
+    render();
+    toast(tr("restored"));
+  } catch (e) {
+    S.spots = before;
+    saveLocal();
+    render();
+    status(`${tr("syncFailed")} ${e.message || ""}`);
+  }
+}
+
 function status(message) {
   E.mapStatus.textContent = message;
   E.mapStatus.classList.add("is-on");
@@ -1828,9 +2774,13 @@ function status(message) {
   status.timer = setTimeout(() => E.mapStatus.classList.remove("is-on"), 4000);
 }
 
-function toast(message) {
+function toast(message, withUndo = false) {
   E.toastText.textContent = message;
+  E.undoButton.hidden = !withUndo;
   E.toast.classList.add("is-on");
   clearTimeout(toast.timer);
-  toast.timer = setTimeout(() => E.toast.classList.remove("is-on"), 4200);
+  toast.timer = setTimeout(() => {
+    E.toast.classList.remove("is-on");
+    E.undoButton.hidden = true;
+  }, withUndo ? 12000 : 4200);
 }

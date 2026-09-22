@@ -302,6 +302,8 @@ img { max-width: 100%; }
 input[type="text"],
 input[type="number"],
 input[type="password"],
+input[type="search"],
+input[type="date"],
 textarea,
 select {
   width: 100%;
@@ -837,6 +839,167 @@ body.editor-open .editor { display: flex; }
 .batch-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .batch-fields { display: grid; gap: 8px; min-width: 0; }
 
+/* ========================= さがす ========================= */
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.search-wrap > svg { width: 1.05em; height: 1.05em; color: var(--ink-3); flex: 0 0 auto; }
+.search-wrap input {
+  border: 0;
+  background: none;
+  padding-left: 0;
+  min-width: 0;
+}
+.search-wrap input:focus-visible { outline-offset: 3px; }
+.search-wrap input::-webkit-search-cancel-button { display: none; }
+/* flex の中で縮まないようにする。縮むとタップ領域が基準を割る。 */
+.search-clear { flex: 0 0 auto; border: 0; background: none; margin-right: 2px; }
+
+.sub-title {
+  margin: 4px 0 0;
+  color: var(--ink-2);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.tagbox {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.tagbox > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--tap);
+  padding: 0 13px;
+  color: var(--ink-2);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tagbox > summary svg { width: 1.05em; height: 1.05em; color: var(--accent); }
+.tagbox > .chips { padding: 0 13px 13px; }
+
+.chip-sm {
+  padding: 0 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.list-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.list-tools .select-wrap { flex: 1 1 10rem; }
+.list-tools .select-wrap select { min-width: 0; width: 100%; }
+.view-toggle { flex: 0 0 auto; grid-auto-columns: minmax(4.5rem, auto); }
+
+/* ========================= 一覧の写真表示 ========================= */
+
+body.view-grid .cards {
+  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  gap: 8px;
+}
+body.view-grid .card { padding: 0; overflow: hidden; }
+body.view-grid .card-main { grid-template-columns: minmax(0, 1fr); gap: 0; }
+body.view-grid .card-thumb { width: 100%; height: auto; aspect-ratio: 1; border: 0; border-radius: 0; }
+body.view-grid .card-text { padding: 8px 10px 10px; }
+body.view-grid .card-body,
+body.view-grid .link-button { display: none; }
+body.view-grid .card-tools { padding: 0 10px 10px; }
+
+.badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.badge-draft { background: var(--accent-soft); color: var(--accent); box-shadow: inset 0 0 0 1px currentColor; }
+.badge-no { background: var(--surface-3); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* ========================= 詳細の追加部分 ========================= */
+
+.detail-tags { margin: 0 0 14px; }
+
+.detail-meta { display: grid; gap: 8px; margin: 0 0 14px; }
+.detail-meta > div {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.detail-meta dt { margin: 0; color: var(--ink-3); font-size: 0.76rem; font-weight: 700; }
+.detail-meta dd { margin: 0; font-size: 0.86rem; }
+.detail-meta dd.value { font-family: var(--mono); font-size: 0.8rem; overflow-wrap: anywhere; }
+
+.detail-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; }
+.detail-actions .button { flex: 1 1 8rem; }
+
+.detail-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.detail-pos { color: var(--ink-3); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+
+.detail-near { margin-top: 18px; }
+.near-list { display: grid; gap: 8px; margin-top: 10px; }
+.near {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 10px;
+  padding: 7px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+}
+.near:hover { border-color: var(--brand); }
+.near-thumb {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--surface-3);
+}
+.near-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.near-text { display: grid; gap: 2px; min-width: 0; align-content: center; }
+.near-title { font-size: 0.86rem; font-weight: 700; }
+.near-dist { color: var(--ink-3); font-size: 0.76rem; }
+
+/* ========================= フォームの追加部分 ========================= */
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.check input { width: 1.4rem; height: 1.4rem; min-height: 0; flex: 0 0 auto; accent-color: var(--brand); }
+
 /* ========================= 重ねる層 ========================= */
 
 .modal {
@@ -886,6 +1049,18 @@ body.editor-open .editor { display: flex; }
 }
 .toast.is-on { display: inline-flex; }
 .toast svg { width: 1.2em; height: 1.2em; }
+.toast-undo {
+  min-height: 2.25rem;
+  margin-left: 6px;
+  padding: 0 12px;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.toast-undo:hover { background: rgba(255, 255, 255, 0.16); }
 
 .lightbox {
   position: fixed;
@@ -900,6 +1075,26 @@ body.editor-open .editor { display: flex; }
 .lightbox-frame { width: min(1000px, 100%); margin: 0; display: grid; gap: 10px; }
 .lightbox-frame img { max-width: 100%; max-height: 78dvh; object-fit: contain; border-radius: var(--radius); background: var(--surface); }
 .lightbox-frame figcaption { color: #fff; font-weight: 700; text-align: center; }
+.lightbox-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.lightbox-pos { color: #fff; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+
+/* 地図の表示切替（Leaflet の部品） */
+.leaflet-control-layers {
+  border-radius: var(--radius) !important;
+  border-color: var(--line) !important;
+  background: var(--surface) !important;
+  color: var(--ink);
+  box-shadow: var(--shadow-1) !important;
+}
+.leaflet-control-layers-toggle { width: 38px !important; height: 38px !important; }
+.leaflet-control-layers-expanded { padding: 10px 12px !important; font-family: var(--sans); }
+.leaflet-control-layers label { display: flex; align-items: center; gap: 7px; min-height: 2rem; font-size: 0.85rem; }
 
 /* 権限による出し分け */
 body.is-viewer .editor-only { display: none !important; }
@@ -965,6 +1160,9 @@ body.is-viewer .editor-only { display: none !important; }
 
 @media (max-width: 480px) {
   .brand-title { font-size: 1.02rem; }
+  .list-tools { flex-direction: column; align-items: stretch; }
+  .detail-meta > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .detail-actions .button { flex: 1 1 100%; }
   .grid-2 { grid-template-columns: 1fr; }
   .batch-item { grid-template-columns: 1fr; }
   .batch-thumb { aspect-ratio: 16 / 10; }

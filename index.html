@@ -8,6 +8,32 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#124a6b" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0f1821" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://tmgddjtt57-collab.github.io/notomap/" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="のとのおと美術館デジタルマップ" href="feed.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="のとのおと美術館デジタルマップ" />
+    <meta property="og:title" content="のとのおと美術館デジタルマップ" />
+    <meta property="og:description" content="能登半島と氷見市の海、里山、集落、季節の色を写真と位置情報で記録するデジタル美術館の地図です。" />
+    <meta property="og:url" content="https://tmgddjtt57-collab.github.io/notomap/" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="のとのおと美術館デジタルマップ" />
+    <meta name="twitter:description" content="能登半島と氷見市の海、里山、集落、季節の色を写真と位置情報で記録するデジタル美術館の地図です。" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Museum",
+        "name": "のとのおと美術館デジタルマップ",
+        "alternateName": "Noto no Oto Museum Digital Map",
+        "description": "能登半島と氷見市の海、里山、集落、季節の色を写真と位置情報で記録し、世界の来訪者に紹介する地図です。",
+        "url": "https://tmgddjtt57-collab.github.io/notomap/",
+        "inLanguage": ["ja", "en", "ko", "zh"],
+        "areaServed": { "@type": "Place", "name": "能登半島・氷見市" }
+      }
+    </script>
 
     <script>
       /* 描画前に配色と文字サイズを反映して、ちらつきを防ぐ */
@@ -31,7 +57,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="styles.css?v=20260922b" />
+    <link rel="stylesheet" href="styles.css?v=20260922c" />
   </head>
 
   <body class="is-viewer">
@@ -121,6 +147,9 @@
                   <button type="button" class="button button-ghost" id="githubSyncButton">
                     <i data-lucide="cloud-upload" aria-hidden="true"></i><span data-i18n="syncButton">GitHub に接続</span>
                   </button>
+                  <button type="button" class="button button-ghost" id="bulkButton">
+                    <i data-lucide="replace" aria-hidden="true"></i><span data-i18n="bulk">市区町村を一括で変える</span>
+                  </button>
                   <button type="button" class="button button-ghost" id="exportButton">
                     <i data-lucide="download" aria-hidden="true"></i><span data-i18n="exportButton">JSON を書き出す</span>
                   </button>
@@ -145,10 +174,34 @@
             </p>
           </section>
 
-          <section class="block" aria-labelledby="groupsTitle">
-            <h2 class="block-title" id="groupsTitle" data-i18n="groups">市区町村</h2>
+          <section class="block" aria-labelledby="findTitle">
+            <h2 class="block-title" id="findTitle" data-i18n="find">さがす</h2>
+
+            <div class="search-wrap">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <label class="visually-hidden" for="searchInput" data-i18n="search">検索</label>
+              <input id="searchInput" type="search" autocomplete="off"
+                data-i18n-placeholder="searchPlaceholder" placeholder="題名・説明・地名・タグ" />
+              <button type="button" class="icon-button search-clear" id="searchClear" hidden data-i18n-label="searchClear">
+                <i data-lucide="x" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <h3 class="sub-title" id="groupsTitle" data-i18n="groups">市区町村</h3>
             <p class="hint" data-i18n="groupsHint">市区町村を選ぶと、地図と一覧が絞り込まれます。</p>
-            <div class="chips" id="groupList"></div>
+            <div class="chips" id="groupList" role="group" aria-labelledby="groupsTitle"></div>
+
+            <details class="tagbox" id="tagBox">
+              <summary><i data-lucide="shapes" aria-hidden="true"></i><span class="tag-sum" data-i18n="topics">様式・主題</span></summary>
+              <div class="chips" id="topicList"></div>
+            </details>
+
+            <details class="tagbox" id="artistBox">
+              <summary><i data-lucide="palette" aria-hidden="true"></i><span class="tag-sum" data-i18n="artists">作家</span></summary>
+              <div class="chips" id="artistList"></div>
+            </details>
+
+            <button type="button" class="link-button" id="clearFiltersButton" hidden data-i18n="clearFilters">絞り込みを解除</button>
           </section>
 
           <section class="block block-grow" aria-labelledby="spotsTitle">
@@ -156,6 +209,27 @@
               <h2 class="block-title" id="spotsTitle" data-i18n="photos">写真</h2>
               <span class="count" id="spotCount"></span>
             </div>
+            <div class="list-tools">
+              <label class="visually-hidden" for="sortSelect" data-i18n="sortBy">並べ替え</label>
+              <span class="select-wrap">
+                <i data-lucide="arrow-down-wide-narrow" aria-hidden="true"></i>
+                <select id="sortSelect">
+                  <option value="new" data-i18n="sortNew">新しい順</option>
+                  <option value="old" data-i18n="sortOld">古い順</option>
+                  <option value="archive" data-i18n="sortArchive">Archive番号順</option>
+                  <option value="title" data-i18n="sortTitle">題名順</option>
+                </select>
+              </span>
+              <div class="segmented view-toggle" id="viewToggle" role="group" data-i18n-label="viewMode">
+                <button type="button" class="segment" data-view="list" aria-pressed="true">
+                  <i data-lucide="rows-3" aria-hidden="true"></i><span data-i18n="viewList">一覧</span>
+                </button>
+                <button type="button" class="segment" data-view="grid" aria-pressed="false">
+                  <i data-lucide="grid-2x2" aria-hidden="true"></i><span data-i18n="viewGrid">写真</span>
+                </button>
+              </div>
+            </div>
+
             <button type="button" class="button button-primary button-wide editor-only" id="newSpotButton">
               <i data-lucide="image-plus" aria-hidden="true"></i><span data-i18n="newPost">新しく投稿</span>
             </button>
@@ -233,6 +307,16 @@
                 <i data-lucide="map-pin" aria-hidden="true"></i><span data-i18n="pickOnMap">地図で指定</span>
               </button>
             </div>
+
+            <label class="field single-only">
+              <span class="field-label" data-i18n="takenAt">撮影日</span>
+              <input id="takenAt" type="date" />
+            </label>
+
+            <label class="check single-only">
+              <input id="draftToggle" type="checkbox" />
+              <span data-i18n="isDraft">下書きにする（公開しない）</span>
+            </label>
 
             <details class="advanced single-only">
               <summary data-i18n="coordDetail">緯度・経度を直接入力</summary>
@@ -321,8 +405,31 @@
       </form>
     </div>
 
+    <div class="modal" id="bulkModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bulkTitle">
+      <form class="modal-card" id="bulkForm">
+        <p class="eyebrow" data-i18n="editorTools">編集者の道具</p>
+        <h2 id="bulkTitle" data-i18n="bulkTitle">市区町村の一括付け替え</h2>
+        <label class="field">
+          <span class="field-label" data-i18n="bulkFrom">対象</span>
+          <select id="bulkFrom"></select>
+        </label>
+        <label class="field">
+          <span class="field-label" data-i18n="bulkTo">変更先</span>
+          <select id="bulkTo"></select>
+        </label>
+        <p class="hint" id="bulkCount"></p>
+        <div class="modal-actions">
+          <button type="button" class="button button-ghost" id="bulkCancelButton" data-i18n="cancel">キャンセル</button>
+          <button type="submit" class="button button-primary">
+            <i data-lucide="replace" aria-hidden="true"></i><span data-i18n="bulkApply">まとめて変える</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
     <p class="toast" id="toast" role="status" aria-live="polite">
       <i data-lucide="circle-check" aria-hidden="true"></i><span id="toastText"></span>
+      <button type="button" class="toast-undo" id="undoButton" hidden data-i18n="undo">元に戻す</button>
     </p>
 
     <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" data-i18n-label="detail">
@@ -332,12 +439,29 @@
       <figure class="lightbox-frame">
         <img id="lightboxImage" alt="" />
         <figcaption id="lightboxCaption"></figcaption>
+        <nav class="lightbox-nav" aria-label="作品の送り">
+          <button type="button" class="button button-ghost" id="lightboxPrev" data-i18n-label="prevWork">
+            <i data-lucide="chevron-left" aria-hidden="true"></i><span data-i18n="prevWork">前の作品</span>
+          </button>
+          <span class="lightbox-pos" id="lightboxPos"></span>
+          <button type="button" class="button button-ghost" id="lightboxNext" data-i18n-label="nextWork">
+            <span data-i18n="nextWork">次の作品</span><i data-lucide="chevron-right" aria-hidden="true"></i>
+          </button>
+        </nav>
       </figure>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-    <script src="app.js?v=20260922b" defer></script>
+    <script src="app.js?v=20260922c" defer></script>
+    <script>
+      /* 現地は電波が不安定なので、一度見た地図と写真は圏外でも開けるようにする */
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("sw.js").catch(() => {});
+        });
+      }
+    </script>
   </body>
 </html>
