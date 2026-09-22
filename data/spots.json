@@ -1,5 +1,39 @@
 [
   {
+    "id": "spot-muczzup0-s1kix8",
+    "createdAt": "2026-09-22T18:18:56.613Z",
+    "updatedAt": "2026-09-22T18:18:56.613Z",
+    "title": {
+      "ja": "影は、 まだ、 帰らない。",
+      "en": "影は、 まだ、 帰らない。",
+      "ko": "影は、 まだ、 帰らない。",
+      "zh": "影は、 まだ、 帰らない。"
+    },
+    "description": {
+      "ja": "影は、\nまだ、\n帰らない。\nThe shadows\nhave not\ngone home yet.\n\n石川県庁【Ishikawa Prefectural Government Office】\nKanazawa, Ishikawa, Japan\n\n36°35'38.2\"N 136°37'32.8\"E\n\nArchive 095\n#ModernismNoto\n#InspiredBySeijiFujishiro\n#KanazawaCity\n#NotoNoOtoMuseum",
+      "en": "影は、\nまだ、\n帰らない。\nThe shadows\nhave not\ngone home yet.\n\n石川県庁【Ishikawa Prefectural Government Office】\nKanazawa, Ishikawa, Japan\n\n36°35'38.2\"N 136°37'32.8\"E\n\nArchive 095\n#ModernismNoto\n#InspiredBySeijiFujishiro\n#KanazawaCity\n#NotoNoOtoMuseum",
+      "ko": "影は、\nまだ、\n帰らない。\nThe shadows\nhave not\ngone home yet.\n\n石川県庁【I시카마치wa Prefectural Government Office】\nKanazawa, I시카마치wa, Japan\n\n36°35'38.2\"N 136°37'32.8\"E\n\nArchive 095\n#ModernismNoto\n#InspiredBySeijiFujishiro\n#KanazawaCity\n#NotoNoOtoMuseum",
+      "zh": "影は、\nまだ、\n帰らない。\nThe shadows\nhave not\ngone home yet.\n\n石川県庁【I志贺町wa Prefectural Government Office】\nKanazawa, I志贺町wa, Japan\n\n36°35'38.2\"N 136°37'32.8\"E\n\nArchive 095\n#ModernismNoto\n#InspiredBySeijiFujishiro\n#KanazawaCity\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
+    },
+    "group": "内灘町",
+    "locationText": "36°35'38.2\"N 136°37'32.8\"E",
+    "lat": 36.593944444444446,
+    "lng": 136.62577777777778,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1790101133707-spot-muczzup0-s1kix8-1-ios-19.jpg?v=1790101136612",
+        "alt": "iOS の画像 (19).jpg",
+        "path": "media/spots/1790101133707-spot-muczzup0-s1kix8-1-ios-19.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-muczybqb-di105x",
     "createdAt": "2026-09-22T18:17:46.136Z",
     "updatedAt": "2026-09-22T18:17:46.136Z",
