@@ -57,7 +57,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="styles.css?v=20260922c" />
+    <link rel="stylesheet" href="styles.css?v=20261028a" />
   </head>
 
   <body class="is-viewer">
@@ -71,96 +71,11 @@
         </div>
 
         <div class="toolbar">
-          <a
-            class="button button-ghost museum-link"
-            href="https://notonooto-qr.vercel.app/go/sns"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-i18n-label="museumAria"
-          >
-            <i data-lucide="external-link" aria-hidden="true"></i>
-            <span data-i18n="museum">のとのおと美術館</span>
-          </a>
-
-          <div class="field field-inline">
-            <label class="visually-hidden" for="languageSelect" data-i18n="language">言語</label>
-            <span class="select-wrap">
-              <i data-lucide="languages" aria-hidden="true"></i>
-              <select id="languageSelect">
-                <option value="ja">日本語</option>
-                <option value="en">English</option>
-                <option value="ko">한국어</option>
-                <option value="zh">简体中文</option>
-              </select>
-            </span>
-          </div>
-
-          <details class="menu" id="settingsMenu">
-            <summary class="button button-ghost menu-trigger" data-i18n-label="settingsOpen">
-              <i data-lucide="settings-2" aria-hidden="true"></i>
-              <span data-i18n="settings">表示と設定</span>
-            </summary>
-
-            <div class="menu-panel" id="settingsPanel">
-              <section class="menu-section">
-                <h2 class="menu-heading" data-i18n="theme">配色</h2>
-                <div class="segmented" id="themeGroup" role="group" data-i18n-label="theme">
-                  <button type="button" class="segment" data-theme-value="system" aria-pressed="true">
-                    <i data-lucide="monitor" aria-hidden="true"></i><span data-i18n="themeSystem">端末に合わせる</span>
-                  </button>
-                  <button type="button" class="segment" data-theme-value="light" aria-pressed="false">
-                    <i data-lucide="sun" aria-hidden="true"></i><span data-i18n="themeLight">明るい</span>
-                  </button>
-                  <button type="button" class="segment" data-theme-value="dark" aria-pressed="false">
-                    <i data-lucide="moon" aria-hidden="true"></i><span data-i18n="themeDark">暗い</span>
-                  </button>
-                </div>
-              </section>
-
-              <section class="menu-section">
-                <h2 class="menu-heading" data-i18n="textSize">文字の大きさ</h2>
-                <div class="segmented" id="textSizeGroup" role="group" data-i18n-label="textSize">
-                  <button type="button" class="segment" data-size-value="normal" aria-pressed="true">
-                    <span class="size-sample" aria-hidden="true">A</span><span data-i18n="textNormal">標準</span>
-                  </button>
-                  <button type="button" class="segment" data-size-value="large" aria-pressed="false">
-                    <span class="size-sample size-sample-lg" aria-hidden="true">A</span><span data-i18n="textLarge">大きい</span>
-                  </button>
-                </div>
-              </section>
-
-              <section class="menu-section">
-                <h2 class="menu-heading" data-i18n="role">権限</h2>
-                <div class="menu-actions">
-                  <button type="button" class="button button-ghost" id="viewerModeButton">
-                    <i data-lucide="eye" aria-hidden="true"></i><span data-i18n="viewerMode">閲覧者</span>
-                  </button>
-                  <button type="button" class="button button-primary" id="editorModeButton">
-                    <i data-lucide="lock-keyhole" aria-hidden="true"></i><span data-i18n="editorMode">編集者</span>
-                  </button>
-                </div>
-              </section>
-
-              <section class="menu-section editor-only">
-                <h2 class="menu-heading" data-i18n="editorTools">編集者の道具</h2>
-                <div class="menu-actions menu-actions-stack">
-                  <button type="button" class="button button-ghost" id="githubSyncButton">
-                    <i data-lucide="cloud-upload" aria-hidden="true"></i><span data-i18n="syncButton">GitHub に接続</span>
-                  </button>
-                  <button type="button" class="button button-ghost" id="bulkButton">
-                    <i data-lucide="replace" aria-hidden="true"></i><span data-i18n="bulk">市区町村を一括で変える</span>
-                  </button>
-                  <button type="button" class="button button-ghost" id="exportButton">
-                    <i data-lucide="download" aria-hidden="true"></i><span data-i18n="exportButton">JSON を書き出す</span>
-                  </button>
-                  <label class="button button-ghost file-button">
-                    <i data-lucide="upload" aria-hidden="true"></i><span data-i18n="importButton">JSON を読み込む</span>
-                    <input id="importInput" type="file" accept="application/json" class="visually-hidden" />
-                  </label>
-                </div>
-              </section>
-            </div>
-          </details>
+          <button type="button" class="button button-ghost menu-button" id="menuButton"
+            aria-haspopup="dialog" aria-expanded="false" aria-controls="menuDrawer">
+            <i data-lucide="menu" aria-hidden="true"></i>
+            <span data-i18n="menu">メニュー</span>
+          </button>
         </div>
       </header>
 
@@ -356,6 +271,118 @@
       </main>
     </div>
 
+    <div class="modal modal-drawer" id="menuDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="menuTitle">
+      <div class="drawer-card" id="menuPanel">
+        <div class="drawer-head">
+          <div>
+            <p class="eyebrow" data-i18n="eyebrow">Noto Peninsula Digital Museum</p>
+            <h2 id="menuTitle" data-i18n="menu">メニュー</h2>
+          </div>
+          <button type="button" class="icon-button" id="menuClose" data-i18n-label="close">
+            <i data-lucide="x" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="drawer-body">
+          <a class="drawer-link museum-link" href="https://notonooto-qr.vercel.app/go/sns"
+            target="_blank" rel="noopener noreferrer" data-i18n-label="museumAria">
+            <i data-lucide="landmark" aria-hidden="true"></i>
+            <span data-i18n="museum">のとのおと美術館</span>
+            <i data-lucide="external-link" class="drawer-link-end" aria-hidden="true"></i>
+          </a>
+
+          <section class="menu-section" aria-labelledby="menuLangTitle">
+            <h3 class="menu-heading" id="menuLangTitle" data-i18n="language">言語</h3>
+            <span class="select-wrap">
+              <i data-lucide="languages" aria-hidden="true"></i>
+              <select id="languageSelect" aria-labelledby="menuLangTitle">
+                <option value="ja">日本語</option>
+                <option value="en">English</option>
+                <option value="ko">한국어</option>
+                <option value="zh">简体中文</option>
+              </select>
+            </span>
+          </section>
+
+          <section class="menu-section">
+            <h3 class="menu-heading" data-i18n="theme">配色</h3>
+            <div class="segmented" id="themeGroup" role="group" data-i18n-label="theme">
+              <button type="button" class="segment" data-theme-value="system" aria-pressed="true">
+                <i data-lucide="monitor" aria-hidden="true"></i><span data-i18n="themeSystem">端末に合わせる</span>
+              </button>
+              <button type="button" class="segment" data-theme-value="light" aria-pressed="false">
+                <i data-lucide="sun" aria-hidden="true"></i><span data-i18n="themeLight">明るい</span>
+              </button>
+              <button type="button" class="segment" data-theme-value="dark" aria-pressed="false">
+                <i data-lucide="moon" aria-hidden="true"></i><span data-i18n="themeDark">暗い</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h3 class="menu-heading" data-i18n="textSize">文字の大きさ</h3>
+            <div class="segmented" id="textSizeGroup" role="group" data-i18n-label="textSize">
+              <button type="button" class="segment" data-size-value="normal" aria-pressed="true">
+                <span class="size-sample" aria-hidden="true">A</span><span data-i18n="textNormal">標準</span>
+              </button>
+              <button type="button" class="segment" data-size-value="large" aria-pressed="false">
+                <span class="size-sample size-sample-lg" aria-hidden="true">A</span><span data-i18n="textLarge">大きい</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h3 class="menu-heading" data-i18n="menuSite">このサイト</h3>
+            <div class="menu-actions menu-actions-stack">
+              <button type="button" class="button button-ghost" id="shareSiteButton">
+                <i data-lucide="share-2" aria-hidden="true"></i><span data-i18n="shareSite">サイトを共有</span>
+              </button>
+              <button type="button" class="button button-ghost" id="installButton" hidden>
+                <i data-lucide="smartphone" aria-hidden="true"></i><span data-i18n="installApp">ホーム画面に追加</span>
+              </button>
+              <a class="button button-ghost" href="feed.xml" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="rss" aria-hidden="true"></i><span data-i18n="feedLink">新着をRSSで読む</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="menu-section" aria-labelledby="menuRoleTitle">
+            <h3 class="menu-heading" id="menuRoleTitle" data-i18n="role">権限</h3>
+            <div class="segmented" role="group" aria-labelledby="menuRoleTitle">
+              <button type="button" class="segment segment-row" id="viewerModeButton">
+                <i data-lucide="eye" aria-hidden="true"></i><span data-i18n="viewerMode">閲覧者</span>
+              </button>
+              <button type="button" class="segment segment-row" id="editorModeButton">
+                <i data-lucide="lock-keyhole" aria-hidden="true"></i><span data-i18n="editorMode">編集者</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="menu-section editor-only">
+            <h3 class="menu-heading" data-i18n="editorTools">編集者の道具</h3>
+            <div class="menu-actions menu-actions-stack">
+              <button type="button" class="button button-primary" id="menuNewPost">
+                <i data-lucide="image-plus" aria-hidden="true"></i><span data-i18n="newPost">新しく投稿</span>
+              </button>
+              <button type="button" class="button button-ghost" id="githubSyncButton">
+                <i data-lucide="cloud-upload" aria-hidden="true"></i><span data-i18n="syncButton">GitHub に接続</span>
+              </button>
+              <button type="button" class="button button-ghost" id="bulkButton">
+                <i data-lucide="replace" aria-hidden="true"></i><span data-i18n="bulk">市区町村を一括で変える</span>
+              </button>
+              <button type="button" class="button button-ghost" id="exportButton">
+                <i data-lucide="download" aria-hidden="true"></i><span data-i18n="exportButton">JSON を書き出す</span>
+              </button>
+              <label class="button button-ghost file-button">
+                <i data-lucide="upload" aria-hidden="true"></i><span data-i18n="importButton">JSON を読み込む</span>
+                <input id="importInput" type="file" accept="application/json" class="visually-hidden" />
+              </label>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
     <div class="modal" id="passkeyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="passkeyTitle">
       <form class="modal-card" id="passkeyForm">
         <p class="eyebrow" data-i18n="editorAccess">Editor access</p>
@@ -454,7 +481,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-    <script src="app.js?v=20260922c" defer></script>
+    <script src="app.js?v=20261028a" defer></script>
     <script>
       /* 現地は電波が不安定なので、一度見た地図と写真は圏外でも開けるようにする */
       if ("serviceWorker" in navigator) {
