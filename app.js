@@ -81,8 +81,6 @@ const I = {
     museum: "のとのおと美術館",
     museumAria: "のとのおと美術館のサイトを新しいタブで開く",
     language: "言語",
-    settings: "表示と設定",
-    settingsOpen: "表示と設定を開く",
     display: "表示",
     theme: "配色",
     themeSystem: "端末に合わせる",
@@ -222,6 +220,12 @@ const I = {
     bulkCount: "{count}件が対象です。",
     bulkDone: "{count}件の市区町村を変えました。",
     bulkApply: "まとめて変える",
+    menu: "メニュー",
+    menuSite: "このサイト",
+    shareSite: "サイトを共有",
+    installApp: "ホーム画面に追加",
+    feedLink: "新着をRSSで読む",
+    clusterLabel: "{count}件の作品をまとめて表示",
   },
   en: {
     siteTitle: "Noto no Oto Museum Digital Map",
@@ -230,8 +234,6 @@ const I = {
     museum: "Noto no Oto Museum",
     museumAria: "Open the Noto no Oto Museum site in a new tab",
     language: "Language",
-    settings: "Display and settings",
-    settingsOpen: "Open display and settings",
     display: "Display",
     theme: "Colour theme",
     themeSystem: "Match device",
@@ -371,6 +373,12 @@ const I = {
     bulkCount: "{count} works selected.",
     bulkDone: "{count} works reassigned.",
     bulkApply: "Reassign",
+    menu: "Menu",
+    menuSite: "This site",
+    shareSite: "Share this site",
+    installApp: "Add to home screen",
+    feedLink: "Follow with RSS",
+    clusterLabel: "{count} works grouped here",
   },
   ko: {
     siteTitle: "노토노오토 미술관 디지털 지도",
@@ -379,8 +387,6 @@ const I = {
     museum: "노토노오토 미술관",
     museumAria: "노토노오토 미술관 사이트를 새 탭에서 열기",
     language: "언어",
-    settings: "표시 및 설정",
-    settingsOpen: "표시 및 설정 열기",
     display: "표시",
     theme: "색상",
     themeSystem: "기기 설정 따르기",
@@ -520,6 +526,12 @@ const I = {
     bulkCount: "{count}건이 대상입니다.",
     bulkDone: "{count}건의 시정촌을 변경했습니다.",
     bulkApply: "일괄 변경",
+    menu: "메뉴",
+    menuSite: "이 사이트",
+    shareSite: "사이트 공유",
+    installApp: "홈 화면에 추가",
+    feedLink: "RSS로 새 소식 받기",
+    clusterLabel: "작품 {count}건을 묶어 표시",
   },
   zh: {
     siteTitle: "能登之音美术馆数字地图",
@@ -528,8 +540,6 @@ const I = {
     museum: "能登之音美术馆",
     museumAria: "在新标签页打开能登之音美术馆网站",
     language: "语言",
-    settings: "显示与设置",
-    settingsOpen: "打开显示与设置",
     display: "显示",
     theme: "配色",
     themeSystem: "跟随设备",
@@ -669,6 +679,12 @@ const I = {
     bulkCount: "共 {count} 条。",
     bulkDone: "已更改 {count} 条的市区町村。",
     bulkApply: "批量更改",
+    menu: "菜单",
+    menuSite: "本站",
+    shareSite: "分享本站",
+    installApp: "添加到主屏幕",
+    feedLink: "用 RSS 订阅更新",
+    clusterLabel: "此处汇集 {count} 件作品",
   },
 };
 
@@ -704,7 +720,8 @@ document.addEventListener("DOMContentLoaded", start);
 
 async function start() {
   [
-    "skipLink", "languageSelect", "settingsMenu", "settingsPanel", "themeGroup", "textSizeGroup",
+    "skipLink", "languageSelect", "menuButton", "menuDrawer", "menuClose", "themeGroup", "textSizeGroup",
+    "shareSiteButton", "installButton", "menuNewPost",
     "viewerModeButton", "editorModeButton", "githubSyncButton", "exportButton", "importInput",
     "groupList", "spotList", "spotCount", "newSpotButton", "sidePanel",
     "searchInput", "searchClear", "topicList", "artistList", "tagBox", "artistBox",
@@ -814,9 +831,22 @@ function bind() {
     if (b) { applyTextSize(b.dataset.sizeValue); store(TEXTSIZE, b.dataset.sizeValue); }
   };
 
-  E.editorModeButton.onclick = () =>
-    sessionStorage.getItem(EDIT) === "1" ? editor() : openModal(E.passkeyModal, E.editorPasskeyInput);
-  E.viewerModeButton.onclick = viewer;
+  /* ---- ハンバーガーメニュー ----
+     ヘッダーには開くボタンだけを置き、設定・権限・編集の道具は右からのパネルに入れる。
+     パネルは .modal と同じ仕組み（フォーカスの閉じ込め・Esc・戻り先）で動かす。
+     中の操作が別のダイアログを開くときは、先に閉じてから開く。
+     閉じずに重ねると、戻り先のフォーカスが上書きされて迷子になる。 */
+  E.menuButton.onclick = openMenu;
+  E.menuClose.onclick = closeMenu;
+  E.menuDrawer.onclick = (ev) => { if (ev.target === E.menuDrawer) closeMenu(); };
+  const viaMenu = (fn) => (...a) => { closeMenu(); return fn(...a); };
+
+  E.editorModeButton.onclick = viaMenu(() =>
+    sessionStorage.getItem(EDIT) === "1" ? editor() : openModal(E.passkeyModal, E.editorPasskeyInput));
+  E.viewerModeButton.onclick = viaMenu(viewer);
+  E.menuNewPost.onclick = viaMenu(startNewPost);
+  E.shareSiteButton.onclick = viaMenu(() => share(""));
+  E.installButton.onclick = viaMenu(installApp);
   E.passkeyForm.onsubmit = (ev) => {
     ev.preventDefault();
     if (E.editorPasskeyInput.value !== PASS) {
@@ -832,12 +862,7 @@ function bind() {
   };
   E.passkeyCancelButton.onclick = () => closeModal(E.passkeyModal);
 
-  E.newSpotButton.onclick = () => {
-    resetForm();
-    if (restoreFormDraft()) status(tr("draftRestored"));
-    openEditor();
-    E.titleJa.focus();
-  };
+  E.newSpotButton.onclick = startNewPost;
   E.closeEditorButton.onclick = closeEditor;
   E.photoFile.onchange = filesChanged;
   E.photoPicker.onclick = () => E.photoFile.click();
@@ -853,7 +878,7 @@ function bind() {
   E.undoButton.onclick = undoDelete;
   ["titleJa", "descriptionJa", "locationInfo", "spotGroup", "latitude", "longitude", "takenAt", "pasteInput"]
     .forEach((id) => { E[id].oninput = saveFormDraft; });
-  E.bulkButton.onclick = openBulk;
+  E.bulkButton.onclick = viaMenu(openBulk);
   E.bulkForm.onsubmit = applyBulk;
   E.bulkCancelButton.onclick = () => closeModal(E.bulkModal);
 
@@ -878,10 +903,10 @@ function bind() {
     if (f && S.drafts[f.dataset.index]) S.drafts[f.dataset.index][f.dataset.draftField] = ev.target.value;
   };
 
-  E.githubSyncButton.onclick = () => { fillGh(); openModal(E.githubSyncModal, E.githubTokenInput); };
+  E.githubSyncButton.onclick = viaMenu(() => { fillGh(); openModal(E.githubSyncModal, E.githubTokenInput); });
   E.githubSyncCancelButton.onclick = () => closeModal(E.githubSyncModal);
   E.githubSyncForm.onsubmit = connectGh;
-  E.exportButton.onclick = exportJson;
+  E.exportButton.onclick = viaMenu(exportJson);
   E.importInput.onchange = importJson;
 
   E.groupList.onclick = (ev) => {
@@ -940,14 +965,50 @@ function bind() {
     if (E.lightbox.getAttribute("aria-hidden") === "false") return closeLightbox();
     if (E.passkeyModal.getAttribute("aria-hidden") === "false") return closeModal(E.passkeyModal);
     if (E.githubSyncModal.getAttribute("aria-hidden") === "false") return closeModal(E.githubSyncModal);
+    if (E.bulkModal.getAttribute("aria-hidden") === "false") return closeModal(E.bulkModal);
+    if (E.menuDrawer.getAttribute("aria-hidden") === "false") return closeMenu();
     if (S.pick) return stopPick();
-    if (E.settingsMenu.open) { E.settingsMenu.open = false; return; }
     if (document.body.classList.contains("editor-open")) closeEditor();
   });
 
-  document.addEventListener("click", (ev) => {
-    if (E.settingsMenu.open && !E.settingsMenu.contains(ev.target)) E.settingsMenu.open = false;
+  /* ホーム画面に追加できる状態になったときだけ、メニューに項目を出す */
+  window.addEventListener("beforeinstallprompt", (ev) => {
+    ev.preventDefault();
+    S.installEvent = ev;
+    E.installButton.hidden = false;
   });
+  window.addEventListener("appinstalled", () => {
+    S.installEvent = null;
+    E.installButton.hidden = true;
+  });
+}
+
+function openMenu() {
+  E.menuButton.setAttribute("aria-expanded", "true");
+  openModal(E.menuDrawer, E.menuClose);
+}
+
+function closeMenu() {
+  if (E.menuDrawer.getAttribute("aria-hidden") === "true") return;
+  E.menuButton.setAttribute("aria-expanded", "false");
+  closeModal(E.menuDrawer);
+}
+
+async function installApp() {
+  const ev = S.installEvent;
+  if (!ev) return;
+  ev.prompt();
+  try { await ev.userChoice; } catch {}
+  S.installEvent = null;
+  E.installButton.hidden = true;
+}
+
+function startNewPost() {
+  if (S.role !== "editor") return;
+  resetForm();
+  if (restoreFormDraft()) status(tr("draftRestored"));
+  openEditor();
+  E.titleJa.focus();
 }
 
 function icons() { if (window.lucide) window.lucide.createIcons(); }
@@ -971,6 +1032,8 @@ function render() {
   E.sortSelect.value = S.sort;
   E.viewToggle.querySelectorAll("[data-view]").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.view === S.view)));
+  E.viewerModeButton.setAttribute("aria-pressed", String(S.role === "viewer"));
+  E.editorModeButton.setAttribute("aria-pressed", String(S.role === "editor"));
   E.searchClear.hidden = !E.searchInput.value;
   E.clearFiltersButton.hidden = !filtersActive();
   groups();
@@ -1021,7 +1084,7 @@ function viewer() {
   document.body.classList.remove("is-editor", "editor-open");
   document.body.classList.add("is-viewer");
   resetForm();
-  E.settingsMenu.open = false;
+  closeMenu();
   render();
 }
 
@@ -1029,7 +1092,7 @@ function editor() {
   S.role = "editor";
   document.body.classList.remove("is-viewer");
   document.body.classList.add("is-editor");
-  E.settingsMenu.open = false;
+  closeMenu();
   render();
   E.newSpotButton.focus();
 }
@@ -1178,7 +1241,7 @@ function renderDetail() {
   E.detailPanel.hidden = false;
   E.detailPanel.innerHTML = `
     <div class="detail-head">
-      <p class="eyebrow">${esc(tr("detail"))}${p.archive ? ` · No.${p.archive}` : ""}</p>
+      <p class="eyebrow">${esc(tr("detail"))}${p.archive ? ` · <span class="keep-case">No.${p.archive}</span>` : ""}</p>
       <button type="button" class="icon-button detail-close" data-action="close" aria-label="${attr(tr("close"))}">
         <i data-lucide="x" aria-hidden="true"></i>
       </button>
@@ -1275,7 +1338,13 @@ function initMap() {
   S.layers = layers;
   S.layerControl = L.control.layers(layers, null, { position: "topright" }).addTo(S.map);
   S.layer = L.markerClusterGroup
-    ? L.markerClusterGroup({ showCoverageOnHover: false, disableClusteringAtZoom: 13, maxClusterRadius: 54, chunkedLoading: true })
+    ? L.markerClusterGroup({
+      showCoverageOnHover: false,
+      disableClusteringAtZoom: 13,
+      maxClusterRadius: 54,
+      chunkedLoading: true,
+      iconCreateFunction: clusterIcon,
+    })
     : L.layerGroup();
   S.layer.addTo(S.map);
   S.map.on("click", (ev) => {
@@ -1297,6 +1366,8 @@ function markers() {
       alt: txt(p, "title"),
       keyboard: true,
       title: txt(p, "title"),
+      photoSrc: photo(p),
+      spotId: p.id,
     });
     mk.on("click", () => selectSpot(p.id, false));
     mk.on("keypress", () => selectSpot(p.id, true));
@@ -1316,6 +1387,43 @@ function markerIcon(src, active) {
     html: `<span class="marker${active ? " is-active" : ""}"><span class="marker-frame${src ? "" : " is-empty"}">${inner}</span></span>`,
     iconSize: [50, 60],
     iconAnchor: [25, 60],
+  });
+}
+
+/* まとめ表示（クラスター）のアイコン。
+   中に入っている作品の写真を1枚、無作為に選んで見せる。
+   - 写真のある作品だけから選ぶ
+   - 同じまとまりが残っているあいだは同じ1枚を使う。ズームや移動のたびに
+     入れ替わるとちらつくので、選び直すのは中身が変わったときだけにする
+   - 中身が変わったかは「件数」で見る。作品は1件ずつ地図に足されていき、そのたびに
+     アイコンが作られる。件数を見ずに覚えると、最初に足された1〜2件の中から選んだ
+     写真を最後まで使い続け、29件のまとまりでも2種類しか出なくなる
+   - 数字は右上の札に出し、写真の下に重なった写真の気配を添える */
+function clusterIcon(cluster) {
+  const kids = cluster.getAllChildMarkers();
+  const n = kids.length;
+  let pick = cluster._notoPick;
+  if (!pick || cluster._notoN !== n || !kids.includes(pick)) {
+    const withPhoto = kids.filter((k) => k.options.photoSrc);
+    pick = withPhoto.length ? withPhoto[Math.floor(Math.random() * withPhoto.length)] : null;
+    cluster._notoPick = pick;
+    cluster._notoN = n;
+  }
+  const src = pick?.options.photoSrc || "";
+  const size = n < 10 ? 52 : n < 30 ? 60 : 68;
+  const cls = n < 10 ? "s" : n < 30 ? "m" : "l";
+  const label = tr("clusterLabel", { count: n });
+  const inner = src
+    ? `<img src="${attr(src)}" alt="" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">`
+    : "";
+  return L.divIcon({
+    className: "marker-cluster marker-cluster-photo",
+    html: `<span class="cluster cluster-${cls}" role="img" aria-label="${attr(label)}">
+      <span class="cluster-stack" aria-hidden="true"></span>
+      <span class="cluster-frame${src ? "" : " is-empty"}">${inner}</span>
+      <span class="cluster-count" aria-hidden="true">${n}</span>
+    </span>`,
+    iconSize: [size, size],
   });
 }
 
@@ -2125,8 +2233,15 @@ async function syncGh(message) {
 /* 投稿を保存するたびに sitemap.xml と feed.xml も更新する。
    静的サイトなので、ここで書かないと新着が検索・購読に載らない。 */
 async function publishFeeds(rows) {
+  for (const [path, text] of feedFiles(rows)) {
+    const cur = await getGh(path).catch(() => null);
+    await putGh(path, b64(text), "Update Noto map feeds", cur?.sha || null, true);
+  }
+}
+
+/* 公開する sitemap.xml と feed.xml の中身を作る。書き込みとは切り離してある。 */
+function feedFiles(rows, site = `${location.origin}${location.pathname}`.replace(/index\.html$/, "")) {
   const live = rows.filter((p) => !p.draft);
-  const site = `${location.origin}${location.pathname}`.replace(/index\.html$/, "");
   const esc2 = (t) => String(t ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
   const when = (p) => (p.updatedAt || p.createdAt || new Date().toISOString());
 
@@ -2157,10 +2272,7 @@ ${items}
 </channel></rss>
 `;
 
-  for (const [path, text] of [["sitemap.xml", sitemap], ["feed.xml", feed]]) {
-    const cur = await getGh(path).catch(() => null);
-    await putGh(path, b64(text), "Update Noto map feeds", cur?.sha || null, true);
-  }
+  return [["sitemap.xml", sitemap], ["feed.xml", feed]];
 }
 
 async function persistPhotos(spot) {

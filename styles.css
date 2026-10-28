@@ -129,6 +129,10 @@ html[data-text="large"] { font-size: 118%; }
 
 * { box-sizing: border-box; }
 
+/* hidden 属性は、display を指定したクラス（.button / .icon-button など）に負けて
+   効かなくなる。検索欄が空なのに「×」が出ていたのはこのため。常に勝たせる。 */
+[hidden] { display: none !important; }
+
 html, body { height: 100%; }
 
 body {
@@ -366,44 +370,82 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
 
 .toolbar { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
 
-.museum-link { white-space: nowrap; }
-
 /* ヘッダー内のボタンは濃い地の上に置くので、境界と文字を明るくする */
-.topbar .button-ghost,
-.topbar .select-wrap {
+.topbar .button-ghost {
   background: var(--header-tint);
   border-color: var(--header-edge);
   color: var(--header-ink);
 }
 .topbar .button-ghost:hover { border-color: var(--header-ink); color: var(--header-ink); }
-.topbar .select-wrap svg { color: var(--header-ink); }
-.topbar select { color: var(--header-ink); }
-.topbar select option { color: var(--ink); background: var(--surface); }
 .topbar :focus-visible { outline-color: var(--header-ink); }
 
-/* -------- 設定メニュー -------- */
+.menu-button { min-width: 7rem; }
 
-.menu { position: relative; }
+/* -------- メニュー（右から出るパネル） -------- */
 
-.menu-trigger { list-style: none; }
-.menu-trigger::-webkit-details-marker { display: none; }
-
-.menu-panel {
-  position: absolute;
-  right: 0;
-  top: calc(100% + 10px);
-  width: min(320px, calc(100vw - 24px));
-  max-height: min(70vh, 560px);
-  overflow: auto;
-  display: grid;
-  gap: 18px;
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: var(--surface);
-  color: var(--ink);
-  box-shadow: var(--shadow-2);
+/* .modal と同じ仕組みで動かす。ヘッダーの外（body 直下）に置くので、
+   ヘッダーや地図の重ね順に巻き込まれず、必ず手前に出る。 */
+/* .modal は後ろ（重ねる層）で place-items: center と padding を指定している。
+   同じ詳しさだと後に書いたほうが勝つので、.modal.modal-drawer にして確実に上書きする。
+   以前はこれが負けて、パネルが画面中央に出ていた。
+   行の高さも画面に固定する。固定しないと中身の高さまで伸びて、画面からはみ出す。 */
+.modal.modal-drawer {
+  place-items: stretch end;
+  grid-template-rows: minmax(0, 1fr);
+  padding: 0;
 }
+
+.drawer-card {
+  width: min(380px, 100%);
+  height: 100%;
+  max-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  box-shadow: var(--shadow-2);
+  animation: drawer-in 0.22s ease-out;
+}
+@keyframes drawer-in { from { transform: translateX(28px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+.drawer-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.drawer-head h2 { margin-top: 2px; font-size: 1.15rem; }
+
+.drawer-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  display: grid;
+  gap: 22px;
+  align-content: start;
+  padding: 18px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+}
+
+.drawer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  padding: 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+.drawer-link:hover { border-color: var(--brand); color: var(--brand); }
+.drawer-link svg { width: 1.15em; height: 1.15em; flex: 0 0 auto; color: var(--accent); }
+.drawer-link span { flex: 1; }
+.drawer-link .drawer-link-end { color: var(--ink-3); }
 
 .menu-section { display: grid; gap: 9px; }
 .menu-heading { color: var(--ink-2); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; }
@@ -440,6 +482,7 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
   cursor: pointer;
 }
 .segment svg { width: 1.1em; height: 1.1em; }
+.segment-row { grid-auto-flow: column; justify-content: center; gap: 8px; font-size: 0.86rem; }
 .segment:hover { background: var(--surface-3); }
 /* 選択状態は色だけに頼らず、枠と太字と文字色の3つで示す */
 .segment[aria-pressed="true"] {
@@ -658,15 +701,68 @@ body.picking #map { cursor: crosshair; }
 .marker-frame.is-empty svg { width: 20px; height: 20px; }
 .marker.is-active .marker-frame { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent), 0 4px 12px rgba(16, 25, 34, 0.4); }
 
-.marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
-  background: rgba(18, 74, 107, 0.3);
+/* ---- まとめ表示（クラスター） ----
+   MarkerCluster.Default.css には頼らず、大きさ・丸み・色を自前で決める。
+   以前は Default.css の読み込み漏れで、数字が角に寄った四角になっていた。
+   中に入っている作品の写真を1枚見せ、その下に重なった写真の気配を添える。 */
+.marker-cluster-photo { background: none; border: 0; }
+
+.cluster { position: relative; display: block; width: 100%; height: 100%; }
+
+.cluster-frame,
+.cluster-stack::before,
+.cluster-stack::after {
+  position: absolute;
+  inset: 5px;
+  border: 3px solid var(--surface);
+  border-radius: 13px;
+  box-shadow: 0 5px 14px rgba(16, 25, 34, 0.38);
 }
-.marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
+.cluster-frame { z-index: 2; overflow: hidden; background: var(--brand); }
+.cluster-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.cluster-stack::before,
+.cluster-stack::after { content: ""; background: var(--surface-3); }
+.cluster-stack::before { transform: rotate(-9deg) translate(-2px, 1px); }
+.cluster-stack::after { transform: rotate(8deg) translate(2px, 1px); }
+
+.cluster-count {
+  position: absolute;
+  z-index: 3;
+  top: -3px;
+  right: -5px;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 7px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--surface);
+  border-radius: 999px;
   background: var(--brand);
   color: var(--brand-ink);
   font-family: var(--sans);
+  font-size: 0.8rem;
   font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 2px 6px rgba(16, 25, 34, 0.35);
 }
+
+.cluster-m .cluster-count { min-width: 28px; height: 28px; font-size: 0.86rem; }
+.cluster-l .cluster-count { min-width: 30px; height: 30px; font-size: 0.92rem; }
+
+.cluster-frame { transition: transform 0.15s ease; }
+.marker-cluster-photo:hover .cluster-frame { transform: translateY(-2px); }
+
+/* キーボードで選んだときは、アイコン全体ではなく写真の枠に輪を出す */
+.marker-cluster-photo:focus-visible { outline: none; }
+.marker-cluster-photo:focus-visible .cluster-frame { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* 地図の枠に出るフォーカスの輪は内側に収める（枠線が太く見えるため） */
+.leaflet-container:focus-visible { outline-offset: -3px; }
+
+/* 「No.110」のような番号は、見出しの大文字化から外す */
+.keep-case { text-transform: none; letter-spacing: 0; }
 
 .leaflet-container { font-family: var(--sans); background: var(--surface-3); }
 .leaflet-control-zoom a {
@@ -1013,6 +1109,9 @@ body.view-grid .card-tools { padding: 0 10px 10px; }
 }
 .modal[aria-hidden="true"], .lightbox[aria-hidden="true"] { display: none; }
 
+/* メニューやダイアログを開いている間は、背後のページを動かさない（スマホで縦に長いため） */
+body.modal-open { overflow: hidden; }
+
 .modal-card {
   width: min(430px, 100%);
   max-height: 90dvh;
@@ -1117,11 +1216,7 @@ body.is-viewer .editor-only { display: none !important; }
 @media (max-width: 860px) {
   .app { min-height: 100dvh; }
 
-  .topbar { flex-direction: column; align-items: stretch; gap: 10px; padding: 10px 12px; }
-  .toolbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
-  .museum-link { grid-column: 1 / -1; }
-  .menu { justify-self: end; }
-  .menu-panel { right: 0; left: auto; }
+  .topbar { gap: 12px; padding: 10px 12px; }
 
   .workspace,
   body.detail-open .workspace { display: flex; flex-direction: column; }
