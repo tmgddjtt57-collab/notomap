@@ -1255,6 +1255,14 @@ body.is-viewer .editor-only { display: none !important; }
 
 @media (max-width: 480px) {
   .brand-title { font-size: 1.02rem; }
+  /* 英字の小見出しがメニューのボタンの隣で折り返さないよう、文字間を詰める */
+  .topbar .eyebrow { font-size: 0.66rem; letter-spacing: 0.05em; }
+}
+
+/* 360px 前後の端末では、メニューのボタンの隣に英字の小見出しを置く幅がない。
+   装飾なので省き、日本語のタイトルを優先する。 */
+@media (max-width: 400px) {
+  .topbar .eyebrow { display: none; }
   .list-tools { flex-direction: column; align-items: stretch; }
   .detail-meta > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .detail-actions .button { flex: 1 1 100%; }
