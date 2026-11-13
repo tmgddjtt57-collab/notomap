@@ -1,5 +1,345 @@
 [
   {
+    "id": "spot-mwej863o-m71hka",
+    "createdAt": "2026-11-13T05:24:26.958Z",
+    "updatedAt": "2026-11-13T05:24:26.958Z",
+    "title": {
+      "ja": "光と、 影と、 ♡",
+      "en": "Light, shadow, and ♡",
+      "ko": "光と、 影と、 ♡",
+      "zh": "光と、 影と、 ♡"
+    },
+    "description": {
+      "ja": "光と、\n影と、\n♡\nLight,\nshadow,\nand ♡\n\n影絵【Shadow Play】\n21st Century Museum of Contemporary Art, Kanazawa, Japan\n\n36°33’39.8”N 136°39’33.2”E\n\nArchive 147\n#LayeredNoto\n#InspiredBySesshu\n#Kanazawa21stCenturyMuseum\n#KanazawaCity\n#NotoNoOtoMuseum",
+      "en": "Light,\nshadow,\nand ♡\n21st Century Museum of Contemporary Art, Kanazawa, Japan",
+      "ko": "光と、\n影と、\n♡\nLight,\nshadow,\nand ♡\n\n影絵【Shadow Play】\n21st Century Museum of Contemporary Art, Kanazawa, Japan\n\n36°33’39.8”N 136°39’33.2”E\n\nArchive 147\n#LayeredNoto\n#InspiredBySesshu\n#Kanazawa21stCenturyMuseum\n#KanazawaCity\n#NotoNoOtoMuseum",
+      "zh": "光と、\n影と、\n♡\nLight,\nshadow,\nand ♡\n\n影絵【Shadow Play】\n21st Century Museum of Contemporary Art, Kanazawa, Japan\n\n36°33’39.8”N 136°39’33.2”E\n\nArchive 147\n#LayeredNoto\n#InspiredBySesshu\n#Kanazawa21stCenturyMuseum\n#KanazawaCity\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
+    },
+    "group": "内灘町",
+    "locationText": "36°33’39.8”N 136°39’33.2”E",
+    "lat": 36.561055555555555,
+    "lng": 136.65922222222224,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547465282-spot-mwej863o-m71hka-1-147a.jpg?v=1794547466957",
+        "alt": "147a.png",
+        "path": "media/spots/1794547465282-spot-mwej863o-m71hka-1-147a.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej84gh-legvi3",
+    "createdAt": "2026-11-13T05:24:25.188Z",
+    "updatedAt": "2026-11-13T05:24:25.188Z",
+    "title": {
+      "ja": "光は、 地平に、 捧げられる。",
+      "en": "Light is offered to the horizon.",
+      "ko": "光は、 地平に、 捧げられる。",
+      "zh": "光は、 地平に、 捧げられる。"
+    },
+    "description": {
+      "ja": "Light\nis offered\nto the horizon.\n\n光の祭壇【Altar of Light】\nMonzen, Wajima, Noto Peninsula, Japan\n\n37°16’48.4”N 136°44’01.9”E\n\nArchive 146\n#PrayerLandNoto\n#InspiredByJamesTurrell\n#MonzenWajima\n#WajimaCity\n#NotoNoOtoMuseum",
+      "en": "Light\nis offered\nto the horizon.\nMonzen, Wajima, Noto Peninsula, Japan",
+      "ko": "Light\nis offered\nto the horizon.\n\n光の祭壇【Altar of Light】\nMonzen, Wajima, Noto Peninsula, Japan\n\n37°16’48.4”N 136°44’01.9”E\n\nArchive 146\n#PrayerLandNoto\n#InspiredByJamesTurrell\n#MonzenWajima\n#WajimaCity\n#NotoNoOtoMuseum",
+      "zh": "Light\nis offered\nto the horizon.\n\n光の祭壇【Altar of Light】\nMonzen, Wajima, Noto Peninsula, Japan\n\n37°16’48.4”N 136°44’01.9”E\n\nArchive 146\n#PrayerLandNoto\n#InspiredByJamesTurrell\n#MonzenWajima\n#WajimaCity\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "輪島市",
+      "en": "Wajima",
+      "ko": "와지마시",
+      "zh": "轮岛市"
+    },
+    "group": "輪島市",
+    "locationText": "37°16’48.4”N 136°44’01.9”E",
+    "lat": 37.28011111111111,
+    "lng": 136.7338611111111,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547463147-spot-mwej84gh-legvi3-1-image.jpg?v=1794547465188",
+        "alt": "image.png",
+        "path": "media/spots/1794547463147-spot-mwej84gh-legvi3-1-image.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej82v2-s5wyx5",
+    "createdAt": "2026-11-13T05:24:23.057Z",
+    "updatedAt": "2026-11-13T05:24:23.057Z",
+    "title": {
+      "ja": "まだ、 ここにいる。",
+      "en": "Not the end. Still here.",
+      "ko": "まだ、 ここにいる。",
+      "zh": "まだ、 ここにいる。"
+    },
+    "description": {
+      "ja": "Not the end.\nStill here.\n\n明日へ！【Toward Tomorrow!】\nUchinada Town Hall, Uchinada, Ishikawa, Japan\n\n36°39’12.3”N 136°38’42.2”E\n\nArchive 145\n#PrayerLandNoto\n#InspiredByEvangelion\n#UchinadaTownHall\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "en": "Not the end.\nStill here.\nUchinada Town Hall, Uchinada, Ishikawa, Japan",
+      "ko": "Not the end.\nStill here.\n\n明日へ！【Toward Tomorrow!】\nUchinada Town Hall, Uchinada, Ishikawa, Japan\n\n36°39’12.3”N 136°38’42.2”E\n\nArchive 145\n#PrayerLandNoto\n#InspiredByEvangelion\n#UchinadaTownHall\n#UchinadaTown\n#NotoNoOtoMuseum",
+      "zh": "Not the end.\nStill here.\n\n明日へ！【Toward Tomorrow!】\nUchinada Town Hall, Uchinada, Ishikawa, Japan\n\n36°39’12.3”N 136°38’42.2”E\n\nArchive 145\n#PrayerLandNoto\n#InspiredByEvangelion\n#UchinadaTownHall\n#UchinadaTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "内灘町",
+      "en": "Uchinada",
+      "ko": "우치나다마치",
+      "zh": "内滩町"
+    },
+    "group": "内灘町",
+    "locationText": "36°39’12.3”N 136°38’42.2”E",
+    "lat": 36.653416666666665,
+    "lng": 136.64505555555556,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547461083-spot-mwej82v2-s5wyx5-1-image-1.jpg?v=1794547463056",
+        "alt": "image (1).png",
+        "path": "media/spots/1794547461083-spot-mwej82v2-s5wyx5-1-image-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej80yz-oy8e2j",
+    "createdAt": "2026-11-13T05:24:20.990Z",
+    "updatedAt": "2026-11-13T05:24:20.990Z",
+    "title": {
+      "ja": "信仰は、 ほどけて、 また集まる。",
+      "en": "Faith unravels, then gathers",
+      "ko": "信仰は、 ほどけて、 また集まる。",
+      "zh": "信仰は、 ほどけて、 また集まる。"
+    },
+    "description": {
+      "ja": "Faith\nunravels,\nthen gathers\nagain.\n\n藤原神社本堂【Fujiwara Shrine Main Hall】\nTsubata, Ishikawa, Japan\n\n36°41’01.1”N 136°43’46.0”E\n\nArchive 144\n#PrayerLandNoto\n#InspiredByAlbertoGiacometti\n#TsubataTown\n#NotoNoOtoMuseum",
+      "en": "Faith\nunravels,\nthen gathers\nagain.\nTsubata, Ishikawa, Japan",
+      "ko": "Faith\nunravels,\nthen gathers\nagain.\n\n藤原神社本堂【Fujiwara Shrine Main Hall】\nTsubata, Ishikawa, Japan\n\n36°41’01.1”N 136°43’46.0”E\n\nArchive 144\n#PrayerLandNoto\n#InspiredByAlbertoGiacometti\n#TsubataTown\n#NotoNoOtoMuseum",
+      "zh": "Faith\nunravels,\nthen gathers\nagain.\n\n藤原神社本堂【Fujiwara Shrine Main Hall】\nTsubata, Ishikawa, Japan\n\n36°41’01.1”N 136°43’46.0”E\n\nArchive 144\n#PrayerLandNoto\n#InspiredByAlbertoGiacometti\n#TsubataTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
+    },
+    "group": "津幡町",
+    "locationText": "36°41’01.1”N 136°43’46.0”E",
+    "lat": 36.683638888888886,
+    "lng": 136.72944444444445,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547458639-spot-mwej80yz-oy8e2j-1-image-2.jpg?v=1794547460989",
+        "alt": "image (2).png",
+        "path": "media/spots/1794547458639-spot-mwej80yz-oy8e2j-1-image-2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej7z86-sjwvwf",
+    "createdAt": "2026-11-13T05:24:18.539Z",
+    "updatedAt": "2026-11-13T05:24:18.539Z",
+    "title": {
+      "ja": "光が、 白く、 濁る。",
+      "en": "Light clouds into white.",
+      "ko": "光が、 白く、 濁る。",
+      "zh": "光が、 白く、 濁る。"
+    },
+    "description": {
+      "ja": "Light\nclouds\ninto white.\n\n祭りの夜【Festival Night】\nNoto Town, Noto Peninsula, Japan\n\n37°18'30.6\"N 137°08'58.9\"E\n\nArchive 143\n#PrayerLandNoto\n#InspiredByGeorgesDeLaTour\n#MatsuriNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "en": "Light\nclouds\ninto white.\nNoto Town, Noto Peninsula, Japan",
+      "ko": "Light\nclouds\ninto white.\n\n祭りの夜【Festival Night】\nNoto Town, Noto Peninsula, Japan\n\n37°18'30.6\"N 137°08'58.9\"E\n\nArchive 143\n#PrayerLandNoto\n#InspiredByGeorgesDeLaTour\n#MatsuriNoto\n#NotoTown\n#NotoNoOtoMuseum",
+      "zh": "Light\nclouds\ninto white.\n\n祭りの夜【Festival Night】\nNoto Town, Noto Peninsula, Japan\n\n37°18'30.6\"N 137°08'58.9\"E\n\nArchive 143\n#PrayerLandNoto\n#InspiredByGeorgesDeLaTour\n#MatsuriNoto\n#NotoTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "能登町",
+      "en": "Noto Town",
+      "ko": "노토초",
+      "zh": "能登町"
+    },
+    "group": "能登町",
+    "locationText": "37°18'30.6\"N 137°08'58.9\"E",
+    "lat": 37.308499999999995,
+    "lng": 137.14969444444444,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547456335-spot-mwej7z86-sjwvwf-1-ios.jpg?v=1794547458539",
+        "alt": "iOS の画像.jpg",
+        "path": "media/spots/1794547456335-spot-mwej7z86-sjwvwf-1-ios.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej7xai-zk0euv",
+    "createdAt": "2026-11-13T05:24:16.278Z",
+    "updatedAt": "2026-11-13T05:24:16.278Z",
+    "title": {
+      "ja": "金箔に、 浮かぶ、 森。",
+      "en": "A forest floating on gold leaf.",
+      "ko": "金箔に、 浮かぶ、 森。",
+      "zh": "金箔に、 浮かぶ、 森。"
+    },
+    "description": {
+      "ja": "A forest\nfloating\non gold leaf.\n\n氷見市役所前【In Front of Himi City Hall】\nHimi, Toyama, Japan\n\n36°51'22.7\"N 136°58'22.5\"E\n\nArchive 142\n#PrayerLandNoto\n#UnattributedNoto\n#GoldLeafNoto\n#HimiCity\n#NotoNoOtoMuseum",
+      "en": "A forest\nfloating\non gold leaf.\nHimi, Toyama, Japan",
+      "ko": "A forest\nfloating\non gold leaf.\n\n氷見市役所前【In Front of Himi City Hall】\nHimi, Toyama, Japan\n\n36°51'22.7\"N 136°58'22.5\"E\n\nArchive 142\n#PrayerLandNoto\n#UnattributedNoto\n#GoldLeafNoto\n#HimiCity\n#NotoNoOtoMuseum",
+      "zh": "A forest\nfloating\non gold leaf.\n\n氷見市役所前【In Front of Himi City Hall】\nHimi, Toyama, Japan\n\n36°51'22.7\"N 136°58'22.5\"E\n\nArchive 142\n#PrayerLandNoto\n#UnattributedNoto\n#GoldLeafNoto\n#HimiCity\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "氷見市",
+      "en": "Himi",
+      "ko": "히미시",
+      "zh": "冰见市"
+    },
+    "group": "氷見市",
+    "locationText": "36°51'22.7\"N 136°58'22.5\"E",
+    "lat": 36.85630555555556,
+    "lng": 136.97291666666666,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547453875-spot-mwej7xai-zk0euv-1-image-3.jpg?v=1794547456278",
+        "alt": "image (3).png",
+        "path": "media/spots/1794547453875-spot-mwej7xai-zk0euv-1-image-3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej7vll-l17uda",
+    "createdAt": "2026-11-13T05:24:13.769Z",
+    "updatedAt": "2026-11-13T05:24:13.769Z",
+    "title": {
+      "ja": "祈りが、 奥で、 待つ。",
+      "en": "Prayer waits within.",
+      "ko": "祈りが、 奥で、 待つ。",
+      "zh": "祈りが、 奥で、 待つ。"
+    },
+    "description": {
+      "ja": "Prayer\nwaits\nwithin.\n\n藤原神社鳥居【Torii at Fujiwara Shrine】\nTsubata, Ishikawa, Japan\n\n36°41'00.4\"N 136°43'41.4\"E\n\nArchive 141\n#PrayerLandNoto\n#InspiredByLeonardoDaVinci\n#TsubataTown\n#NotoNoOtoMuseum",
+      "en": "Prayer\nwaits\nwithin.\nTsubata, Ishikawa, Japan",
+      "ko": "Prayer\nwaits\nwithin.\n\n藤原神社鳥居【Torii at Fujiwara Shrine】\nTsubata, Ishikawa, Japan\n\n36°41'00.4\"N 136°43'41.4\"E\n\nArchive 141\n#PrayerLandNoto\n#InspiredByLeonardoDaVinci\n#TsubataTown\n#NotoNoOtoMuseum",
+      "zh": "Prayer\nwaits\nwithin.\n\n藤原神社鳥居【Torii at Fujiwara Shrine】\nTsubata, Ishikawa, Japan\n\n36°41'00.4\"N 136°43'41.4\"E\n\nArchive 141\n#PrayerLandNoto\n#InspiredByLeonardoDaVinci\n#TsubataTown\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "津幡町",
+      "en": "Tsubata",
+      "ko": "쓰바타마치",
+      "zh": "津幡町"
+    },
+    "group": "津幡町",
+    "locationText": "36°41'00.4\"N 136°43'41.4\"E",
+    "lat": 36.68344444444444,
+    "lng": 136.72816666666668,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547451640-spot-mwej7vll-l17uda-1-ios-1.jpg?v=1794547453769",
+        "alt": "iOS の画像 (1).jpg",
+        "path": "media/spots/1794547451640-spot-mwej7vll-l17uda-1-ios-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej7tsb-6iue66",
+    "createdAt": "2026-11-13T05:24:11.577Z",
+    "updatedAt": "2026-11-13T05:24:11.577Z",
+    "title": {
+      "ja": "朝日が、 風景を、 重ねる。",
+      "en": "The sunrise layers the landscape.",
+      "ko": "朝日が、 風景を、 重ねる。",
+      "zh": "朝日が、 風景を、 重ねる。"
+    },
+    "description": {
+      "ja": "The sunrise\nlayers\nthe landscape.\n\n日の出【Sunrise】\nNanao Castle Mountain Observatory, Noto Peninsula, Japan\n\n37°00’41.4”N 136°59’34.9”E\n\nArchive 140\n#LayeredNoto\n#InspiredByHasegawaTohaku\n#InspiredByMaxLiebermann\n#InspiredByEdvardMunch\n#NotoNoOtoMuseum",
+      "en": "The sunrise\nlayers\nthe landscape.\nNanao Castle Mountain Observatory, Noto Peninsula, Japan",
+      "ko": "The sunrise\nlayers\nthe landscape.\n\n日の出【Sunrise】\nNanao Castle Mountain Observatory, Noto Peninsula, Japan\n\n37°00’41.4”N 136°59’34.9”E\n\nArchive 140\n#LayeredNoto\n#InspiredByHasegawaTohaku\n#InspiredByMaxLiebermann\n#InspiredByEdvardMunch\n#NotoNoOtoMuseum",
+      "zh": "The sunrise\nlayers\nthe landscape.\n\n日の出【Sunrise】\nNanao Castle Mountain Observatory, Noto Peninsula, Japan\n\n37°00’41.4”N 136°59’34.9”E\n\nArchive 140\n#LayeredNoto\n#InspiredByHasegawaTohaku\n#InspiredByMaxLiebermann\n#InspiredByEdvardMunch\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°00’41.4”N 136°59’34.9”E",
+    "lat": 37.0115,
+    "lng": 136.99302777777777,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547449295-spot-mwej7tsb-6iue66-1-image-4.jpg?v=1794547451576",
+        "alt": "image (4).png",
+        "path": "media/spots/1794547449295-spot-mwej7tsb-6iue66-1-image-4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej7rye-99gdrd",
+    "createdAt": "2026-11-13T05:24:09.227Z",
+    "updatedAt": "2026-11-13T05:24:09.227Z",
+    "title": {
+      "ja": "闇に、 海月が、 浮かぶ。",
+      "en": "A jellyfish floats in the dark.",
+      "ko": "闇に、 海月が、 浮かぶ。",
+      "zh": "闇に、 海月が、 浮かぶ。"
+    },
+    "description": {
+      "ja": "A jellyfish\nfloats\nin the dark.\n\n赤い海月【Red Jellyfish】\nNotojima Aquarium, Nanao, Noto Peninsula, Japan\n\n37°08'57.5\"N 136°58'59.0\"E\n\nArchive 139\n#LayeredNoto\n#InspiredByZaoWouKi\n#NotojimaAquarium\n#NotojimaNanao\n#NotoNoOtoMuseum",
+      "en": "A jellyfish\nfloats\nin the dark.\nNotojima Aquarium, Nanao, Noto Peninsula, Japan",
+      "ko": "A jellyfish\nfloats\nin the dark.\n\n赤い海月【Red Jellyfish】\nNotojima Aquarium, Nanao, Noto Peninsula, Japan\n\n37°08'57.5\"N 136°58'59.0\"E\n\nArchive 139\n#LayeredNoto\n#InspiredByZaoWouKi\n#NotojimaAquarium\n#NotojimaNanao\n#NotoNoOtoMuseum",
+      "zh": "A jellyfish\nfloats\nin the dark.\n\n赤い海月【Red Jellyfish】\nNotojima Aquarium, Nanao, Noto Peninsula, Japan\n\n37°08'57.5\"N 136°58'59.0\"E\n\nArchive 139\n#LayeredNoto\n#InspiredByZaoWouKi\n#NotojimaAquarium\n#NotojimaNanao\n#NotoNoOtoMuseum"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°08'57.5\"N 136°58'59.0\"E",
+    "lat": 37.14930555555556,
+    "lng": 136.98305555555555,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547446931-spot-mwej7rye-99gdrd-1-image-5.jpg?v=1794547449227",
+        "alt": "image (5).png",
+        "path": "media/spots/1794547446931-spot-mwej7rye-99gdrd-1-image-5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "spot-mwej7q1a-a9ra51",
+    "createdAt": "2026-11-13T05:24:06.854Z",
+    "updatedAt": "2026-11-13T05:24:06.854Z",
+    "title": {
+      "ja": "水槽に、 魚が、 重なる。",
+      "en": "Fish overlap in the aquarium.",
+      "ko": "水槽に、 魚が、 重なる。",
+      "zh": "水槽に、 魚が、 重なる。"
+    },
+    "description": {
+      "ja": "Fish\noverlap\nin the aquarium.\n\n金魚の水槽【Goldfish Aquarium】\nNotojima Aquarium, Nanao, Noto Peninsula, Japan\n\n37°08'57.5\"N 136°58'59.0\"E\n\nArchive 138\n#LayeredNoto\n#InspiredByMorrisLouis\n#InspiredByPaulKlee\n#NotojimaAquarium\n#NotoNoOtoMuseum （",
+      "en": "Fish\noverlap\nin the aquarium.\nNotojima Aquarium, Nanao, Noto Peninsula, Japan",
+      "ko": "Fish\noverlap\nin the aquarium.\n\n金魚の水槽【Goldfish Aquarium】\nNotojima Aquarium, Nanao, Noto Peninsula, Japan\n\n37°08'57.5\"N 136°58'59.0\"E\n\nArchive 138\n#LayeredNoto\n#InspiredByMorrisLouis\n#InspiredByPaulKlee\n#NotojimaAquarium\n#NotoNoOtoMuseum （",
+      "zh": "Fish\noverlap\nin the aquarium.\n\n金魚の水槽【Goldfish Aquarium】\nNotojima Aquarium, Nanao, Noto Peninsula, Japan\n\n37°08'57.5\"N 136°58'59.0\"E\n\nArchive 138\n#LayeredNoto\n#InspiredByMorrisLouis\n#InspiredByPaulKlee\n#NotojimaAquarium\n#NotoNoOtoMuseum （"
+    },
+    "municipality": {
+      "ja": "七尾市",
+      "en": "Nanao",
+      "ko": "나나오시",
+      "zh": "七尾市"
+    },
+    "group": "七尾市",
+    "locationText": "37°08'57.5\"N 136°58'59.0\"E",
+    "lat": 37.14930555555556,
+    "lng": 136.98305555555555,
+    "photos": [
+      {
+        "src": "https://raw.githubusercontent.com/tmgddjtt57-collab/notomap/main/media/spots/1794547444484-spot-mwej7q1a-a9ra51-1-image-6.jpg?v=1794547446854",
+        "alt": "image (6).png",
+        "path": "media/spots/1794547444484-spot-mwej7q1a-a9ra51-1-image-6.jpg"
+      }
+    ]
+  },
+  {
     "id": "spot-mweiyf0g-r5q1ib",
     "createdAt": "2026-11-13T05:16:53.472Z",
     "updatedAt": "2026-11-13T05:16:53.472Z",
