@@ -1293,3 +1293,7 @@ body.is-viewer .editor-only { display: none !important; }
   .topbar, .editor, .toast, .map-status, .editor-only { display: none !important; }
   .workspace { display: block; }
 }
+
+/* メニュー内の補足リンク（アクセス解析の説明など） */
+a.hint { display: inline-flex; align-items: center; min-height: var(--tap); text-decoration: underline; text-underline-offset: 3px; }
+a.hint:hover { color: var(--brand); }

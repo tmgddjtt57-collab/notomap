@@ -3,7 +3,7 @@
      1. 設定          2. 自治体データ    3. 多言語
      4. 状態          5. 起動と結線      6. 表示
      7. 地図          8. 編集フォーム    9. 位置情報
-    10. GitHub 連携  11. 共通処理
+    10. GitHub 連携  11. 共通処理    12. アクセス解析
 */
 
 /* ============================ 1. 設定 ============================ */
@@ -13,6 +13,10 @@ const BRANCH = "main";
 const DATA = "data/spots.json";
 const MEDIA = "media/spots";
 const PASS = "noto2026";
+
+/* Google アナリティクス(GA4)の測定ID。G-XXXXXXXXXX の形。公開しても問題のない値。
+   空のままなら、解析は読み込まれず、メニューの「アクセス解析」も出ない。 */
+const GA_ID = "";
 
 /* 保存キーは従来のまま。更新後も token と言語設定を引き継ぐ。 */
 const LS = "noto-no-oto-spots-v5";
@@ -24,6 +28,7 @@ const THEME = "noto-no-oto-theme";
 const TEXTSIZE = "noto-no-oto-textsize";
 const VIEW = "noto-no-oto-view";
 const FORMDRAFT = "noto-no-oto-form-draft";
+const ANALYTICS = "noto-no-oto-analytics"; /* "off" なら測らない。編集者として使った端末も "off" にする */
 
 const MAX_SIDE = 1280;
 const JPEG_Q = 0.78;
@@ -226,6 +231,12 @@ const I = {
     installApp: "ホーム画面に追加",
     feedLink: "新着をRSSで読む",
     clusterLabel: "{count}件の作品をまとめて表示",
+    analytics: "アクセス解析",
+    analyticsNote: "サイトの改善のため、Google アナリティクスで閲覧状況（見られた作品・端末・おおまかな地域など）を集計しています。名前や連絡先などは集めず、広告には使いません。Cookie を使います。",
+    analyticsOn: "協力する",
+    analyticsOff: "協力しない",
+    analyticsDnt: "ブラウザの「トラッキング拒否」設定を尊重し、測定していません。",
+    analyticsLink: "Google によるデータの取り扱い",
   },
   en: {
     siteTitle: "Noto no Oto Museum Digital Map",
@@ -379,6 +390,12 @@ const I = {
     installApp: "Add to home screen",
     feedLink: "Follow with RSS",
     clusterLabel: "{count} works grouped here",
+    analytics: "Analytics",
+    analyticsNote: "To improve this site, we use Google Analytics to count visits (which works were viewed, device type, rough region). We do not collect names or contact details, and the data is not used for ads. Cookies are used.",
+    analyticsOn: "Allow",
+    analyticsOff: "Don't allow",
+    analyticsDnt: "Your browser's Do Not Track setting is respected, so nothing is measured.",
+    analyticsLink: "How Google uses data",
   },
   ko: {
     siteTitle: "노토노오토 미술관 디지털 지도",
@@ -532,6 +549,12 @@ const I = {
     installApp: "홈 화면에 추가",
     feedLink: "RSS로 새 소식 받기",
     clusterLabel: "작품 {count}건을 묶어 표시",
+    analytics: "접속 분석",
+    analyticsNote: "사이트 개선을 위해 Google 애널리틱스로 열람 현황(본 작품, 기기, 대략적인 지역 등)을 집계합니다. 이름이나 연락처는 수집하지 않으며 광고에는 사용하지 않습니다. 쿠키를 사용합니다.",
+    analyticsOn: "협조하기",
+    analyticsOff: "협조하지 않기",
+    analyticsDnt: "브라우저의 추적 거부 설정을 존중하여 측정하지 않습니다.",
+    analyticsLink: "Google의 데이터 처리 방식",
   },
   zh: {
     siteTitle: "能登之音美术馆数字地图",
@@ -685,6 +708,12 @@ const I = {
     installApp: "添加到主屏幕",
     feedLink: "用 RSS 订阅更新",
     clusterLabel: "此处汇集 {count} 件作品",
+    analytics: "访问统计",
+    analyticsNote: "为改进本站，我们使用 Google Analytics 统计浏览情况（被查看的作品、设备、大致地区等）。不收集姓名、联系方式，也不用于广告。会使用 Cookie。",
+    analyticsOn: "允许",
+    analyticsOff: "不允许",
+    analyticsDnt: "已尊重浏览器的“请勿跟踪”设置，不进行统计。",
+    analyticsLink: "Google 如何使用数据",
   },
 };
 
@@ -720,7 +749,7 @@ document.addEventListener("DOMContentLoaded", start);
 
 async function start() {
   [
-    "skipLink", "languageSelect", "menuButton", "menuDrawer", "menuClose", "themeGroup", "textSizeGroup",
+    "skipLink", "languageSelect", "analyticsSection", "analyticsGroup", "analyticsState", "menuButton", "menuDrawer", "menuClose", "themeGroup", "textSizeGroup",
     "shareSiteButton", "installButton", "menuNewPost",
     "viewerModeButton", "editorModeButton", "githubSyncButton", "exportButton", "importInput",
     "groupList", "spotList", "spotCount", "newSpotButton", "sidePanel",
@@ -746,6 +775,7 @@ async function start() {
   readUrl();          /* ?lang= を i18n() より先に反映する */
   bind();
   i18n();
+  initAnalytics();
   initMap();
   S.spots = localSpots();
   render();
@@ -804,8 +834,10 @@ async function share(id) {
   const url = shareUrl(id);
   const title = p ? `${txt(p, "title")}｜${tr("siteTitle")}` : tr("siteTitle");
   try {
-    if (navigator.share) { await navigator.share({ title, url }); return; }
+    const how = navigator.share ? "web_share" : "copy_link";
+    if (navigator.share) { await navigator.share({ title, url }); track("share", { method: how, content_type: id ? "spot" : "site", item_id: id || "" }); return; }
     await navigator.clipboard.writeText(url);
+    track("share", { method: how, content_type: id ? "spot" : "site", item_id: id || "" });
     toast(tr("linkCopied"));
   } catch (e) {
     if (e?.name !== "AbortError") status(url);
@@ -817,6 +849,7 @@ function bind() {
     S.lang = E.languageSelect.value;
     store(LANG, S.lang);
     i18n();
+    paintAnalytics();
     relabelLayers();
     render();
     syncUrl();
@@ -825,6 +858,10 @@ function bind() {
   E.themeGroup.onclick = (ev) => {
     const b = ev.target.closest("[data-theme-value]");
     if (b) { applyTheme(b.dataset.themeValue); store(THEME, b.dataset.themeValue); }
+  };
+  E.analyticsGroup.onclick = (ev) => {
+    const b = ev.target.closest("[data-analytics-value]");
+    if (b) setAnalytics(b.dataset.analyticsValue === "on");
   };
   E.textSizeGroup.onclick = (ev) => {
     const b = ev.target.closest("[data-size-value]");
@@ -914,8 +951,14 @@ function bind() {
     if (b) setGroup(b.dataset.group);
   };
 
-  let searchTimer;
+  let searchTimer, searchTrackTimer;
   E.searchInput.oninput = () => {
+    /* 打ち込みの途中は数えない。手が止まってから1回だけ送る */
+    clearTimeout(searchTrackTimer);
+    searchTrackTimer = setTimeout(() => {
+      const q = E.searchInput.value.trim();
+      if (q.length >= 2) track("search", { search_term: q.slice(0, 50) });
+    }, 1500);
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => {
       S.q = E.searchInput.value;
@@ -978,6 +1021,7 @@ function bind() {
     E.installButton.hidden = false;
   });
   window.addEventListener("appinstalled", () => {
+    track("pwa_install");
     S.installEvent = null;
     E.installButton.hidden = true;
   });
@@ -1090,6 +1134,7 @@ function viewer() {
 
 function editor() {
   S.role = "editor";
+  setAnalytics(false); /* 運営の操作が閲覧数に混ざらないようにする */
   document.body.classList.remove("is-viewer");
   document.body.classList.add("is-editor");
   closeMenu();
@@ -1109,6 +1154,7 @@ function closeEditor() {
 }
 
 function setGroup(id) {
+  if (id && id !== "all" && id !== S.group) track("filter_area", { area: id });
   S.group = id || "all";
   S.fitKey = "";
   render();
@@ -1182,8 +1228,11 @@ function listClick(ev) {
 }
 
 function selectSpot(id, focusDetail) {
-  S.selected = id;
   const p = S.spots.find((x) => x.id === id);
+  if (p && S.selected !== id) {
+    track("spot_view", { spot_id: id, spot_name: p.title?.ja || txt(p, "title"), area: p.group || p.municipality?.ja || "" });
+  }
+  S.selected = id;
   if (p && S.map && valid(p.lat, p.lng)) {
     S.map.setView([p.lat, p.lng], Math.max(S.map.getZoom(), 13), { animate: !reducedMotion() });
   }
@@ -2895,4 +2944,66 @@ function toast(message, withUndo = false) {
     E.toast.classList.remove("is-on");
     E.undoButton.hidden = true;
   }, withUndo ? 12000 : 4200);
+}
+
+/* ====================== 12. アクセス解析 ======================
+   Google アナリティクス(GA4)。GA_ID が空なら何もしない。
+   ・利用者が「協力しない」を選べる。ブラウザの「トラッキング拒否」も尊重する。
+   ・編集者として使った端末は測らない（運営の操作で数字が膨らまないように）。
+   ・広告用のデータ連携は切ってある。名前・連絡先・投稿内容は送らない。
+   ・作品の閲覧は spot_view イベントで数える（SPA なのでページ遷移では数えられない）。 */
+
+let gaLoaded = false;
+
+const gaEnabled = () => /^G-[A-Z0-9]{6,}$/.test(GA_ID);
+const gaBlocked = () => navigator.doNotTrack === "1" || window.doNotTrack === "1" || navigator.globalPrivacyControl === true;
+const gaWanted = () => gaEnabled() && !gaBlocked() && store(ANALYTICS) !== "off";
+
+function initAnalytics() {
+  E.analyticsSection.hidden = !gaEnabled();
+  paintAnalytics();
+  loadAnalytics();
+}
+
+function loadAnalytics() {
+  if (gaLoaded || !gaWanted()) return;
+  gaLoaded = true;
+  window[`ga-disable-${GA_ID}`] = false;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() { window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", GA_ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+  const el = document.createElement("script");
+  el.async = true;
+  el.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_ID)}`;
+  document.head.append(el);
+}
+
+function setAnalytics(on) {
+  if (!gaEnabled()) return;
+  store(ANALYTICS, on ? "on" : "off");
+  if (on) {
+    loadAnalytics();
+    window[`ga-disable-${GA_ID}`] = !gaWanted();
+  } else {
+    window[`ga-disable-${GA_ID}`] = true;
+    /* すでに置かれた計測用の Cookie も消す */
+    document.cookie.split(";").map((c) => c.split("=")[0].trim()).filter((n) => n.startsWith("_ga"))
+      .forEach((n) => { document.cookie = `${n}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`; });
+  }
+  paintAnalytics();
+}
+
+function paintAnalytics() {
+  if (!E.analyticsGroup) return;
+  const on = gaWanted();
+  E.analyticsGroup.querySelectorAll("[data-analytics-value]").forEach((b) =>
+    b.setAttribute("aria-pressed", String((b.dataset.analyticsValue === "on") === on)));
+  E.analyticsState.hidden = !gaBlocked();
+  E.analyticsState.textContent = gaBlocked() ? tr("analyticsDnt") : "";
+}
+
+function track(name, params) {
+  if (!gaLoaded || window[`ga-disable-${GA_ID}`]) return;
+  try { window.gtag("event", name, params || {}); } catch { /* 計測の失敗で画面を止めない */ }
 }

@@ -36,6 +36,9 @@ self.addEventListener("fetch", (ev) => {
   /* GitHub API への書き込み・読み取りには一切触れない */
   if (url.hostname === "api.github.com") return;
 
+  /* アクセス解析の通信にも触れない（控えを返すと数え違いのもとになる） */
+  if (/(^|\.)(googletagmanager|google-analytics|analytics\.google)\.com$/.test(url.hostname)) return;
+
   /* 投稿データだけは新しいものを優先し、圏外のときだけ控えを返す。
      同じ raw.githubusercontent.com でも写真は下の「一度読んだら使い回す」に回す。 */
   if (url.pathname.endsWith("/data/spots.json")) {

@@ -57,7 +57,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="styles.css?v=20261028a" />
+    <link rel="stylesheet" href="styles.css?v=20261114a" />
   </head>
 
   <body class="is-viewer">
@@ -346,6 +346,21 @@
             </div>
           </section>
 
+          <section class="menu-section" id="analyticsSection" aria-labelledby="menuAnalyticsTitle" hidden>
+            <h3 class="menu-heading" id="menuAnalyticsTitle" data-i18n="analytics">アクセス解析</h3>
+            <p class="hint" data-i18n="analyticsNote">サイトの改善のため、Google アナリティクスで閲覧状況を集計しています。</p>
+            <div class="segmented" id="analyticsGroup" role="group" aria-labelledby="menuAnalyticsTitle">
+              <button type="button" class="segment" data-analytics-value="on" aria-pressed="true">
+                <span data-i18n="analyticsOn">協力する</span>
+              </button>
+              <button type="button" class="segment" data-analytics-value="off" aria-pressed="false">
+                <span data-i18n="analyticsOff">協力しない</span>
+              </button>
+            </div>
+            <p class="hint" id="analyticsState" role="status" hidden></p>
+            <a class="hint" href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" data-i18n="analyticsLink">Google によるデータの取り扱い</a>
+          </section>
+
           <section class="menu-section" aria-labelledby="menuRoleTitle">
             <h3 class="menu-heading" id="menuRoleTitle" data-i18n="role">権限</h3>
             <div class="segmented" role="group" aria-labelledby="menuRoleTitle">
@@ -481,7 +496,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-    <script src="app.js?v=20261028a" defer></script>
+    <script src="app.js?v=20261114a" defer></script>
     <script>
       /* 現地は電波が不安定なので、一度見た地図と写真は圏外でも開けるようにする */
       if ("serviceWorker" in navigator) {
